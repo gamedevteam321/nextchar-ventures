@@ -6,17 +6,17 @@ const products = [
   {
     id: 1,
     name: 'BIOCHAR',
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1000&q=80'
+    image: '/lovable-uploads/f372d015-695b-4f0d-bd25-a7cbf2a7286b.png'
   }, 
   {
     id: 2,
     name: 'BIOCOAL',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80'
+    image: '/lovable-uploads/f8367d4d-176c-4c0f-b2cb-a8eb3883a8ba.png'
   }, 
   {
     id: 3,
     name: 'WOOD VINEGAR',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1000&q=80'
+    image: '/lovable-uploads/da065e7f-742b-4b7d-9a90-dadc376c350a.png'
   }
 ];
 
@@ -45,8 +45,8 @@ const ProductsSection: React.FC = () => {
                       e.currentTarget.src = 'https://placehold.co/600x400/333333/FFFFFF?text=Biocarbon';
                     }}
                   />
-                  <div className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-black/80 to-transparent p-4">
-                    <h3 className="text-xl font-bold text-white">{product.name}</h3>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    {/* The product name is already overlaid on the images, so we don't need to display it here */}
                   </div>
                 </div>
               </CardContent>

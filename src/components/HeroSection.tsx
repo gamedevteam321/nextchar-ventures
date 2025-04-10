@@ -22,22 +22,20 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Background wrapper with a base color to ensure something shows */}
-      <div className="absolute inset-0 bg-black">
-        {/* Background image with max z-index for this layer */}
-        <div 
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url('/lovable-uploads/1eed848a-4e4c-4d64-83f7-24d58181c18e.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        />
-        
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
-      </div>
+      {/* Background with proper z-index layering */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url('/lovable-uploads/1eed848a-4e4c-4d64-83f7-24d58181c18e.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 1,
+        }}
+      />
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50 z-1"></div>
       
       <div className="container mx-auto relative z-10 px-6 md:px-12 lg:px-16 pt-32 pb-20">
         <div className="max-w-3xl">

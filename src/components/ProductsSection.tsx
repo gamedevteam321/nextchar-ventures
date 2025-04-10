@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -6,17 +5,17 @@ const products = [
   {
     id: 1,
     name: 'BIOCHAR',
-    image: '/lovable-uploads/f372d015-695b-4f0d-bd25-a7cbf2a7286b.png'
+    image: '/Biochar.png'
   }, 
   {
     id: 2,
     name: 'BIOCOAL',
-    image: '/lovable-uploads/f8367d4d-176c-4c0f-b2cb-a8eb3883a8ba.png'
+    image: '/BioCoal.png'
   }, 
   {
     id: 3,
     name: 'WOOD VINEGAR',
-    image: '/lovable-uploads/da065e7f-742b-4b7d-9a90-dadc376c350a.png'
+    image: '/Wood Vinegar.png'
   }
 ];
 
@@ -33,9 +32,9 @@ const ProductsSection: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map(product => (
-            <Card key={product.id} className="bg-carbon border border-gold/20 overflow-hidden card-effect rounded-xl">
-              <CardContent className="p-0">
-                <div className="h-64 overflow-hidden relative">
+            <Card key={product.id} className="bg-carbon border border-gold/20 overflow-hidden card-effect rounded-xl aspect-square">
+              <CardContent className="p-0 h-full">
+                <div className="h-full overflow-hidden relative">
                   <img 
                     src={product.image} 
                     alt={product.name} 

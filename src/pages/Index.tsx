@@ -1,10 +1,10 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import ProductsSection from '@/components/ProductsSection';
 import BiocharSection from '@/components/BiocharSection';
 import ImpactSection from '@/components/ImpactSection';
+import QuoteSliderSection from '@/components/QuoteSliderSection';
 import TechnologySection from '@/components/TechnologySection';
 import CarbonCreditsSection from '@/components/CarbonCreditsSection';
 import ClosingSection from '@/components/ClosingSection';
@@ -41,6 +41,7 @@ const Index: React.FC = () => {
       <ProductsSection />
       <BiocharSection />
       <ImpactSection />
+      <QuoteSliderSection />
       <TechnologySection />
       <CarbonCreditsSection />
       <ClosingSection />

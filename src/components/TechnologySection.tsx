@@ -1,79 +1,83 @@
-
 import React from 'react';
 
 const technologies = [
   {
     id: 1,
-    title: 'Modular & Scalable',
-    description: 'Adaptable systems for any operation size'
+    title: "Modular & Scalable",
+    description: "Easily scale up or down based on biomass availability and project requirements."
   },
   {
     id: 2,
-    title: 'Biomass Agnostic',
-    description: 'Works with virtually any organic feedstock'
+    title: "Biomass Agnostic",
+    description: "Process various types of organic material for maximum versatility."
   },
   {
     id: 3,
-    title: 'High Temperature Pyrolysis',
-    description: 'Clean production with precise control'
+    title: "High Temperature with Precision Control",
+    description: "Achieve optimal pyrolysis conditions for different feedstocks."
   },
   {
     id: 4,
-    title: 'Hyperlocal Implementation',
-    description: 'Bringing solutions directly to communities'
+    title: "Hyperlocal Implementation",
+    description: "Deploy units directly where biomass is available to minimize transportation."
   },
   {
     id: 5,
-    title: 'Low Skill Requirement',
-    description: 'User-friendly technology for all skill levels'
+    title: "Low Skill Requirement",
+    description: "Designed for ease of operation in various global contexts."
   },
   {
     id: 6,
-    title: 'Low Energy Consumption',
-    description: 'Efficient operations with minimal resources'
+    title: "Low Energy Consumption",
+    description: "Energy-efficient design that minimizes operational costs."
   },
   {
     id: 7,
-    title: 'Emissions Control',
-    description: 'Clean processes that maintain air quality'
+    title: "Emissions Control",
+    description: "Advanced systems to ensure clean operation with minimal environmental impact."
   },
   {
     id: 8,
-    title: 'Transparent MRV',
-    description: 'Measurement, Reporting, and Verification'
+    title: "Transparent Monitoring",
+    description: "Real-time data collection for process optimization and verification."
   },
   {
     id: 9,
-    title: 'Trusted Verification',
-    description: 'Third-party validation of all credits'
+    title: "Trusted Verification Process",
+    description: "Rigorous standards ensuring accountability and quality assurance."
   }
 ];
 
-const TechnologySection: React.FC = () => {
+export default function TechnologySection() {
   return (
-    <section id="technology" className="section-padding bg-carbon-light px-6 md:px-12">
-      <div className="container mx-auto">
-        <h2 className="section-title">Our Technology</h2>
-        <p className="text-center text-gray-400 mb-12 max-w-3xl mx-auto">
-          Our processing technology is scalable, efficient & clean
-        </p>
+    <section className="w-full bg-[#111111] py-20 md:py-32">
+      <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Technology</h2>
+        <p className="text-xl md:text-2xl text-white/80 mb-16">Our Processing technology is scalable, efficient & robust</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {technologies.map((tech) => (
-            <div key={tech.id} className="tech-card">
-              <div className="flex items-center justify-center mb-4">
-                <div className="h-12 w-12 flex items-center justify-center border border-gold rounded-full">
-                  <span className="text-gold text-xl">{tech.id}</span>
+            <div 
+              key={tech.id}
+              className="relative rounded-lg overflow-hidden group"
+              style={{
+                backgroundImage: 'url(/technology-placeholder.png)',
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+                backgroundColor: '#111111',
+                backgroundPosition: 'center'
+              }}
+            >
+              <div className="aspect-[4/3] p-10 flex flex-col justify-center bg-gradient-to-b from-black/20 to-black/60 hover:from-black/40 hover:to-black/80 transition-all duration-300">
+                <div className="text-center mt-16">
+                  <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] bg-clip-text text-transparent">{tech.title}</h3>
+                  <p className="text-white/90 text-sm">{tech.description}</p>
                 </div>
               </div>
-              <h3 className="text-xl font-bold text-center text-gold mb-2">{tech.title}</h3>
-              <p className="text-center text-gray-400">{tech.description}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default TechnologySection;
+}

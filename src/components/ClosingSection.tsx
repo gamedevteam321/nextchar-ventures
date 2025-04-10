@@ -1,31 +1,64 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import './QuoteSlider.css';
 
-import React from 'react';
+const quotes = [
+  {
+    id: 1,
+    mainTitle: "Global soils are collapsing—overworked, depleted, and contaminated",
+    description: "Biochar is the most effective known solution to restore them & biomass waste has no better use than becoming biochar",
+    quote: "\"Nothing else comes close\"",
+    author: "— Arjun Dhawan, Co-Founder, Nexchar"
+  },
+  {
+    id: 2,
+    mainTitle: "Global soils are collapsing—overworked, depleted, and contaminated",
+    description: "Biochar is the most effective known solution to restore them & biomass waste has no better use than becoming biochar",
+    quote: "\"Nothing else comes close\"",
+    author: "-Paramjeet Singh Sehra, Co-Founder, Nexchar"
+  }
+];
 
-const ClosingSection: React.FC = () => {
+export default function ClosingSection() {
   return (
-    <section id="about" className="section-padding bg-carbon-light px-6 md:px-12">
-      <div className="container mx-auto max-w-4xl">
-        <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Global soils are collapsing—<span className="text-gold">overworked, depleted, and contaminated</span>
-          </h2>
-          
-          <p className="text-xl md:text-2xl mb-8">
-            Biochar is the most effective known solution to restore soil health and sequester carbon at scale
-          </p>
-          
-          <div className="mt-12">
-            <p className="text-2xl italic text-gold mb-4">
-              "Nothing else comes close"
-            </p>
-            <p className="text-gray-400">
-              — Adam Green, Co-Founder, lovable.dev
-            </p>
-          </div>
-        </div>
+    <section className="w-full bg-[#111111] py-20 md:py-32">
+      <div className="max-w-[90rem] mx-auto">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          className="w-full"
+        >
+          {quotes.map((quote) => (
+            <SwiperSlide key={quote.id}>
+              <div className="flex flex-col justify-center min-h-[20rem] px-4 md:px-20 py-12 bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] rounded-2xl mx-4 md:mx-16 lg:mx-24">
+                <div className="max-w-4xl mx-auto w-full">
+                  <div className="text-left">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#111111] mb-8">
+                      {quote.mainTitle}
+                    </h2>
+                    <p className="text-xl md:text-2xl lg:text-3xl text-[#111111]/90 mb-8">
+                      {quote.description}
+                    </p>
+                    <p className="text-xl md:text-2xl lg:text-3xl italic text-[#111111] mb-8">
+                      {quote.quote}
+                    </p>
+                  </div>
+                  <p className="text-lg md:text-xl text-[#111111]/80 text-right">
+                    {quote.author}
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
-};
-
-export default ClosingSection;
+}

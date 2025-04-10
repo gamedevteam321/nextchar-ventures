@@ -1,28 +1,18 @@
-
-import React from 'react';
-import { Button } from "@/components/ui/button";
-
-const FooterCTA: React.FC = () => {
+export default function FooterCTA() {
   return (
-    <section className="section-padding bg-carbon px-6 md:px-12">
-      <div className="container mx-auto">
-        <div className="border border-gold/30 rounded-xl bg-carbon-light/50 p-8 md:p-12 max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gold mb-6">
+    <section className="w-full bg-[#111111] py-20 md:py-32">
+      <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] bg-clip-text text-transparent mb-8">
             THE TIME IS NOW
           </h2>
-          
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            We are a carbon project developer creating scalable solutions for sustainable agriculture, carbon sequestration, and climate resilience. Join us in building a regenerative future.
+        </div>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-400 text-center leading-relaxed">
+            We are a carbon project developer leveraging proprietary modular pyrolysis technology to convert agricultural and forestry waste into biochar, addressing waste management challenges while creating a product with substantial agricultural benefits and carbon removal potential.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gold">Join Our Mission</Button>
-            <Button className="btn-outline">Contact Us</Button>
-          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default FooterCTA;
+}

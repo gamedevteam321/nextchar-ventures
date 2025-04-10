@@ -1,31 +1,19 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  return (
-    <header className={`${isScrolled ? 'sticky-header' : 'bg-transparent'} py-6 px-6 md:px-12 lg:px-16 flex items-center justify-between absolute top-0 left-0 right-0 z-50`}>
+  return <header className={`${isScrolled ? 'sticky-header' : 'bg-transparent'} py-6 px-6 md:px-12 lg:px-16 flex items-center justify-between absolute top-0 left-0 right-0 z-50`}>
       <div className="flex items-center">
         <div className="flex items-center">
-          <img 
-            src="/lovable-uploads/febb6c91-fbeb-473c-8b2d-00dcf36d471c.png" 
-            alt="Lovable Ventures" 
-            className="h-12 w-auto"
-          />
-          <span className="text-xs uppercase text-white ml-2 tracking-wider hidden md:inline-block">
-            Lovable ventures
-          </span>
+          <img src="/lovable-uploads/febb6c91-fbeb-473c-8b2d-00dcf36d471c.png" alt="Lovable Ventures" className="h-12 w-auto" />
+          
         </div>
       </div>
       
@@ -37,8 +25,6 @@ const Header: React.FC = () => {
       </nav>
       
       <Button className="bg-gold text-black hover:bg-gold-light font-medium rounded-md text-sm px-6">Get Started</Button>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;

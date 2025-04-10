@@ -6,19 +6,19 @@ const products = [
   {
     id: 1,
     name: 'BIOCHAR',
-    image: 'https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
+    image: '/lovable-uploads/9acbbd7c-206c-4cf1-b285-fcf27c6ccce4.png',
     description: 'Carbon-rich soil amendment'
   },
   {
     id: 2,
     name: 'BIOCOAL',
-    image: 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
+    image: '/lovable-uploads/19ad373a-ee93-4503-b837-eb23721e9a45.png',
     description: 'Renewable energy alternative'
   },
   {
     id: 3,
     name: 'WOOD VINEGAR',
-    image: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400&q=80',
+    image: '/lovable-uploads/eb273200-007c-45aa-ab93-8e064ce3f221.png',
     description: 'Natural plant protection'
   }
 ];
@@ -36,15 +36,18 @@ const ProductsSection: React.FC = () => {
           {products.map((product) => (
             <Card key={product.id} className="bg-carbon border border-gold/20 overflow-hidden card-effect">
               <CardContent className="p-0">
-                <div className="h-64 overflow-hidden">
+                <div className="h-64 overflow-hidden relative">
                   <img 
                     src={product.image}
                     alt={product.name}
                     className="w-full h-full object-cover transition-all duration-500 hover:scale-110"
                   />
+                  {/* Product name overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <h3 className="text-3xl font-bold text-gold">{product.name}</h3>
+                  </div>
                 </div>
                 <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-gold mb-2">{product.name}</h3>
                   <p className="text-gray-400">{product.description}</p>
                 </div>
               </CardContent>

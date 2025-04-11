@@ -88,17 +88,9 @@
   }
 
   body {
-    @apply bg-background text-foreground transition-colors duration-300;
+    @apply bg-[#111111] text-white;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
     font-family: 'Montserrat', sans-serif;
-  }
-
-  body.light {
-    @apply bg-white;
-  }
-  
-  body.dark {
-    @apply bg-[#111111];
   }
   
   html {
@@ -124,11 +116,7 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-8 text-center transition-colors duration-300;
-  }
-
-  .light .section-title {
-    @apply text-gray-900;
+    @apply text-3xl md:text-4xl font-bold mb-8 text-center;
   }
   
   .section-padding {
@@ -136,19 +124,11 @@
   }
   
   .stat-card {
-    @apply flex flex-col items-center justify-center p-6 border border-gold/20 rounded-lg transition-colors duration-300;
-  }
-
-  .light .stat-card {
-    @apply bg-white shadow-md;
+    @apply flex flex-col items-center justify-center p-6 border border-gold/20 rounded-lg;
   }
   
   .tech-card {
     @apply p-6 border border-gold/20 rounded-lg hover:border-gold/50 transition-all duration-300;
-  }
-
-  .light .tech-card {
-    @apply bg-white shadow-md;
   }
 }
 
@@ -156,14 +136,7 @@
 .sticky-header {
   @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
   backdrop-filter: blur(10px);
-}
-
-.dark .sticky-header {
   background-color: rgba(17, 17, 17, 0.8);
-}
-
-.light .sticky-header {
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Animation for reveal elements */
@@ -199,20 +172,8 @@
 }
 
 /* Light theme specific styles */
-.light {
-  @apply bg-white text-gray-800;
-}
-
-.light p {
-  @apply text-gray-700;
-}
-
-.light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
-  @apply text-gray-900;
-}
-
 .light-header {
-  @apply bg-white text-gray-800 shadow-md;
+  @apply bg-white text-gray-800;
 }
 
 .light .nav-link {
@@ -221,46 +182,4 @@
 
 .dark .nav-link {
   @apply text-white hover:text-gold;
-}
-
-/* Card and section backgrounds for light mode */
-.light .bg-carbon {
-  @apply bg-gray-50;
-}
-
-.light .bg-section {
-  @apply bg-gray-100;
-}
-
-/* Button styles for light mode */
-.light .btn-outline {
-  @apply border-gold text-gray-800;
-}
-
-/* Form elements for light mode */
-.light input, .light textarea {
-  @apply bg-white border-gray-300 text-gray-800;
-}
-
-/* Mobile menu for light mode */
-.light .mobile-menu {
-  @apply bg-white text-gray-800;
-}
-
-/* Footer for light mode */
-.light footer {
-  @apply bg-gray-100 text-gray-800;
-}
-
-/* Additional light mode specific styles */
-.light .card {
-  @apply bg-white shadow-md;
-}
-
-.light .border-subtle {
-  @apply border-gray-200;
-}
-
-.light .text-subtle {
-  @apply text-gray-600;
 }

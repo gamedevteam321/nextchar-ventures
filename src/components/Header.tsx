@@ -63,11 +63,7 @@ const Header: React.FC = () => {
         py-6 px-6 md:px-12 lg:px-16 flex items-center justify-between fixed top-0 left-0 right-0 z-50 transition-colors duration-300`}>
         <div className="flex items-center">
           <div className="flex items-center">
-            <img 
-              src={getImagePath(isDarkTheme ? "/lovable-uploads/logo.png" : "/lovable-uploads/blacklogo.png")} 
-              alt="Nextchar Ventures" 
-              className="h-12 w-auto" 
-            />
+            <img src={getImagePath("/lovable-uploads/logo.png")} alt="Lovable Ventures" className="h-12 w-auto" />
           </div>
         </div>
         

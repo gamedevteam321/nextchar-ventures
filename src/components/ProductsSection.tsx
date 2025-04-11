@@ -1,21 +1,22 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
+import { getImagePath } from "@/lib/utils";
 
 const products = [
   {
     id: 1,
     name: 'BIOCHAR',
-    image: '/Biochar.png'
+    image: getImagePath('/Biochar.png')
   }, 
   {
     id: 2,
     name: 'BIOCOAL',
-    image: '/BioCoal.png'
+    image: getImagePath('/BioCoal.png')
   }, 
   {
     id: 3,
     name: 'WOOD VINEGAR',
-    image: '/Wood Vinegar.png'
+    image: getImagePath('/Wood Vinegar.png')
   }
 ];
 

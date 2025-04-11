@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImagePath } from "@/lib/utils";
 
 export default function Footer() {
   return (
@@ -8,9 +9,9 @@ export default function Footer() {
           {/* Logo Column */}
           <div className="flex flex-col items-center md:items-start">
             <img 
-              src="/lovable-uploads/logo.png" 
-              alt="Company Logo" 
-              className="h-16 w-auto mb-4"
+              src={getImagePath("/lovable-uploads/logo.png")} 
+              alt="Lovable Ventures" 
+              className="h-12 w-auto mb-4"
             />
             <p className="text-gray-400 text-sm text-center md:text-left">
               Transforming waste into value through innovative carbon removal solutions.

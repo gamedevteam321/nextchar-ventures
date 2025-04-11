@@ -1,41 +1,42 @@
 import React from 'react';
+import { getImagePath } from "@/lib/utils";
 
 const stats = [
   {
     id: 1,
     number: '1,650,000',
     label: 'tons/year of CO2\nto be removed',
-    icon: '/our plan/Co2.png'
+    icon: getImagePath('/our plan/Co2.png')
   },
   {
     id: 2,
     number: '3,000,000',
     label: 'tons/year of residue to\nbe removed',
-    icon: '/our plan/residue.png'
+    icon: getImagePath('/our plan/residue.png')
   },
   {
     id: 3,
     number: '750,000',
     label: 'Tons/Year of\nBiochar to be\nproduced',
-    icon: '/our plan/Biochar.png'
+    icon: getImagePath('/our plan/Biochar.png')
   },
   {
     id: 4,
     number: '1000',
     label: 'Production\nfacilities\nplanned\n(Decentralized)',
-    icon: '/our plan/Decentralized.png'
+    icon: getImagePath('/our plan/Decentralized.png')
   },
   {
     id: 5,
     number: '10,000+',
     label: 'Rural Jobs\nCreated',
-    icon: '/our plan/Jobs.png'
+    icon: getImagePath('/our plan/Jobs.png')
   },
   {
     id: 6,
     number: 'The Largest',
     label: 'Decentralized\nCarbon Project\nin the World',
-    icon: '/our plan/Decentralized carbon.png'
+    icon: getImagePath('/our plan/Decentralized carbon.png')
   }
 ];
 

@@ -6,6 +6,8 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+    --radius: 0.5rem;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -28,11 +30,8 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -69,7 +68,6 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
     --sidebar-background: 240 5.9% 10%;
@@ -90,9 +88,17 @@
   }
 
   body {
-    @apply bg-carbon text-white;
+    @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
     font-family: 'Montserrat', sans-serif;
+  }
+
+  body.light {
+    @apply bg-white;
+  }
+  
+  body.dark {
+    @apply bg-[#111111];
   }
   
   html {
@@ -118,7 +124,11 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-8 text-center;
+    @apply text-3xl md:text-4xl font-bold mb-8 text-center transition-colors duration-300;
+  }
+
+  .light .section-title {
+    @apply text-gray-900;
   }
   
   .section-padding {
@@ -126,11 +136,19 @@
   }
   
   .stat-card {
-    @apply flex flex-col items-center justify-center p-6 border border-gold/20 rounded-lg;
+    @apply flex flex-col items-center justify-center p-6 border border-gold/20 rounded-lg transition-colors duration-300;
+  }
+
+  .light .stat-card {
+    @apply bg-white shadow-md;
   }
   
   .tech-card {
     @apply p-6 border border-gold/20 rounded-lg hover:border-gold/50 transition-all duration-300;
+  }
+
+  .light .tech-card {
+    @apply bg-white shadow-md;
   }
 }
 
@@ -138,17 +156,111 @@
 .sticky-header {
   @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
   backdrop-filter: blur(10px);
+}
+
+.dark .sticky-header {
   background-color: rgba(17, 17, 17, 0.8);
 }
 
-/* For scroll animations */
+.light .sticky-header {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animation for reveal elements */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
 }
 
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Theme transition effects */
+.transition-theme {
+  transition: background-color 0.3s ease-in-out,
+              color 0.3s ease-in-out,
+              border-color 0.3s ease-in-out;
+}
+
+/* Gold color */
+.text-gold {
+  color: #FFD700;
+}
+
+.bg-gold {
+  background-color: #FFD700;
+}
+
+.hover\:bg-gold-light:hover {
+  background-color: #FFE44D;
+}
+
+/* Light theme specific styles */
+.light {
+  @apply bg-white text-gray-800;
+}
+
+.light p {
+  @apply text-gray-700;
+}
+
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+  @apply text-gray-900;
+}
+
+.light-header {
+  @apply bg-white text-gray-800 shadow-md;
+}
+
+.light .nav-link {
+  @apply text-gray-800 hover:text-gold;
+}
+
+.dark .nav-link {
+  @apply text-white hover:text-gold;
+}
+
+/* Card and section backgrounds for light mode */
+.light .bg-carbon {
+  @apply bg-gray-50;
+}
+
+.light .bg-section {
+  @apply bg-gray-100;
+}
+
+/* Button styles for light mode */
+.light .btn-outline {
+  @apply border-gold text-gray-800;
+}
+
+/* Form elements for light mode */
+.light input, .light textarea {
+  @apply bg-white border-gray-300 text-gray-800;
+}
+
+/* Mobile menu for light mode */
+.light .mobile-menu {
+  @apply bg-white text-gray-800;
+}
+
+/* Footer for light mode */
+.light footer {
+  @apply bg-gray-100 text-gray-800;
+}
+
+/* Additional light mode specific styles */
+.light .card {
+  @apply bg-white shadow-md;
+}
+
+.light .border-subtle {
+  @apply border-gray-200;
+}
+
+.light .text-subtle {
+  @apply text-gray-600;
 }

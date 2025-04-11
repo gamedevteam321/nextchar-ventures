@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImagePath } from "@/lib/utils";
 
 const BiocharSection: React.FC = () => {
   return (
@@ -13,9 +14,9 @@ const BiocharSection: React.FC = () => {
       
       <div className="w-full">
         <img 
-          src="/tree.png" 
-          alt="Tree Illustration" 
-          className="w-full h-auto object-contain max-h-[600px] md:max-h-[800px]"
+          src={getImagePath("/tree.png")} 
+          alt="Tree" 
+          className="w-full h-full object-cover"
         />
       </div>
     </section>

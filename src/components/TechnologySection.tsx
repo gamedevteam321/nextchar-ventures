@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImagePath } from "@/lib/utils";
 
 const technologies = [
   {
@@ -50,7 +51,7 @@ const technologies = [
 
 export default function TechnologySection() {
   return (
-    <section className="w-full bg-[#111111] py-20 md:py-32">
+    <section id="technology" className="section-padding bg-carbon-dark px-6 md:px-12">
       <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Technology</h2>
         <p className="text-xl md:text-2xl text-white/80 mb-16">Our Processing technology is scalable, efficient & robust</p>
@@ -61,7 +62,7 @@ export default function TechnologySection() {
               key={tech.id}
               className="relative rounded-lg overflow-hidden group"
               style={{
-                backgroundImage: 'url(/technology-placeholder.png)',
+                backgroundImage: `url(${getImagePath('/technology-placeholder.png')})`,
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
                 backgroundColor: '#111111',

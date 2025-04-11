@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Button } from "@/components/ui/button";
+import { getImagePath } from "@/lib/utils";
 
 const HeroSection: React.FC = () => {
   useEffect(() => {
@@ -27,7 +28,7 @@ const HeroSection: React.FC = () => {
           className="mx-2 relative"
         >
           <img 
-            src="/Hero.png"
+            src={getImagePath("/Hero.png")}
             alt="Hero"
             className="w-full h-full object-cover min-h-[300px] md:min-h-[400px] lg:min-h-[500px]"
           />

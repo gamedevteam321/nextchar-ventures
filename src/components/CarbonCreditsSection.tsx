@@ -1,6 +1,8 @@
-export default function CarbonCreditsSection() {
+import { getImagePath } from "@/lib/utils";
+
+const CarbonCreditsSection = () => {
   return (
-    <section className="w-full bg-[#111111] py-20 md:py-32">
+    <section id="carbon" className="section-padding bg-carbon-dark px-6 md:px-12">
       <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Content Side */}
@@ -29,13 +31,15 @@ export default function CarbonCreditsSection() {
           {/* Image Side */}
           <div className="relative rounded-2xl overflow-hidden">
             <img 
-              src="/carbon-credits.png"
-              alt="Carbon Credit Illustration"
-              className="w-full h-auto rounded-2xl"
+              src={getImagePath("/carbon-credits.png")}
+              alt="Carbon Credits"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default CarbonCreditsSection;

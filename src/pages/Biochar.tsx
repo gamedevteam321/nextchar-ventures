@@ -494,19 +494,19 @@ const Biochar = () => {
                          bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
               Carbon Sequestration
             </h2>
-            <p className="text-[#919191] font-light text-[20px] leading-[150%] tracking-[0%] mb-4">
+            <p className="text-[#919191] font-light text-[18px] leading-[150%] tracking-[0%] mb-4">
               Humans have observed the benefits of biochar for tens-of thousands of years, from the pre-Columbian (450 BC) farmers in South America who produced 'terra preta', transforming marginal soils to what was one of the most productive food systems in human history.
             </p>
-            <p className="text-[#919191] font-light text-[20px] leading-[150%] tracking-[0%] mb-4">
+            <p className="text-[#919191] font-light text-[18px] leading-[150%] tracking-[0%] mb-4">
               When a ton of biochar is produced and used in a soils application, it permanently sequesters 3 tons of CO2
             </p>
-            <p className="text-[#919191] font-light text-[20px] leading-[150%] tracking-[0%] mb-4">
+            <p className="text-[#919191] font-light text-[18px] leading-[150%] tracking-[0%] mb-4">
               There is a rapid acceleration of renewable energy sources that will ultimately slow the build-up of CO2 in the atmosphere, but not in-time to repair the damage that has already been done
             </p>
-            <p className="text-[#919191] font-light text-[20px] leading-[150%] tracking-[0%] mb-4">
+            <p className="text-[#919191] font-light text-[18px] leading-[150%] tracking-[0%] mb-4">
               Most climate scientists believe new strategies for sequestering carbon must be developed to avoid catastrophic consequences from climate change
             </p>
-            <p className="text-[#919191] font-light text-[20px] leading-[150%] tracking-[0%]">
+            <p className="text-[#919191] font-light text-[18px] leading-[150%] tracking-[0%]">
               Biochar is broadly viewed by climate scientists as one of the few viable approaches to carbon sequestration, having the benefit if no downstream impacts, and large scale deployment will be driven by the marketplace.
             </p>
           </div>

@@ -11,6 +11,7 @@ import ClosingSection from '@/components/ClosingSection';
 import FooterCTA from '@/components/FooterCTA';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
+import SectionDivider from '@/components/SectionDivider';
 
 const Index: React.FC = () => {
   useEffect(() => {
@@ -38,12 +39,18 @@ const Index: React.FC = () => {
     <div className="bg-carbon text-white min-h-screen">
       <Header />
       <HeroSection />
+      <SectionDivider />
       <ProductsSection />
+      <SectionDivider />
       <BiocharSection />
+      <SectionDivider />
       <ImpactSection />
       <QuoteSliderSection />
+      <SectionDivider />
       <TechnologySection />
+      <SectionDivider />
       <CarbonCreditsSection />
+      <SectionDivider />
       <ClosingSection />
       <FooterCTA />
       <Footer />

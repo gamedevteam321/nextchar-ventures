@@ -10,7 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 3000,
     strictPort: false,
-    middlewareMode: false
+    middlewareMode: false,
+    historyApiFallback: true
   },
   plugins: [
     react(),

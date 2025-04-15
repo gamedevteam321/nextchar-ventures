@@ -3,7 +3,7 @@ import { getImagePath } from "@/lib/utils";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#111111] py-12 border-t border-white/10">
+    <footer className="w-full bg-[#111111] py-12">
       <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo Column */}
@@ -41,8 +41,17 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Section Line */}
+        <div className="w-full py-8">
+          <img 
+            src={getImagePath("/Section-line.png")}
+            alt="Section Divider" 
+            className="w-full h-auto" 
+          />
+        </div>
+
         {/* Copyright */}
-        <div className="border-t border-white/10 pt-8 mt-8">
+        <div className="pt-8">
           <p className="text-gray-400 text-sm text-center">
             © {new Date().getFullYear()} All rights reserved.
           </p>

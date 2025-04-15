@@ -34,13 +34,13 @@ export default function ClosingQuoteSection() {
           {quotes.map((quote) => (
             <SwiperSlide key={quote.id}>
               <div className="flex flex-col items-center justify-center min-h-[30rem] px-4 md:px-20 py-16 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] rounded-2xl mx-4 md:mx-16 lg:mx-24">
-                <div className="text-center max-w-4xl">
+                <div className="text-center max-w-xl">
                   {quote.text.split('\n\n').map((paragraph, index) => (
                     <p 
                       key={index} 
                       className={`mb-8 ${
                         index === 0 
-                          ? 'text-2xl md:text-3xl lg:text-4xl font-bold' 
+                          ? 'text-xl md:text-2xl lg:text-3xl font-medium' 
                           : index === 2 
                             ? 'text-xl md:text-2xl lg:text-3xl italic' 
                             : 'text-xl md:text-2xl lg:text-3xl'

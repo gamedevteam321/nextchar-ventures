@@ -51,8 +51,8 @@ const technologies = [
 
 export default function TechnologySection() {
   return (
-    <section id="technology" className="section-padding bg-carbon-dark px-6 md:px-12">
-      <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
+    <section id="technology" className="section-padding bg-carbon px-[200px] py-16">
+      <div className="max-w-[90rem] mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Technology</h2>
         <p className="text-xl md:text-2xl text-white/80 mb-16">Our Processing technology is scalable, efficient & robust</p>
         

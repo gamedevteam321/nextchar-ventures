@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { getImagePath } from "@/lib/utils";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,6 +36,13 @@ const Header: React.FC = () => {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
+    
+    // If not on home page, navigate to home page first
+    if (location.pathname !== '/') {
+      window.location.href = '/' + sectionId;
+      return;
+    }
+
     const element = document.querySelector(sectionId);
     if (element) {
       const headerOffset = 80; // Height of your fixed header
@@ -58,41 +67,40 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className={`${isScrolled ? 'sticky-header' : 'bg-transparent'} 
-        ${!isDarkTheme ? 'light-header bg-white text-black shadow-md' : ''} 
-        py-6 px-6 md:px-12 lg:px-16 flex items-center justify-between fixed top-0 left-0 right-0 z-50 transition-colors duration-300`}>
+      <header className={`${isScrolled ? 'bg-black/80 backdrop-blur-sm' : 'bg-transparent'} 
+        py-6 px-6 md:px-12 lg:px-16 flex items-center justify-between fixed top-0 left-0 right-0 z-50 transition-all duration-300`}>
         <div className="flex items-center">
-          <div className="flex items-center">
-            <img src={getImagePath("/lovable-uploads/logo.png")} alt="Lovable Ventures" className="h-12 w-auto" />
-          </div>
+          <Link to="/" className="flex items-center hover:opacity-90 transition-opacity">
+            <img src={getImagePath("/lovable-uploads/logo.png")} alt="NexChar Ventures" className="h-12 w-auto" />
+          </Link>
         </div>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <a 
             href="#products" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-sm font-medium`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#products')}
           >
             Products
           </a>
           <a 
             href="#technology" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-sm font-medium`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#technology')}
           >
             Technology
           </a>
           <a 
             href="#carbon" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-sm font-medium`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#carbon')}
           >
             Carbon Removal
           </a>
           <a 
             href="#about" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-sm font-medium`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#about')}
           >
             About Us
@@ -101,10 +109,12 @@ const Header: React.FC = () => {
         
         <div className="flex items-center space-x-4">
           <Button 
-            className="hidden md:flex bg-gold text-black hover:bg-gold-light font-medium rounded-md text-sm px-6"
+            className="hidden md:flex text-white hover:opacity-90 font-medium rounded-md text-sm px-6 relative
+            before:absolute before:inset-0 before:rounded-md before:p-[3px] before:bg-gradient-to-r before:from-[#F0EDE4] before:to-[#A4966E]
+            after:absolute after:inset-[3px] after:rounded-[5px] after:bg-gradient-to-r after:from-[#886808] after:to-[#C5A133]"
             onClick={handleGetStarted}
           >
-            Get Started
+            <span className="relative z-10">Get Started</span>
           </Button>
 
           {/* Theme Toggle Button - Hidden for now
@@ -146,37 +156,39 @@ const Header: React.FC = () => {
         <nav className="flex flex-col items-center justify-center h-full space-y-8 p-6">
           <a
             href="#products"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-xl font-medium`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#products')}
           >
             Products
           </a>
           <a
             href="#technology"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-xl font-medium`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#technology')}
           >
             Technology
           </a>
           <a
             href="#carbon"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-xl font-medium`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#carbon')}
           >
             Carbon Removal
           </a>
           <a
             href="#about"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-xl font-medium`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#about')}
           >
             About Us
           </a>
           <Button
-            className="bg-gold text-black hover:bg-gold-light font-medium rounded-md text-lg px-8 py-3 mt-4"
+            className="bg-gold text-black hover:bg-gold-light font-medium rounded-md text-lg px-8 py-3 mt-4 relative
+            before:absolute before:inset-0 before:rounded-md before:p-[3px] before:bg-gradient-to-r before:from-[#F0EDE4] before:to-[#A4966E]
+            after:absolute after:inset-[3px] after:rounded-[5px] after:bg-gradient-to-r after:from-[#886808] after:to-[#C5A133]"
             onClick={handleGetStarted}
           >
-            Get Started
+            <span className="relative z-10">Get Started</span>
           </Button>
           {/* Theme Toggle Button in Mobile Menu - Hidden for now
           <Button

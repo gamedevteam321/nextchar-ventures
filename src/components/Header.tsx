@@ -107,7 +107,7 @@ const Header: React.FC = () => {
             Get Started
           </Button>
 
-          {/* Theme Toggle Button */}
+          {/* Theme Toggle Button - Hidden for now
           <Button
             variant="ghost"
             size="icon"
@@ -120,6 +120,7 @@ const Header: React.FC = () => {
               <Moon className="h-5 w-5" />
             )}
           </Button>
+          */}
           
           {/* Mobile Menu Button */}
           <button
@@ -177,6 +178,7 @@ const Header: React.FC = () => {
           >
             Get Started
           </Button>
+          {/* Theme Toggle Button in Mobile Menu - Hidden for now
           <Button
             variant="ghost"
             size="icon"
@@ -189,6 +191,7 @@ const Header: React.FC = () => {
               <Moon className="h-6 w-6" />
             )}
           </Button>
+          */}
         </nav>
       </div>
     </>

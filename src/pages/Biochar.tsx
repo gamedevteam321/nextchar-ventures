@@ -18,14 +18,14 @@ const compostBenefits = [
 
 const Biochar = () => {
   return (
-    <div className="text-white font-montserrat">
+    <div className="text-white font-montserrat bg-carbon">
       {/* Hero Section */}
       <section className="relative min-h-[600px] h-screen w-full">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.8)] via-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.8)] z-10" />
-          <img 
-            src={getImagePath("/Biochar-Hero.png")} 
-            alt="Biochar Hero" 
+          <img
+            src={getImagePath("/Biochar-Hero.png")}
+            alt="Biochar Hero"
             className="w-full h-full object-cover"
             onError={(e) => {
               console.error(`Failed to load hero image`);
@@ -33,14 +33,14 @@ const Biochar = () => {
             }}
           />
         </div>
-        <div className="relative z-20 h-full px-[50px]"> 
-          <div className="max-w-[1200px] w-full pt-[94px] mx-auto">
+        <div className="relative z-20 h-full">
+          <div className="max- w-full pt-[150px] mx-auto ">
             {/* Main Heading - Medium weight */}
-            <h1 
+            <h1
               className="font-montserrat text-[28px] sm:text-[40px] md:text-[50px] font-medium leading-[100%] sm:leading-[100%] tracking-[0%]
                          bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text
                          drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]
-                         mb-[35vh] sm:mb-[60vh] text-center"
+                         mb-[35vh] sm:mb-[50vh] text-center"
               style={{
                 width: '100%',
                 height: '100%',
@@ -51,23 +51,25 @@ const Biochar = () => {
             >
               Best Organic Soil Amendment
             </h1>
-            <div className="pl-[40px]">
-              <div className="font-montserrat text-[24px] sm:text-[32px] md:text-[50px] font-medium leading-[130%] sm:leading-[120%] md:leading-[100%] tracking-[0%] 
+            <div className="pl-[65px] ">
+          <div className="font-montserrat text-[24px] sm:text-[32px] md:text-[50px] font-medium leading-[130%] sm:leading-[120%] md:leading-[100%] tracking-[0%] 
                             flex flex-wrap items-center mb-3 gap-x-2 sm:gap-x-3 md:gap-x-4 gap-y-1">
-                <span className="text-[#D87344]">Waste</span>
-                <span className="text-[#BCBCBC]">{'>'}{'>'}</span>
-                <span className="text-[#BCBCBC]">Carbon</span>
-                <span className="text-[#BCBCBC]">{'>'}{'>'}</span>
-                <span className="text-[#BCBCBC]">Soil</span>
-                <span className="text-[#BCBCBC]">{'>'}{'>'}</span>
-                <span className="text-[#00A92D]">Life</span>
-              </div>
-              <p className="font-light text-white text-[14px] sm:text-base md:text-lg max-w-2xl mt-2 leading-[150%] sm:leading-[140%]">
-                Biochar is a charcoal-like material made from organic residues
-              </p>
-            </div>
+            <span className="text-[#D87344]">Waste</span>
+            <span className="text-[#BCBCBC]">{'>'}{'>'}</span>
+            <span className="text-[#BCBCBC]">Carbon</span>
+            <span className="text-[#BCBCBC]">{'>'}{'>'}</span>
+            <span className="text-[#A4966E]">Soil</span>
+            <span className="text-[#A4966E]">{'>'}{'>'}</span>
+            <span className="text-[#00A92D]">Life</span>
+          </div>
+          <p className="font-light text-white text-[25px] sm:text-base md:text-lg max-w-3xl mt-2 leading-[150%] sm:leading-[140%]">
+            Biochar is a charcoal-like material made from organic residues
+          </p>
+        </div>
+
           </div>
         </div>
+        
       </section>
 
       {/* Benefits Grid Section - Light weight */}
@@ -79,26 +81,24 @@ const Biochar = () => {
         <div className="grid grid-cols-1 md:grid-cols-2  md:gap-0.1">
           {/* Card 1: Soil Treatment - Medium weight */}
           <div className="relative bg-carbon-light overflow-hidden">
-            <img 
-              src={getImagePath("/Soil-Treatment.png")} 
-              alt="Soil Treatment" 
-              className="w-full h-auto object-contain" 
+            <img
+              src={getImagePath("/Soil-Treatment.png")}
+              alt="Soil Treatment"
+              className="w-full h-auto object-contain"
             />
-            <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 
-                          bg-gradient-to-t from-black/70 via-black/50 to-transparent">
-              <h3 className="text-lg md:text-xl font-medium text-white">Soil Treatment</h3>
+            <div className="absolute bottom-10 left-0 w-full p-4 md:p-6">
+              <h3 className="font-montserrat font-semibold text-[35px] leading-[100%] tracking-[0%] text-white">Soil Treatment</h3>
             </div>
           </div>
           {/* Card 2: Livestock Health - Medium weight */}
           <div className="relative bg-carbon-light overflow-hidden">
-            <img 
-              src={getImagePath("/Live-Stock-Health.png")} 
-              alt="Livestock Health" 
-              className="w-full h-auto object-contain" 
+            <img
+              src={getImagePath("/Live-Stock-Health.png")}
+              alt="Livestock Health"
+              className="w-full h-auto object-contain"
             />
-            <div className="absolute bottom-0 left-0 w-full p-4 md:p-6 
-                          bg-gradient-to-t from-black/70 via-black/50 to-transparent">
-              <h3 className="text-lg md:text-xl font-medium text-white">Livestock Health</h3>
+            <div className="absolute bottom-10 left-0 w-full p-4 md:p-6">
+              <h3 className="font-montserrat font-semibold text-[35px] leading-[100%] tracking-[0%] text-white">Livestock Health</h3>
             </div>
           </div>
         </div>
@@ -106,10 +106,10 @@ const Biochar = () => {
 
       {/* Section Line Divider */}
       <div className="py-[150px] px-0"> {/* 150px padding above and below */}
-        <img 
+        <img
           src={getImagePath("/Section-line.png")} /* Replace with your actual line image path */
-          alt="Section Divider" 
-          className="w-full h-auto" 
+          alt="Section Divider"
+          className="w-full h-auto"
         />
       </div>
 
@@ -136,10 +136,10 @@ const Biochar = () => {
             </div>
             {/* Image Container with More Padding */}
             <div className="px-16 "> {/* Increase padding significantly */}
-              <img 
-                src={getImagePath("/production-process.png")} 
-                alt="Production Process Diagram" 
-                className="w-full h-auto object-contain rounded-lg" 
+              <img
+                src={getImagePath("/production-process.png")}
+                alt="Production Process Diagram"
+                className="w-full h-auto object-contain rounded-lg"
               />
             </div>
           </div>
@@ -148,10 +148,10 @@ const Biochar = () => {
 
       {/* Section Line Divider */}
       <div className="py-[150px] px-0"> {/* 150px padding above and below */}
-        <img 
+        <img
           src={getImagePath("/Section-line.png")} /* Replace with your actual line image path */
-          alt="Section Divider" 
-          className="w-full h-auto" 
+          alt="Section Divider"
+          className="w-full h-auto"
         />
       </div>
 
@@ -174,10 +174,10 @@ const Biochar = () => {
 
       {/* Section Line Divider */}
       <div className="py-[150px] px-0"> {/* 150px padding above and below */}
-        <img 
+        <img
           src={getImagePath("/Section-line.png")} /* Replace with your actual line image path */
-          alt="Section Divider" 
-          className="w-full h-auto" 
+          alt="Section Divider"
+          className="w-full h-auto"
         />
       </div>
 
@@ -198,11 +198,11 @@ const Biochar = () => {
               { title: "It's additional", description: "The income from carbon credits finances biochar production and carbon removal that would otherwise not have taken place." }
             ].map((feature, index) => (
               <div key={index} className="text-left">
-                <img 
-                  src={getImagePath("/special-feature-icon.svg")} 
-                  alt="Feature Icon" 
-                  className="mb-[20px]" 
-                  style={{ width: '71px', height: '61px' }} 
+                <img
+                  src={getImagePath("/special-feature-icon.svg")}
+                  alt="Feature Icon"
+                  className="mb-[20px]"
+                  style={{ width: '71px', height: '61px' }}
                 />
                 <h3 className="text-lg md:text-xl font-medium mb-[20px] 
                              bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text inline-block">
@@ -219,10 +219,10 @@ const Biochar = () => {
 
       {/* Section Line Divider */}
       <div className="py-[150px] px-0"> {/* 150px padding above and below */}
-        <img 
+        <img
           src={getImagePath("/Section-line.png")} /* Replace with your actual line image path */
-          alt="Section Divider" 
-          className="w-full h-auto" 
+          alt="Section Divider"
+          className="w-full h-auto"
         />
       </div>
 
@@ -230,16 +230,16 @@ const Biochar = () => {
       <section className="py-[60px] md:py-[150px] px-[200px]">
         {/* Top Grid: Image (2/5 width) + Main Text (3/5 width) */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-start mb-[50px]"> {/* Use items-start, 5 cols */}
-          {/* Image Side - Col Span 2 */} 
+          {/* Image Side - Col Span 2 */}
           <div className="relative w-full md:col-span-2">
-            <img 
-              src={getImagePath("/agri-benefits.png")} 
-              alt="Biochar in agriculture" 
+            <img
+              src={getImagePath("/agri-benefits.png")}
+              alt="Biochar in agriculture"
               className="w-full h-auto object-contain rounded-lg" /* Reverted to object-contain */
             />
           </div>
 
-          {/* Text Content Side - Col Span 3 */} 
+          {/* Text Content Side - Col Span 3 */}
           <div className="text-white md:col-span-3">
             <h2 className="text-2xl md:text-3xl font-medium mb-[50px] inline-block
                          bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
@@ -264,9 +264,9 @@ const Biochar = () => {
           </div>
         </div>
 
-        
 
-        {/* Compost Producer Subsection */}        
+
+        {/* Compost Producer Subsection */}
         <div className="mt-[50px] pt-[50px]">
           <h3 className="font-montserrat font-semibold text-[25px] leading-[100%] tracking-[0%] capitalize text-center mb-[50px]
                        bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
@@ -275,9 +275,9 @@ const Biochar = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-[30px] px-[30px]">
             {compostBenefits.map((benefit, index) => (
               <div key={index} className="flex items-center gap-[32px]">
-                <img 
-                  src={getImagePath("/agri-icon.svg")} 
-                  alt="Checkmark Icon" 
+                <img
+                  src={getImagePath("/agri-icon.svg")}
+                  alt="Checkmark Icon"
                   style={{ width: '43px', height: '37px' }}
                 />
                 <span className="font-montserrat font-medium text-[20px] leading-[100%] tracking-[0%]
@@ -292,10 +292,10 @@ const Biochar = () => {
 
       {/* Section Line Divider */}
       <div className="py-[150px] px-0"> {/* 150px padding above and below */}
-        <img 
+        <img
           src={getImagePath("/Section-line.png")} /* Replace with your actual line image path */
-          alt="Section Divider" 
-          className="w-full h-auto" 
+          alt="Section Divider"
+          className="w-full h-auto"
         />
       </div>
 
@@ -305,8 +305,8 @@ const Biochar = () => {
                      bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
           Higher Crop Yields With Better Quality
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]">
-          {[ 
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[50px]">
+          {[
             { title: "Increase Water Retention", description: "Enhance soil structure for better water holding capacity" },
             { title: "Increase Nutrient Absorption", description: "Improved nutrient uptake and availability for plants." },
             { title: "Houses Good Microbes", description: "Create optimal environment for beneficial soil microorganisms" },
@@ -314,8 +314,8 @@ const Biochar = () => {
             { title: "Protects against heavy metals & toxins in soil", description: "Supports healthy plant development and growth" },
             { title: "Increased cation-exchange capacity", description: "Active carbon sequestration for environmental benefit." }
           ].map((benefit, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="rounded-[15px] relative"
               style={{
                 border: '2px solid transparent',
@@ -325,9 +325,9 @@ const Biochar = () => {
               }}
             >
               <div className="p-[15px_20px] w-full flex flex-col gap-[15px]">
-                <img 
-                  src={getImagePath("/agri-icon.svg")} 
-                  alt="Feature Icon" 
+                <img
+                  src={getImagePath("/agri-icon.svg")}
+                  alt="Feature Icon"
                   style={{ width: '71px', height: '61px' }}
                 />
                 <div className="flex flex-col gap-[15px] flex-1">
@@ -347,10 +347,10 @@ const Biochar = () => {
 
       {/* Section Line Divider */}
       <div className="py-[150px] px-0"> {/* 150px padding above and below */}
-        <img 
+        <img
           src={getImagePath("/Section-line.png")} /* Replace with your actual line image path */
-          alt="Section Divider" 
-          className="w-full h-auto" 
+          alt="Section Divider"
+          className="w-full h-auto"
         />
       </div>
 
@@ -358,7 +358,7 @@ const Biochar = () => {
       <section className="py-[60px] md:py-[150px] px-[200px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] items-start">
           {/* Text Content - Removed fixed width */}
-          <div> 
+          <div>
             <h2 className="text-[35px] font-semibold leading-[100%] tracking-[0%] font-montserrat
                          bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text mb-[20px]">
               Livestock Health
@@ -409,10 +409,10 @@ const Biochar = () => {
           </div>
 
           {/* Image Side - Removed fixed width */}
-          <div> 
-            <img 
-              src={getImagePath("/livestock-health.png")} 
-              alt="Biochar in Livestock Health" 
+          <div>
+            <img
+              src={getImagePath("/livestock-health.png")}
+              alt="Biochar in Livestock Health"
               className="w-full h-auto object-contain"
             />
           </div>
@@ -458,8 +458,8 @@ const Biochar = () => {
                 <div className="flex flex-col items-center justify-center h-[400px] px-4 md:px-20 py-16 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] rounded-2xl mx-4 md:mx-16 lg:mx-24">
                   <div className="text-center max-w-4xl overflow-y-auto">
                     {quote.text.split('\n\n').map((paragraph, index) => (
-                      <p 
-                        key={index} 
+                      <p
+                        key={index}
                         className={`mb-8 text-[#111111] font-montserrat text-2xl leading-relaxed font-medium`}
                       >
                         {paragraph}
@@ -478,10 +478,10 @@ const Biochar = () => {
 
       {/* Section Line Divider */}
       <div className="py-[150px] px-0"> {/* 150px padding above and below */}
-        <img 
+        <img
           src={getImagePath("/Section-line.png")} /* Replace with your actual line image path */
-          alt="Section Divider" 
-          className="w-full h-auto" 
+          alt="Section Divider"
+          className="w-full h-auto"
         />
       </div>
 
@@ -512,15 +512,15 @@ const Biochar = () => {
           </div>
           {/* Image Side */}
           <div className="w-full">
-            <img 
-              src={getImagePath("/Carbon-Sequestration.png")} 
-              alt="The Biochar Cycle" 
+            <img
+              src={getImagePath("/Carbon-Sequestration.png")}
+              alt="The Biochar Cycle"
               className="w-full h-auto object-contain"
             />
           </div>
         </div>
       </section>
-      
+
       {/* Add Footer */}
       <Footer />
     </div>

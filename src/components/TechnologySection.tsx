@@ -53,8 +53,12 @@ export default function TechnologySection() {
   return (
     <section id="technology" className="section-padding bg-carbon px-[200px] py-16">
       <div className="max-w-[90rem] mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Technology</h2>
-        <p className="text-xl md:text-2xl text-white/80 mb-16">Our Processing technology is scalable, efficient & robust</p>
+        <h2 className="text-4xl md:text-5xl font-semibold mb-8 font-montserrat leading-[100%] tracking-[0%] capitalize">
+          <span className="bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] bg-clip-text text-transparent">
+            Our Technology
+          </span>
+        </h2>
+        <p className="text-2xl md:text-3xl text-white/80 mb-16">Our Processing technology is scalable, efficient & robust</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {technologies.map((tech) => (
@@ -65,11 +69,10 @@ export default function TechnologySection() {
                 backgroundImage: `url(${getImagePath('/technology-placeholder.png')})`,
                 backgroundSize: 'contain',
                 backgroundRepeat: 'no-repeat',
-                backgroundColor: '#111111',
                 backgroundPosition: 'center'
               }}
             >
-              <div className="aspect-[4/3] p-10 flex flex-col justify-center bg-gradient-to-b from-black/20 to-black/60 hover:from-black/40 hover:to-black/80 transition-all duration-300">
+              <div className="aspect-[4/3] p-10 flex flex-col justify-center">
                 <div className="text-center mt-16">
                   <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] bg-clip-text text-transparent">{tech.title}</h3>
                   <p className="text-white/90 text-sm">{tech.description}</p>

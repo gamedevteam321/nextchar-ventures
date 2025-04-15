@@ -53,15 +53,11 @@ const ImpactSection: React.FC = () => {
           {stats.slice(0, 3).map((stat) => (
             <div key={stat.id} className="flex items-center gap-[47px] flex-1">
               <div className="w-[100px] h-[100px] relative">
-                <img 
-                  src={stat.icon} 
-                  alt={stat.label}
-                  className="w-full h-full aspect-square object-contain [filter:drop-shadow(0_0_0_#886808)_brightness(0)_saturate(100%)_invert(74%)_sepia(11%)_saturate(1960%)_hue-rotate(359deg)_brightness(89%)_contrast(84%)]"
+                <div 
+                  className="w-full h-full svg-mask-gradient"
                   style={{
-                    WebkitMask: `url(${stat.icon}) center/contain no-repeat`,
-                    mask: `url(${stat.icon}) center/contain no-repeat`,
-                    background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)',
-                  }}
+                    '--icon-url': `url(${stat.icon})`,
+                  } as React.CSSProperties}
                 />
               </div>
               <div className="flex flex-col justify-center items-center gap-[11px] flex-1 self-stretch">
@@ -83,15 +79,11 @@ const ImpactSection: React.FC = () => {
           {stats.slice(3).map((stat) => (
             <div key={stat.id} className="flex items-center gap-[47px] flex-1">
               <div className="w-[100px] h-[100px] relative">
-                <img 
-                  src={stat.icon} 
-                  alt={stat.label}
-                  className="w-full h-full aspect-square object-contain [filter:drop-shadow(0_0_0_#886808)_brightness(0)_saturate(100%)_invert(74%)_sepia(11%)_saturate(1960%)_hue-rotate(359deg)_brightness(89%)_contrast(84%)]"
+                <div 
+                  className="w-full h-full svg-mask-gradient"
                   style={{
-                    WebkitMask: `url(${stat.icon}) center/contain no-repeat`,
-                    mask: `url(${stat.icon}) center/contain no-repeat`,
-                    background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)',
-                  }}
+                    '--icon-url': `url(${stat.icon})`,
+                  } as React.CSSProperties}
                 />
               </div>
               <div className="flex flex-col justify-center items-center gap-[11px] flex-1 self-stretch">

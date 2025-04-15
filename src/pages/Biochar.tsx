@@ -71,7 +71,7 @@ const Biochar = () => {
       </section>
 
       {/* Benefits Grid Section - Light weight */}
-      <section className="py-[60px] md:py-[150px] px-[80px]">
+      <section className="py-[60px] md:py-[150px] px-[200px]">
         <p className="font-montserrat font-light text-[30px] leading-[100%] tracking-[0%] mb-[100px] 
                     bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text text-left">
           While biochar has diverse applications, our focus is on it's most urgent & impactful use for soil remediation and livestock health, while ensuring carbon sequestration for a Climate Relevant Time scale.
@@ -114,7 +114,7 @@ const Biochar = () => {
       </div>
 
       {/* Production Process Section - Medium/Light weight */}
-      <section className="py-[60px] md:py-[150px] px-[80px]">
+      <section className="py-[60px] md:py-[150px] px-[200px]">
         <div className="px-4"> {/* Removed container mx-auto */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Text Content */}
@@ -156,7 +156,7 @@ const Biochar = () => {
       </div>
 
       {/* Source Section - Medium/Light weight */}
-      <section className="py-[60px] md:py-[150px] px-[80px]">
+      <section className="py-[60px] md:py-[150px] px-[200px]">
         <h2 className="font-montserrat font-medium text-[30px] leading-[100%] tracking-[0%] capitalize 
                      mb-[50px] text-left inline-block 
                      bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
@@ -182,7 +182,7 @@ const Biochar = () => {
       </div>
 
       {/* Special Features Section - Medium/Light weight */}
-      <section className="py-[60px] md:py-[150px] bg-carbon-light px-[80px]">
+      <section className="py-[60px] md:py-[150px] bg-carbon-light px-[200px]">
         <div className="px-4">
           <h2 className="text-2xl md:text-3xl font-medium mb-[80px] text-left inline-block 
                        bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
@@ -227,7 +227,7 @@ const Biochar = () => {
       </div>
 
       {/* Agriculture Benefits Section - Updated */}
-      <section className="py-[60px] md:py-[150px] px-[80px]">
+      <section className="py-[60px] md:py-[150px] px-[200px]">
         {/* Top Grid: Image (2/5 width) + Main Text (3/5 width) */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 items-start mb-[50px]"> {/* Use items-start, 5 cols */}
           {/* Image Side - Col Span 2 */} 
@@ -300,50 +300,48 @@ const Biochar = () => {
       </div>
 
       {/* Crop Yields Section - Medium weight */}
-      <section className="py-[60px] md:py-[150px] px-[80px]">
-        <div className="px-[80px]">
-          <h2 className="text-2xl md:text-3xl font-medium mb-[50px] inline-block
-                       bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
-            Higher Crop Yields With Better Quality
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]">
-            {[ 
-              { title: "Increase Water Retention", description: "Enhance soil structure for better water holding capacity" },
-              { title: "Increase Nutrient Absorption", description: "Improved nutrient uptake and availability for plants." },
-              { title: "Houses Good Microbes", description: "Create optimal environment for beneficial soil microorganisms" },
-              { title: "Increase Soil Fertility", description: "Enhance soil composition for better crop yields." },
-              { title: "Protects against heavy metals & toxins in soil", description: "Supports healthy plant development and growth" },
-              { title: "Increased cation-exchange capacity", description: "Active carbon sequestration for environmental benefit." }
-            ].map((benefit, index) => (
-              <div 
-                key={index} 
-                className="w-[380px] h-[191px] rounded-[15px] relative"
-                style={{
-                  border: '2px solid transparent',
-                  backgroundImage: 'linear-gradient(#1E1E1E, #1E1E1E), linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
-                  backgroundOrigin: 'border-box',
-                  backgroundClip: 'content-box, border-box'
-                }}
-              >
-                <div className="p-[15px_20px] w-full h-[161px] flex flex-col gap-[15px]">
-                  <img 
-                    src={getImagePath("/agri-icon.svg")} 
-                    alt="Feature Icon" 
-                    style={{ width: '71px', height: '61px' }}
-                  />
-                  <div className="flex flex-col gap-[15px] flex-1">
-                    <h3 className="text-[18px] font-medium leading-[100%] tracking-[0%] font-montserrat
-                                 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text w-full">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-white font-light text-[15px] leading-[100%] tracking-[0%] font-montserrat w-full">
-                      {benefit.description}
-                    </p>
-                  </div>
+      <section className="py-[60px] md:py-[150px] px-[200px]">
+        <h2 className="text-2xl md:text-3xl font-medium mb-[50px] inline-block
+                     bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+          Higher Crop Yields With Better Quality
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+          {[ 
+            { title: "Increase Water Retention", description: "Enhance soil structure for better water holding capacity" },
+            { title: "Increase Nutrient Absorption", description: "Improved nutrient uptake and availability for plants." },
+            { title: "Houses Good Microbes", description: "Create optimal environment for beneficial soil microorganisms" },
+            { title: "Increase Soil Fertility", description: "Enhance soil composition for better crop yields." },
+            { title: "Protects against heavy metals & toxins in soil", description: "Supports healthy plant development and growth" },
+            { title: "Increased cation-exchange capacity", description: "Active carbon sequestration for environmental benefit." }
+          ].map((benefit, index) => (
+            <div 
+              key={index} 
+              className="rounded-[15px] relative"
+              style={{
+                border: '2px solid transparent',
+                backgroundImage: 'linear-gradient(#1E1E1E, #1E1E1E), linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
+                backgroundOrigin: 'border-box',
+                backgroundClip: 'content-box, border-box'
+              }}
+            >
+              <div className="p-[15px_20px] w-full flex flex-col gap-[15px]">
+                <img 
+                  src={getImagePath("/agri-icon.svg")} 
+                  alt="Feature Icon" 
+                  style={{ width: '71px', height: '61px' }}
+                />
+                <div className="flex flex-col gap-[15px] flex-1">
+                  <h3 className="text-[18px] font-medium leading-[100%] tracking-[0%] font-montserrat
+                               bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text w-full">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-white font-light text-[15px] leading-[100%] tracking-[0%] font-montserrat w-full">
+                    {benefit.description}
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -357,74 +355,72 @@ const Biochar = () => {
       </div>
 
       {/* Livestock Health Section - Medium/Light weight */}
-      <section className="py-[60px] md:py-[150px] px-[80px]">
-        <div className="px-[80px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] items-start">
-            {/* Text Content */}
-            <div className="w-[535px]">
-              <h2 className="text-[35px] font-semibold leading-[100%] tracking-[0%] font-montserrat
-                           bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text mb-[20px]">
-                Livestock Health
-              </h2>
-              <p className="text-[#919191] text-[20px] leading-[100%] tracking-[0%] font-normal font-montserrat mb-[30px]">
-                Biochar isn't just for soil – it's a game-changer in animal care too. When added to animal feed or used in bedding, biochar improves digestion, reduces odors, and supports overall livestock well-being.
-              </p>
-              <div className="mt-[20px]">
-                <h3 className="text-[20px] font-semibold leading-[100%] tracking-[0%] font-montserrat mb-[20px]
-                             bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">
-                  Key Benefits
-                </h3>
-                <ul className="space-y-[15px]">
-                  <li className="flex items-start gap-[15px]">
-                    <span className="text-[#A4966E] text-[25px] leading-[20px]">•</span>
-                    <div className="flex flex-col">
-                      <span className="font-bold text-[20px] leading-[100%] tracking-[0%] font-montserrat
-                                     bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Better Gut Health:</span>
-                      <span className="text-[#919191] text-[18px] leading-[28px] tracking-[0%] font-light font-montserrat mt-[10px]">Acts as a natural detoxifier in animal feed, reducing toxins and improving digestion.</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-[15px]">
-                    <span className="text-[#A4966E] text-[25px] leading-[20px]">•</span>
-                    <div className="flex flex-col">
-                      <span className="font-bold text-[20px] leading-[100%] tracking-[0%] font-montserrat
-                                     bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Odor Control:</span>
-                      <span className="text-[#919191] text-[18px] leading-[28px] tracking-[0%] font-light font-montserrat mt-[10px]">Minimizes ammonia and unpleasant smells in stables and sheds.</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-[15px]">
-                    <span className="text-[#A4966E] text-[25px] leading-[20px]">•</span>
-                    <div className="flex flex-col">
-                      <span className="font-bold text-[20px] leading-[100%] tracking-[0%] font-montserrat
-                                     bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Cleaner Bedding:</span>
-                      <span className="text-[#919191] text-[18px] leading-[28px] tracking-[0%] font-light font-montserrat mt-[10px]">Absorbs moisture and pathogens, keeping animals dry and healthy.</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-[15px]">
-                    <span className="text-[#A4966E] text-[25px] leading-[20px]">•</span>
-                    <div className="flex flex-col">
-                      <span className="font-bold text-[20px] leading-[100%] tracking-[0%] font-montserrat
-                                     bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Eco-Friendly Farming:</span>
-                      <span className="text-[#919191] text-[18px] leading-[28px] tracking-[0%] font-light font-montserrat mt-[10px]">Enhances manure quality, making it more effective as a fertilizer.</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+      <section className="py-[60px] md:py-[150px] px-[200px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] items-start">
+          {/* Text Content - Removed fixed width */}
+          <div> 
+            <h2 className="text-[35px] font-semibold leading-[100%] tracking-[0%] font-montserrat
+                         bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text mb-[20px]">
+              Livestock Health
+            </h2>
+            <p className="text-[#919191] text-[20px] leading-[100%] tracking-[0%] font-normal font-montserrat mb-[30px]">
+              Biochar isn't just for soil – it's a game-changer in animal care too. When added to animal feed or used in bedding, biochar improves digestion, reduces odors, and supports overall livestock well-being.
+            </p>
+            <div className="mt-[20px]">
+              <h3 className="text-[20px] font-semibold leading-[100%] tracking-[0%] font-montserrat mb-[20px]
+                           bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">
+                Key Benefits
+              </h3>
+              <ul className="space-y-[15px]">
+                <li className="flex items-start gap-[15px]">
+                  <span className="text-[#A4966E] text-[25px] leading-[20px]">•</span>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-[20px] leading-[100%] tracking-[0%] font-montserrat
+                                   bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Better Gut Health:</span>
+                    <span className="text-[#919191] text-[18px] leading-[28px] tracking-[0%] font-light font-montserrat mt-[10px]">Acts as a natural detoxifier in animal feed, reducing toxins and improving digestion.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-[15px]">
+                  <span className="text-[#A4966E] text-[25px] leading-[20px]">•</span>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-[20px] leading-[100%] tracking-[0%] font-montserrat
+                                   bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Odor Control:</span>
+                    <span className="text-[#919191] text-[18px] leading-[28px] tracking-[0%] font-light font-montserrat mt-[10px]">Minimizes ammonia and unpleasant smells in stables and sheds.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-[15px]">
+                  <span className="text-[#A4966E] text-[25px] leading-[20px]">•</span>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-[20px] leading-[100%] tracking-[0%] font-montserrat
+                                   bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Cleaner Bedding:</span>
+                    <span className="text-[#919191] text-[18px] leading-[28px] tracking-[0%] font-light font-montserrat mt-[10px]">Absorbs moisture and pathogens, keeping animals dry and healthy.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-[15px]">
+                  <span className="text-[#A4966E] text-[25px] leading-[20px]">•</span>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-[20px] leading-[100%] tracking-[0%] font-montserrat
+                                   bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Eco-Friendly Farming:</span>
+                    <span className="text-[#919191] text-[18px] leading-[28px] tracking-[0%] font-light font-montserrat mt-[10px]">Enhances manure quality, making it more effective as a fertilizer.</span>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            {/* Image Side */}
-            <div className="w-[535px]">
-              <img 
-                src={getImagePath("/livestock-health.png")} 
-                alt="Biochar in Livestock Health" 
-                className="w-full h-auto object-contain"
-              />
-            </div>
+          {/* Image Side - Removed fixed width */}
+          <div> 
+            <img 
+              src={getImagePath("/livestock-health.png")} 
+              alt="Biochar in Livestock Health" 
+              className="w-full h-auto object-contain"
+            />
           </div>
         </div>
       </section>
 
       {/* Quote Slider Section */}
-      <section className="py-[60px] md:py-[150px] px-[80px]">
+      <section className="py-[60px] md:py-[150px] px-[200px]">
         <div className="max-w-[90rem] mx-auto">
           <Swiper
             modules={[Pagination, Autoplay]}
@@ -464,7 +460,7 @@ const Biochar = () => {
                     {quote.text.split('\n\n').map((paragraph, index) => (
                       <p 
                         key={index} 
-                        className={`mb-8 text-[#111111] font-montserrat text-[35px] leading-[100%] tracking-[0%] font-semibold`}
+                        className={`mb-8 text-[#111111] font-montserrat text-2xl leading-relaxed font-medium`}
                       >
                         {paragraph}
                       </p>
@@ -490,7 +486,7 @@ const Biochar = () => {
       </div>
 
       {/* Carbon Sequestration Section - Medium/Light weight */}
-      <section className="py-[60px] md:py-[150px] px-[80px]">
+      <section className="py-[60px] md:py-[150px] px-[200px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Text Content */}
           <div className="text-white">

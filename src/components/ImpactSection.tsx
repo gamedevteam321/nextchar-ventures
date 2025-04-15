@@ -6,37 +6,37 @@ const stats = [
     id: 1,
     number: '1,650,000',
     label: 'tons/year of CO2\nto be removed',
-    icon: getImagePath('/our plan/Co2.png')
+    icon: getImagePath('/our plan/Co2.svg')
   },
   {
     id: 2,
     number: '3,000,000',
     label: 'tons/year of residue to\nbe removed',
-    icon: getImagePath('/our plan/residue.png')
+    icon: getImagePath('/our plan/residue.svg')
   },
   {
     id: 3,
     number: '750,000',
     label: 'Tons/Year of\nBiochar to be\nproduced',
-    icon: getImagePath('/our plan/Biochar.png')
+    icon: getImagePath('/our plan/Biochar.svg')
   },
   {
     id: 4,
     number: '1000',
     label: 'Production\nfacilities\nplanned\n(Decentralized)',
-    icon: getImagePath('/our plan/Decentralized.png')
+    icon: getImagePath('/our plan/Decentralized.svg')
   },
   {
     id: 5,
     number: '10,000+',
     label: 'Rural Jobs\nCreated',
-    icon: getImagePath('/our plan/Jobs.png')
+    icon: getImagePath('/our plan/Jobs.svg')
   },
   {
     id: 6,
     number: 'The Largest',
     label: 'Decentralized\nCarbon Project\nin the World',
-    icon: getImagePath('/our plan/Decentralized carbon.png')
+    icon: getImagePath('/our plan/Decentralized carbon.svg')
   }
 ];
 

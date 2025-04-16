@@ -36,9 +36,9 @@ const HeroSection: React.FC = () => {
             className="w-full h-full object-cover object-center"
           />
         </div>
-        <div className="relative z-20 h-full flex flex-col justify-center px-4 sm:px-6 md:px-8 lg:px-16">
-          <div className="mt-[100px] sm:mt-[150px] md:mt-[200px] lg:mt-[400px] pl-4 sm:pl-6 md:pl-8 lg:pl-[30px]">
-            <h1 className="font-montserrat text-[20px] xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] leading-[120%] md:leading-[100%] tracking-[0%] font-bold mb-4 md:mb-6 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
+        <div className="relative z-20 h-full flex flex-col justify-end px-4 sm:px-6 md:px-8 lg:px-16">
+          <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-20 pl-4 sm:pl-6 md:pl-8 lg:pl-[30px]">
+            <h1 className="font-montserrat text-[20px] xs:text-[24px] sm:text-[28px] md:text-[40px] lg:text-[60px] leading-[120%] md:leading-[100%] tracking-[0%] font-bold mb-4 md:mb-6 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
               <div className="flex flex-col">
                 <span className="bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text whitespace-nowrap">
                   Scalable Carbon Solutions
@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
                 </span>
               </div>
             </h1>
-            <div className="font-montserrat text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] leading-[120%] md:leading-[100%] tracking-[0%] font-medium flex flex-wrap items-center gap-x-2">
+            <div className="font-montserrat text-[16px] sm:text-[18px] md:text-[24px] lg:text-[32px] leading-[120%] md:leading-[100%] tracking-[0%] font-medium flex flex-wrap items-center gap-x-2">
               <span className="bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Clean</span>
               <span className="text-white">Planet.</span>
               <span className="bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Clean</span>

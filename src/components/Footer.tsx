@@ -7,19 +7,19 @@ export default function Footer() {
       <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo Column */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center">
             <img 
               src={getImagePath("/lovable-uploads/logo.png")} 
               alt="Lovable Ventures" 
               className="h-12 w-auto mb-4"
             />
-            <p className="text-gray-400 text-sm text-center md:text-left">
+            <p className="text-gray-400 text-sm text-center">
               Transforming waste into value through innovative carbon removal solutions.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div className="text-center md:text-left">
+          <div className="text-center">
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="text-center md:text-left">
+          <div className="text-center">
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-gray-400">info@nexcharventures.com</li>

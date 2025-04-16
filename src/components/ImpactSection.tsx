@@ -42,17 +42,17 @@ const stats = [
 
 const ImpactSection: React.FC = () => {
   return (
-    <section className="section-padding bg-carbon-dark px-[200px] py-16">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-16 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+    <section className="section-padding bg-carbon-dark w-full overflow-x-hidden">
+      <div className="container mx-auto w-full px-4 sm:px-6 md:px-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 md:mb-16 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
           Our Plan
         </h2>
         
         {/* Upper layer */}
-        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-[49px] w-full mb-12">
+        <div className="flex flex-col lg:flex-row items-start gap-6 md:gap-12 w-full mb-8 md:mb-12">
           {stats.slice(0, 3).map((stat) => (
-            <div key={stat.id} className="flex items-center gap-[47px] flex-1">
-              <div className="w-[100px] h-[100px] relative">
+            <div key={stat.id} className="flex flex-col lg:flex-row items-center gap-4 md:gap-[47px] flex-1 w-full">
+              <div className="w-16 h-16 md:w-[100px] md:h-[100px] relative">
                 <div 
                   className="w-full h-full svg-mask-gradient"
                   style={{
@@ -60,13 +60,13 @@ const ImpactSection: React.FC = () => {
                   } as React.CSSProperties}
                 />
               </div>
-              <div className="flex flex-col justify-center items-center gap-[11px] flex-1 self-stretch">
+              <div className="flex flex-col justify-center items-center gap-2 md:gap-[11px] flex-1 self-stretch w-full">
                 {stat.number && (
-                  <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
                     {stat.number}
                   </h3>
                 )}
-                <p className="text-white/80 whitespace-pre-line text-center">
+                <p className="text-white/80 whitespace-pre-line text-center text-sm md:text-base">
                   {stat.label}
                 </p>
               </div>
@@ -75,10 +75,10 @@ const ImpactSection: React.FC = () => {
         </div>
 
         {/* Lower layer */}
-        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-[49px] w-full">
+        <div className="flex flex-col lg:flex-row items-start gap-6 md:gap-12 w-full">
           {stats.slice(3).map((stat) => (
-            <div key={stat.id} className="flex items-center gap-[47px] flex-1">
-              <div className="w-[100px] h-[100px] relative">
+            <div key={stat.id} className="flex flex-col lg:flex-row items-center gap-4 md:gap-[47px] flex-1 w-full">
+              <div className="w-16 h-16 md:w-[100px] md:h-[100px] relative">
                 <div 
                   className="w-full h-full svg-mask-gradient"
                   style={{
@@ -86,13 +86,13 @@ const ImpactSection: React.FC = () => {
                   } as React.CSSProperties}
                 />
               </div>
-              <div className="flex flex-col justify-center items-center gap-[11px] flex-1 self-stretch">
+              <div className="flex flex-col justify-center items-center gap-2 md:gap-[11px] flex-1 self-stretch w-full">
                 {stat.number && (
-                  <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
                     {stat.number}
                   </h3>
                 )}
-                <p className="text-white/80 whitespace-pre-line text-center">
+                <p className="text-white/80 whitespace-pre-line text-center text-sm md:text-base">
                   {stat.label}
                 </p>
               </div>

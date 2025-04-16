@@ -1,6 +1,6 @@
 .swiper-pagination-bullet {
   background: #000000 !important;
-  width: 1.5rem !important;
+  width: 1rem !important;
   height: 0.25rem !important;
   border-radius: 999px !important;
   margin: 0 0.25rem !important;
@@ -10,13 +10,13 @@
 }
 
 .swiper-pagination-bullet-active {
-  width: 3rem !important;
+  width: 2rem !important;
   border-radius: 999px !important;
   background: linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%) !important;
 }
 
 .swiper-pagination-horizontal {
-  bottom: 1.5rem !important;
+  bottom: 1rem !important;
 }
 
 .quote-text {
@@ -24,10 +24,34 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 100%;
+  max-width: 100%;
 }
 
 .quote-slider-section {
   background: linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%);
-  border-radius: 1.5rem;
-  padding: 3rem 0;
+  border-radius: 1rem;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 1.5rem !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 3rem !important;
+  }
+  
+  .swiper-pagination-horizontal {
+    bottom: 1.5rem !important;
+  }
+  
+  .quote-slider-section {
+    border-radius: 1.5rem;
+    padding: 3rem 0;
+  }
 } 

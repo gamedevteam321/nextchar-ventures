@@ -25,9 +25,9 @@ const quotes = [
 
 export default function QuoteSliderSection() {
   return (
-    <section className="relative w-full px-[200px] py-20 md:py-32">
+    <section className="relative w-full px-[10px] py-12 md:py-20 overflow-x-hidden">
       <div 
-        className="relative max-w-[90rem] mx-auto rounded-3xl"
+        className="relative max-w-[90rem] mx-auto rounded-2xl md:rounded-3xl overflow-hidden w-full px-4 sm:px-6 md:px-8"
         style={{ background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)' }}
       >
         <Swiper
@@ -42,8 +42,8 @@ export default function QuoteSliderSection() {
         >
           {quotes.map((quote) => (
             <SwiperSlide key={quote.id}>
-              <div className="flex flex-col items-center justify-center min-h-[20rem] py-16">
-                <p className="quote-text text-center text-lg md:text-2xl lg:text-3xl font-medium max-w-4xl mb-16">
+              <div className="flex flex-col items-center justify-center min-h-[15rem] md:min-h-[20rem] py-8 md:py-16 px-4 md:px-8 w-full">
+                <p className="quote-text text-center text-base sm:text-lg md:text-xl lg:text-2xl font-medium max-w-4xl mb-8 md:mb-16 w-full">
                   {quote.text}
                 </p>
               </div>

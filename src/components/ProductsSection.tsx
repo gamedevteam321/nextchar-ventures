@@ -26,21 +26,21 @@ const products = [
 
 const ProductsSection: React.FC = () => {
   return (
-    <section id="products" className="section-padding bg-carbon-dark px-[200px] py-16">
-      <div className="container mx-auto">
-        <div className="text-left max-w-3xl mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">Our Biocarbons</h2>
-          <p className="text-gray-400">
+    <section id="products" className="section-padding bg-carbon-dark w-full overflow-x-hidden">
+      <div className="container mx-auto w-full px-4 sm:px-6 md:px-8">
+        <div className="text-left max-w-3xl mb-8 md:mb-12 w-full">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Our Biocarbons</h2>
+          <p className="text-gray-400 text-base md:text-lg">
             Pioneering next generation carbon solutions.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 w-full">
           {products.map(product => (
-            <Link key={product.id} to={product.link}>
-              <Card className="bg-carbon border border-gold/20 overflow-hidden card-effect rounded-xl aspect-square hover:border-gold/40 transition-all duration-300">
-                <CardContent className="p-0 h-full">
-                  <div className="h-full overflow-hidden relative">
+            <Link key={product.id} to={product.link} className="w-full">
+              <Card className="bg-carbon border border-gold/20 overflow-hidden card-effect rounded-xl aspect-square hover:border-gold/40 transition-all duration-300 w-full">
+                <CardContent className="p-0 h-full w-full">
+                  <div className="h-full overflow-hidden relative w-full">
                     <img 
                       src={product.image} 
                       alt={product.name} 
@@ -61,10 +61,7 @@ const ProductsSection: React.FC = () => {
         </div>
       </div>
     </section>
-
-    
   );
-  
 };
 
 export default ProductsSection;

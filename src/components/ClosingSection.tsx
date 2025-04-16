@@ -23,8 +23,8 @@ const quotes = [
 
 export default function ClosingSection() {
   return (
-    <section id="about" className="section-padding bg-carbon-dark px-[200px] py-16">
-      <div className="max-w-[90rem] mx-auto">
+    <section id="about" className="section-padding bg-carbon-dark w-full overflow-x-hidden">
+      <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-6 md:px-8">
         <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ clickable: true }}
@@ -37,20 +37,20 @@ export default function ClosingSection() {
         >
           {quotes.map((quote) => (
             <SwiperSlide key={quote.id}>
-              <div className="flex flex-col justify-center min-h-[20rem] py-12 bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] rounded-2xl">
+              <div className="flex flex-col justify-center h-[24rem] sm:h-[28rem] md:h-[32rem] py-8 md:py-12 bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] rounded-xl md:rounded-2xl w-full">
                 <div className="max-w-4xl mx-auto w-full px-4 md:px-8">
-                  <div className="text-left">
-                    <h2 className="font-medium text-[30px] text-[#111111] mb-8">
+                  <div className="text-left space-y-3 md:space-y-8 w-full">
+                    <h2 className="font-medium text-xl md:text-2xl lg:text-3xl text-[#111111]">
                       {quote.mainTitle}
                     </h2>
-                    <p className="font-medium text-[30px] text-[#111111]/90 mb-8">
+                    <p className="font-medium text-xl md:text-2xl lg:text-3xl text-[#111111]/90">
                       {quote.description}
                     </p>
-                    <p className="font-medium text-[30px] italic text-[#111111] mb-8">
+                    <p className="font-medium text-xl md:text-2xl lg:text-3xl italic text-[#111111]">
                       {quote.quote}
                     </p>
                   </div>
-                  <p className="font-normal text-[25px] text-[#111111]/80 text-right">
+                  <p className="font-normal text-lg md:text-xl lg:text-2xl text-[#111111]/80 text-right mt-4 md:mt-8">
                     {quote.author}
                   </p>
                 </div>

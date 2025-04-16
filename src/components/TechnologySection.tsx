@@ -51,20 +51,20 @@ const technologies = [
 
 export default function TechnologySection() {
   return (
-    <section id="technology" className="section-padding bg-carbon px-[200px] py-16">
-      <div className="max-w-[90rem] mx-auto">
-        <h2 className="text-4xl md:text-5xl font-semibold mb-8 font-montserrat leading-[100%] tracking-[0%] capitalize">
+    <section id="technology" className="section-padding bg-carbon w-full overflow-x-hidden">
+      <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-6 md:px-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-8 font-montserrat leading-[100%] tracking-[0%] capitalize">
           <span className="bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] bg-clip-text text-transparent">
             Our Technology
           </span>
         </h2>
-        <p className="text-2xl md:text-3xl text-white/80 mb-16">Our Processing technology is scalable, efficient & robust</p>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/80 mb-8 md:mb-16">Our Processing technology is scalable, efficient & robust</p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
           {technologies.map((tech) => (
             <div 
               key={tech.id}
-              className="relative rounded-lg overflow-hidden group"
+              className="relative rounded-lg overflow-hidden group w-full"
               style={{
                 backgroundImage: `url(${getImagePath('/technology-placeholder.png')})`,
                 backgroundSize: 'contain',
@@ -76,15 +76,15 @@ export default function TechnologySection() {
                  from-black/80 - Starting opacity (0-100)
                  via-black/50 - Middle opacity (0-100)
                  to-transparent - End opacity (always transparent) */}
-              <div className="absolute inset-0 " />
+              <div className="absolute inset-0" />
               
               {/* Content Container - Adjust these values:
-                 p-7 - Padding around content (p-1 to p-12)
-                 space-y-5 - Vertical gap between elements (space-y-1 to space-y-12) */}
-              <div className="aspect-[4/3] p-7 flex flex-col justify-end mb-10">
-                <div className="text-center space-y-1">
-                  <h3 className="text-xl font-semibold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] bg-clip-text text-transparent">{tech.title}</h3>
-                  <p className="text-white/90 text-sm">{tech.description}</p>
+                 p-4 - Padding around content (p-1 to p-12)
+                 space-y-1 - Vertical gap between elements (space-y-1 to space-y-12) */}
+              <div className="aspect-[4/3] p-4 md:p-7 flex flex-col justify-end w-full">
+                <div className="text-center space-y-1 md:space-y-2 w-full mb-10 md:mb-5">
+                  <h3 className="text-lg md:text-xl font-semibold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] bg-clip-text text-transparent">{tech.title}</h3>
+                  <p className="text-white/90 text-sm md:text-base">{tech.description}</p>
                 </div>
               </div>
             </div>

@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { getImagePath } from "@/lib/utils";
-import { Menu, X, Sun, Moon } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Menu, X, Sun, Moon, ChevronDown } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,6 +67,12 @@ const Header: React.FC = () => {
     handleNavClick({ preventDefault: () => {} } as React.MouseEvent<HTMLAnchorElement>, '#carbon');
   };
 
+  const handleProductClick = (product: string) => {
+    setIsProductsDropdownOpen(false);
+    setIsMobileMenuOpen(false);
+    navigate(`/${product}`);
+  };
+
   return (
     <>
       <header className={`${isScrolled ? 'bg-black/80 backdrop-blur-sm' : 'bg-transparent'} 
@@ -77,13 +85,46 @@ const Header: React.FC = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a 
-            href="#products" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
-            onClick={(e) => handleNavClick(e, '#products')}
+          <div 
+            className="relative group"
+            onMouseEnter={() => setIsProductsDropdownOpen(true)}
+            onMouseLeave={() => setIsProductsDropdownOpen(false)}
           >
-            Products
-          </a>
+            <button 
+              className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
+            >
+              Products
+              <ChevronDown className="ml-1 h-5 w-5" />
+            </button>
+            
+            {/* Products Dropdown */}
+            <div className={`absolute top-full left-0 w-48 ${isDarkTheme ? 'bg-black/90' : 'bg-white'} rounded-md shadow-lg py-2 mt-2 transition-all duration-300 ${isProductsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+              <a 
+                href="/biochar" 
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleProductClick('biochar');
+                }}
+              >
+                Biochar
+              </a>
+              <a 
+                href="#bio-coal" 
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                onClick={(e) => handleNavClick(e, '#bio-coal')}
+              >
+                Biocoal
+              </a>
+              <a 
+                href="#wood-vinegar" 
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                onClick={(e) => handleNavClick(e, '#wood-vinegar')}
+              >
+                Wood Vinegar
+              </a>
+            </div>
+          </div>
           <a 
             href="#technology" 
             className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
@@ -154,13 +195,45 @@ const Header: React.FC = () => {
         }`}
       >
         <nav className="flex flex-col items-center justify-center h-full space-y-8 p-6">
-          <a
-            href="#products"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
-            onClick={(e) => handleNavClick(e, '#products')}
-          >
-            Products
-          </a>
+          <div className="relative">
+            <button 
+              className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
+              onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
+            >
+              Products
+              <ChevronDown className={`ml-1 h-5 w-5 transition-transform duration-300 ${isProductsDropdownOpen ? 'rotate-180' : ''}`} />
+            </button>
+            
+            {/* Mobile Products Dropdown */}
+            <div className={`${isProductsDropdownOpen ? 'max-h-48' : 'max-h-0'} overflow-hidden transition-all duration-300`}>
+              <div className="flex flex-col items-center space-y-4 mt-4">
+                <a
+                  href="/biochar"
+                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[20px] font-light leading-[100%] tracking-[0%] text-center`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleProductClick('biochar');
+                  }}
+                >
+                  Biochar
+                </a>
+                <a
+                  href="#bio-coal"
+                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[20px] font-light leading-[100%] tracking-[0%] text-center`}
+                  onClick={(e) => handleNavClick(e, '#bio-coal')}
+                >
+                  Biocoal
+                </a>
+                <a
+                  href="#wood-vinegar"
+                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[20px] font-light leading-[100%] tracking-[0%] text-center`}
+                  onClick={(e) => handleNavClick(e, '#wood-vinegar')}
+                >
+                  Wood Vinegar
+                </a>
+              </div>
+            </div>
+          </div>
           <a
             href="#technology"
             className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}

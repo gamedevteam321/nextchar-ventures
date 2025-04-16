@@ -91,10 +91,15 @@
     @apply bg-[#000000] text-white;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
   }
   
   html {
     @apply scroll-smooth;
+  }
+
+  img {
+    @apply max-w-full h-auto;
   }
 }
 
@@ -120,15 +125,19 @@
   }
   
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-8 md:py-16 lg:py-24;
   }
   
   .stat-card {
-    @apply flex flex-col items-center justify-center p-6 border border-gold/20 rounded-lg;
+    @apply flex flex-col items-center justify-center p-4 md:p-6 border border-gold/20 rounded-lg;
   }
   
   .tech-card {
-    @apply p-6 border border-gold/20 rounded-lg hover:border-gold/50 transition-all duration-300;
+    @apply p-4 md:p-6 border border-gold/20 rounded-lg hover:border-gold/50 transition-all duration-300;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 md:px-8 lg:px-[200px];
   }
 }
 
@@ -182,6 +191,41 @@
 
 .dark .nav-link {
   @apply text-white hover:text-gold;
+}
+
+/* Responsive text sizes */
+.text-responsive {
+  @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+}
+
+/* Responsive padding */
+.p-responsive {
+  @apply p-4 sm:p-6 md:p-8 lg:p-12;
+}
+
+/* Responsive margins */
+.m-responsive {
+  @apply m-4 sm:m-6 md:m-8 lg:m-12;
+}
+
+/* Responsive grid */
+.grid-responsive {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  @apply fixed top-0 right-0 w-[80%] h-full bg-black/95 z-40 md:hidden transition-transform duration-300 ease-in-out;
+}
+
+/* Responsive images */
+.responsive-image {
+  @apply w-full h-auto object-cover object-center;
+}
+
+/* Responsive containers */
+.responsive-container {
+  @apply w-full max-w-[90rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-[200px];
 }
 
 @layer utilities {

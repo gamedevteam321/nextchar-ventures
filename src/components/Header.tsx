@@ -91,7 +91,7 @@ const Header: React.FC = () => {
             onMouseLeave={() => setIsProductsDropdownOpen(false)}
           >
             <button 
-              className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
+              className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
             >
               Products
               <ChevronDown className="ml-1 h-5 w-5" />
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
             <div className={`absolute top-full left-0 w-48 ${isDarkTheme ? 'bg-black/90' : 'bg-white'} rounded-md shadow-lg py-2 mt-2 transition-all duration-300 ${isProductsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
               <a 
                 href="/biochar" 
-                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px]`}
                 onClick={(e) => {
                   e.preventDefault();
                   handleProductClick('biochar');
@@ -111,14 +111,14 @@ const Header: React.FC = () => {
               </a>
               <a 
                 href="#bio-coal" 
-                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px]`}
                 onClick={(e) => handleNavClick(e, '#bio-coal')}
               >
                 Biocoal
               </a>
               <a 
                 href="#wood-vinegar" 
-                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px]`}
                 onClick={(e) => handleNavClick(e, '#wood-vinegar')}
               >
                 Wood Vinegar
@@ -127,21 +127,21 @@ const Header: React.FC = () => {
           </div>
           <a 
             href="#technology" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#technology')}
           >
             Technology
           </a>
           <a 
             href="#carbon" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#carbon')}
           >
             Carbon Removal
           </a>
           <a 
             href="#about" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#about')}
           >
             About Us
@@ -197,7 +197,7 @@ const Header: React.FC = () => {
         <nav className="flex flex-col items-center justify-center h-full space-y-8 p-6">
           <div className="relative">
             <button 
-              className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
+              className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
               onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
             >
               Products
@@ -209,7 +209,7 @@ const Header: React.FC = () => {
               <div className="flex flex-col items-center space-y-4 mt-4">
                 <a
                   href="/biochar"
-                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[20px] font-light leading-[100%] tracking-[0%] text-center`}
+                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
                   onClick={(e) => {
                     e.preventDefault();
                     handleProductClick('biochar');
@@ -219,14 +219,14 @@ const Header: React.FC = () => {
                 </a>
                 <a
                   href="#bio-coal"
-                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[20px] font-light leading-[100%] tracking-[0%] text-center`}
+                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
                   onClick={(e) => handleNavClick(e, '#bio-coal')}
                 >
                   Biocoal
                 </a>
                 <a
                   href="#wood-vinegar"
-                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[20px] font-light leading-[100%] tracking-[0%] text-center`}
+                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
                   onClick={(e) => handleNavClick(e, '#wood-vinegar')}
                 >
                   Wood Vinegar
@@ -236,21 +236,21 @@ const Header: React.FC = () => {
           </div>
           <a
             href="#technology"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#technology')}
           >
             Technology
           </a>
           <a
             href="#carbon"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#carbon')}
           >
             Carbon Removal
           </a>
           <a
             href="#about"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[25px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => handleNavClick(e, '#about')}
           >
             About Us

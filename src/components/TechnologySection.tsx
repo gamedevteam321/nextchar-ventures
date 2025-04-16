@@ -1,5 +1,4 @@
 import React from 'react';
-import { getImagePath } from "@/lib/utils";
 
 const technologies = [
   {
@@ -51,40 +50,61 @@ const technologies = [
 
 export default function TechnologySection() {
   return (
-    <section id="technology" className="section-padding bg-carbon w-full overflow-x-hidden">
-      <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-6 md:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-8 font-montserrat leading-[100%] tracking-[0%] capitalize">
-          <span className="bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] bg-clip-text text-transparent">
+    <section id="technology" className="py-8 sm:py-12 md:py-[25px]  bg-carbon w-full overflow-x-hidden">
+      <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-20 xl:px-40">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize">
+          <span style={{ background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Our Technology
           </span>
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/80 mb-8 md:mb-16">Our Processing technology is scalable, efficient & robust</p>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8 md:mb-16" style={{ color: '#474747' }}>
+          Our Processing technology is scalable, efficient & robust
+        </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6">
           {technologies.map((tech) => (
-            <div 
+            <div
               key={tech.id}
-              className="relative rounded-lg overflow-hidden group w-full"
+              className="rounded-[20px] p-6"
               style={{
-                backgroundImage: `url(${getImagePath('/technology-placeholder.png')})`,
-                backgroundSize: 'contain',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center'
+                background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
+                position: 'relative',
+                isolation: 'isolate',
+                overflow: 'hidden'
               }}
             >
-              {/* Gradient Overlay - Adjust these values:
-                 from-black/80 - Starting opacity (0-100)
-                 via-black/50 - Middle opacity (0-100)
-                 to-transparent - End opacity (always transparent) */}
-              <div className="absolute inset-0" />
-              
-              {/* Content Container - Adjust these values:
-                 p-4 - Padding around content (p-1 to p-12)
-                 space-y-1 - Vertical gap between elements (space-y-1 to space-y-12) */}
-              <div className="aspect-[4/3] p-4 md:p-7 flex flex-col justify-end w-full">
-                <div className="text-center space-y-1 md:space-y-2 w-full mb-10 md:mb-5">
-                  <h3 className="text-lg md:text-xl font-semibold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] bg-clip-text text-transparent">{tech.title}</h3>
-                  <p className="text-white/90 text-sm md:text-base">{tech.description}</p>
+              <div
+                className="absolute inset-0 rounded-[20px]"
+                style={{
+                  content: '""',
+                  background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
+                  padding: '1px',
+                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                  WebkitMaskComposite: 'xor',
+                  maskComposite: 'exclude',
+                  pointerEvents: 'none'
+                }}
+              />
+              <div className="flex flex-col items-center gap-4 text-center relative z-10">
+                <div className="relative w-12 h-12 flex justify-center">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 2L44.7846 13V35L24 46L3.21539 35V13L24 2Z" stroke="url(#paint0_linear)" strokeWidth="2"/>
+                    <defs>
+                      <linearGradient id="paint0_linear" x1="3.21539" y1="24" x2="44.7846" y2="24" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#A4966E"/>
+                        <stop offset="1" stopColor="#F0EDE4"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <h3 className="text-base sm:text-lg md:text-xl font-medium leading-tight
+                              bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                    {tech.title}
+                  </h3>
+                  <p className="text-[#EDFDF6] text-sm sm:text-base font-light leading-relaxed">
+                    {tech.description}
+                  </p>
                 </div>
               </div>
             </div>

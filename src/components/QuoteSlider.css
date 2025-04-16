@@ -12,7 +12,7 @@
 .swiper-pagination-bullet-active {
   width: 2rem !important;
   border-radius: 999px !important;
-  background: linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%) !important;
+  background: linear-gradient(90deg, #00A92D 32.21%, #00A92D 76.44%) !important;
 }
 
 .swiper-pagination-horizontal {

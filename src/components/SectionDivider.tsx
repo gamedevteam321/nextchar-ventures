@@ -3,7 +3,7 @@ import { getImagePath } from "@/lib/utils";
 
 const SectionDivider: React.FC = () => {
   return (
-    <div className="py-[50px] md:py-[150px] px-0">
+    <div className="py-[5px] md:py-[20px] px-0">
       <img 
         src={getImagePath("/Section-line.png")}
         alt="Section Divider" 

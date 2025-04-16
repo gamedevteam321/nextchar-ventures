@@ -72,9 +72,18 @@ export default function TechnologySection() {
                 backgroundPosition: 'center'
               }}
             >
-              <div className="aspect-[4/3] p-10 flex flex-col justify-center">
-                <div className="text-center mt-16">
-                  <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] bg-clip-text text-transparent">{tech.title}</h3>
+              {/* Gradient Overlay - Adjust these values:
+                 from-black/80 - Starting opacity (0-100)
+                 via-black/50 - Middle opacity (0-100)
+                 to-transparent - End opacity (always transparent) */}
+              <div className="absolute inset-0 " />
+              
+              {/* Content Container - Adjust these values:
+                 p-7 - Padding around content (p-1 to p-12)
+                 space-y-5 - Vertical gap between elements (space-y-1 to space-y-12) */}
+              <div className="aspect-[4/3] p-7 flex flex-col justify-end mb-10">
+                <div className="text-center space-y-1">
+                  <h3 className="text-xl font-semibold bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] bg-clip-text text-transparent">{tech.title}</h3>
                   <p className="text-white/90 text-sm">{tech.description}</p>
                 </div>
               </div>

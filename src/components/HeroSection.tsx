@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Image Section */}
-      <section className="relative h-[800px] sm:h-[900px] md:h-[1000px] lg:h-[1400px] -mt-20">
+      <section className="relative h-[800px] sm:h-[500px] md:h-[900px] lg:h-[1000px] -mt-20">
         <div className="absolute inset-0 w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.72)] via-transparent to-[rgba(0,0,0,0.8)] z-10"
                style={{

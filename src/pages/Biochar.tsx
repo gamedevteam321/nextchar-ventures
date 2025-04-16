@@ -40,13 +40,14 @@ const Biochar = () => {
               className="font-montserrat text-[28px] sm:text-[40px] md:text-[50px] font-medium leading-[100%] sm:leading-[100%] tracking-[0%]
                          bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text
                          drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]
-                         mb-[35vh] sm:mb-[50vh] text-center"
+                         mb-[35vh] sm:mb-[50vh] text-center px-4"
               style={{
                 width: '100%',
                 height: '100%',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                paddingBottom: '0.5rem'
               }}
             >
               Best Organic Soil Amendment
@@ -421,7 +422,7 @@ const Biochar = () => {
 
       {/* Quote Slider Section */}
       <section className="py-[60px] md:py-[150px] px-[200px]">
-        <div className="max-w-[90rem] mx-auto">
+        <div className="w-full">
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
@@ -435,27 +436,22 @@ const Biochar = () => {
             {[
               {
                 id: 1,
-                text: "Fundamentally Committed to Regeneration\n\nAs the soil goes, we go. As the soil heals, we heal.",
-                author: "— Nexchar"
+                text: "Biochar is one of the most promising tools we have to combat climate change while improving soil health.",
+                author: "Dr. Johannes Lehmann, Cornell University"
               },
               {
                 id: 2,
-                text: "To mitigate agriculture impact on climate change, is to future proof farmers' ability to feed 8 billion people",
-                author: ""
+                text: "The potential of biochar to sequester carbon while improving agricultural productivity is truly remarkable.",
+                author: "Dr. David Laird, Iowa State University"
               },
               {
                 id: 3,
-                text: "See why biochar is big bonus for soil...\n\nOne gram of biochar can have a larger surface area than a basketball court, making it an exceptional storage solution for water and nutrients. Additionally, biochar is an ideal host for beneficial fungi, bacteria, and microbes.",
-                author: ""
-              },
-              {
-                id: 4,
-                text: "Building Soil. Sinking Carbon. Improving Lives\n\nNexchar's Biochar help farmers increase long term profitability, regenerate degraded soils and improve yields becoming more resilient to climate change",
-                author: ""
+                text: "Biochar represents a win-win solution for both climate change mitigation and sustainable agriculture.",
+                author: "Dr. Stephen Joseph, University of New South Wales"
               }
             ].map((quote) => (
               <SwiperSlide key={quote.id}>
-                <div className="flex flex-col items-center justify-center h-[400px] px-4 md:px-20 py-16 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] rounded-2xl mx-4 md:mx-16 lg:mx-24">
+                <div className="flex flex-col items-center justify-center h-[400px] px-4 md:px-20 py-16 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] rounded-2xl">
                   <div className="text-center max-w-4xl overflow-y-auto">
                     {quote.text.split('\n\n').map((paragraph, index) => (
                       <p

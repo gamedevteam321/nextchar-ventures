@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Image Section */}
-      <section className="relative h-[800px] sm:h-[500px] md:h-[900px] lg:h-[800px] -mt-20">
+      <section className="relative h-[800px] sm:h-[500px] md:h-[900px] lg:h-[820px] -mt-20">
         <div className="absolute inset-0 w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-b from-[rgba(6, 6, 6, 0.72)] via-transparent to-[rgba(0, 0, 0, 0.8)] z-10"
                style={{
@@ -92,7 +92,7 @@ const HeroSection: React.FC = () => {
       </section>
 
       {/* Content Section */}
-      <section className="bg-beige w-full px-4 sm:px-6 md:px-8 lg:px-[200px] pt-[60px] sm:pt-[25px] md:pt-[40px] lg:pt-[75px] pb-6 md:pb-8">
+      <section className="bg-beige w-full px-4 sm:px-6 md:px-8 lg:px-[150px] pt-[60px] sm:pt-[25px] md:pt-[40px] lg:pt-[75px] pb-6 md:pb-8">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
           <p className="font-montserrat font-light text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px] leading-[120%] md:leading-[100%] tracking-[0%] w-full reveal text-green-dark" style={{ animationDelay: '0.2s' }}>
             We transform Biomass Waste streams that are presently being burnt, landfilled or underutilised to products imperative for life

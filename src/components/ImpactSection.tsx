@@ -42,8 +42,8 @@ const stats = [
 
 const ImpactSection: React.FC = () => {
   return (
-    <section className="section-padding bg-green-dark w-full overflow-x-hidden">
-      <div className="container mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-20 xl:px-40">
+    <section className="pb-20 md:pb-4 lg:pb-8 xl:pb-12 bg-green-dark w-full overflow-x-hidden">
+      <div className="container mx-auto w-full px-4 sm:px-10 md:px-28 lg:px-32 xl:px-36 pt-8 md:pt-8 lg:pt-12 xl:pt-16">
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize">
           <span className="bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] bg-clip-text text-transparent">
            Our Plan

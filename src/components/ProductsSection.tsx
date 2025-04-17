@@ -28,7 +28,7 @@ const ProductsSection: React.FC = () => {
   return (
     <section id="products" className="bg-beige w-full overflow-hidden">
       <div className="container mx-auto w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-12">
-        <div className="text-left max-w-3xl mb-2 md:mb-12 w-full pl-2 sm:pl-6 md:pl-12 lg:pl-16 xl:pl-24">
+        <div className="text-left max-w-3xl mb-2 md:mb-12 w-full pl-2 sm:pl-6 md:pl-12 lg:pl-14 xl:pl-20">
           <h2 
             className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize"
             style={{

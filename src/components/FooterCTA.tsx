@@ -12,7 +12,7 @@ export default function FooterCTA() {
             THE TIME IS NOW
           </h2>
         </div>
-        <div className="max-w-4xl mx-auto w-full">
+        <div className="px-4 sm:px-10 md:px-16 lg:px-24 xl:px-32 mx-auto w-full">
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 text-center leading-relaxed">
             We are a carbon project developer leveraging proprietary modular pyrolysis technology to convert agricultural and forestry waste into biochar, addressing waste management challenges while creating a product with substantial agricultural benefits and carbon removal potential.
           </p>

@@ -4,8 +4,8 @@ import { getImagePath } from "@/lib/utils";
 const BiocharSection: React.FC = () => {
   return (
     <section className="bg-beige w-full overflow-x-hidden">
-      <div className="container-padding pt-8 md:pt-8 pb-2 md:pb-0.5">
-        <div className="container mx-auto text-left w-full pl-6 sm:pl-6 md:pl-8 lg:pl-12 xl:pl-16">
+      <div className="container-padding pt-8 md:pt-8 pb-1 md:pb-0.5 ">
+        <div className="container mx-auto text-left w-full pl-6 sm:pl-6 md:pl-8 lg:pl-12 xl:pl-14">
           <h2 
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize"
             style={{
@@ -23,7 +23,7 @@ const BiocharSection: React.FC = () => {
         </div>
       </div>
       
-      <div className="w-full container-padding flex justify-center pb-4">
+      <div className="w-full container-padding flex justify-center pb-50 md:pb-20 lg:pb-20 xl:pb-20">
         <img 
           src={getImagePath("/tree-light.png")} 
           alt="Tree" 

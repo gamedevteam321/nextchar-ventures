@@ -21,6 +21,7 @@ const quotes = [
     id: 4,
     text: `"Biochar in the Tropics can achieve at least 20% of this."`
   }
+  
 ];
 
 export default function QuoteSliderSection() {
@@ -39,9 +40,9 @@ export default function QuoteSliderSection() {
         >
           {quotes.map((quote) => (
             <SwiperSlide key={quote.id}>
-              <div className="flex flex-col items-center justify-center min-h-[15rem] md:min-h-[20rem] py-8 md:py-16 px-4 md:px-8 w-full">
+              <div className="flex flex-col items-center justify-center min-h-[15rem] md:min-h-[20rem] py-4 md:py-8 px-4 md:px-8 w-full">
                 <p 
-                  className="quote-text text-center text-base sm:text-lg md:text-xl lg:text-2xl font-medium max-w-4xl mb-8 md:mb-16 w-full"
+                  className="quote-text text-center text-base sm:text-lg md:text-xl lg:text-2xl font-medium max-w-4xl mb-4 md:mb-8 w-full"
                   style={{
                     background: 'linear-gradient(90deg, #F0EDE4 0%, #A4966E 100%)',
                     WebkitBackgroundClip: 'text',

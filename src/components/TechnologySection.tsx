@@ -50,22 +50,22 @@ const technologies = [
 
 export default function TechnologySection() {
   return (
-    <section id="technology" className="py-8 sm:py-12 md:py-[25px]  bg-carbon w-full overflow-x-hidden">
-      <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-20 xl:px-40">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize">
+    <section id="technology" className="pt-8 sm:pt-12 md:pt-[80px]  bg-carbon w-full overflow-x-hidden">
+      <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-24 xl:px-28">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize">
           <span style={{ background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Our Technology
           </span>
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8 md:mb-16" style={{ color: '#474747' }}>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-10" style={{ color: '#474747' }}>
           Our Processing technology is scalable, efficient & robust
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 sm:gap-2 lg:gap-3">
           {technologies.map((tech) => (
             <div
               key={tech.id}
-              className="rounded-[20px] p-6"
+              className="rounded-[12px] p-3 sm:p-4"
               style={{
                 background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
                 position: 'relative',
@@ -74,7 +74,7 @@ export default function TechnologySection() {
               }}
             >
               <div
-                className="absolute inset-0 rounded-[20px]"
+                className="absolute inset-0 rounded-[12px]"
                 style={{
                   content: '""',
                   background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
@@ -85,9 +85,9 @@ export default function TechnologySection() {
                   pointerEvents: 'none'
                 }}
               />
-              <div className="flex flex-col items-center gap-4 text-center relative z-10">
-                <div className="relative w-12 h-12 flex justify-center">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center relative z-10">
+                <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex justify-center">
+                  <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24 2L44.7846 13V35L24 46L3.21539 35V13L24 2Z" stroke="url(#paint0_linear)" strokeWidth="2"/>
                     <defs>
                       <linearGradient id="paint0_linear" x1="3.21539" y1="24" x2="44.7846" y2="24" gradientUnits="userSpaceOnUse">
@@ -97,12 +97,12 @@ export default function TechnologySection() {
                     </defs>
                   </svg>
                 </div>
-                <div className="flex flex-col items-center gap-2">
-                  <h3 className="text-base sm:text-lg md:text-xl font-medium leading-tight
+                <div className="flex flex-col items-center gap-0.5 sm:gap-1">
+                  <h3 className="text-xs sm:text-sm md:text-base font-medium leading-tight
                               bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
                     {tech.title}
                   </h3>
-                  <p className="text-[#EDFDF6] text-sm sm:text-base font-light leading-relaxed">
+                  <p className="text-[#EDFDF6] text-[10px] sm:text-xs font-light leading-relaxed">
                     {tech.description}
                   </p>
                 </div>

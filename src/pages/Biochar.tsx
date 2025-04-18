@@ -211,21 +211,21 @@ const Biochar = () => {
           <img
             src={getImagePath("/key-structure-bg.png")}
             alt="Structure Background"
-            className="w-full h-auto"
+            className="w-full h-auto min-h-[300px] sm:min-h-auto object-cover sm:object-contain"
           />
         </div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center">
-          <div className="relative z-10 px-4 sm:px-8 md:px-[150px]">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-8
+        <div className="py-12 absolute inset-0 flex flex-col justify-center bg-black/40 sm:bg-transparent">
+          <div className="relative z-10 px-6 sm:px-8 md:px-[150px] py-12 sm:py-0">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-4 sm:mb-8
                        bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
               The key is in its structure
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 md:gap-12">
-              <div className="text-[#F0EDE4] space-y-6">
+            <div className="grid grid-cols-1 gap-4 sm:gap-8 md:gap-12 max-w-[800px]">
+              <div className="text-[#F0EDE4] space-y-4 sm:space-y-6">
                 <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                Nexchar Biochar is a very stable form of carbon with a highly porous structure.Its internal surface is over 100 square meters per gram of biochar.This internal area enhances the nutrient holding-capacity by as much as 20 times that healthy soil and doubles water-retention as it absorbs moisture and releases it back into the soil when water availability is depressed.
+                Nexchar Biochar is a very stable form of carbon with a highly porous structure. Its internal surface is over 100 square meters per gram of biochar. This internal area enhances the nutrient holding-capacity by as much as 20 times that healthy soil and doubles water-retention as it absorbs moisture and releases it back into the soil when water availability is depressed.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
                 Nexchar honeycomb structure provides the perfect housing for beneficial microbes which defends roots and fights off pests.

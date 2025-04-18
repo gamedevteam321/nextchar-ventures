@@ -200,10 +200,10 @@ const Header: React.FC = () => {
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <nav className="flex flex-col items-center justify-center h-full space-y-8 p-6">
+        <nav className="flex flex-col items-start justify-center h-full space-y-8 p-6 w-full">
           <div className="w-full">
             <button 
-              className={`w-full text-left px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px] flex items-center justify-between`}
+              className={`w-full text-left px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px] font-inter font-light leading-[100%] tracking-[0%] flex items-center`}
               onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
             >
               Products
@@ -243,7 +243,7 @@ const Header: React.FC = () => {
           
           <a 
             href="/technology"
-            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
             onClick={(e) => {
               e.preventDefault();
               handleProductClick('technology');
@@ -253,25 +253,25 @@ const Header: React.FC = () => {
           </a>
           <a
             href="#carbon"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
             onClick={(e) => handleNavClick(e, '#carbon')}
           >
             Carbon Removal
           </a>
           <a
             href="#about"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
             onClick={(e) => handleNavClick(e, '#about')}
           >
             About Us
           </a>
           <Button
-            className="bg-gold text-black hover:bg-gold-light font-medium rounded-md text-lg px-8 py-3 mt-4 relative
+            className="w-full text-white hover:opacity-90 font-medium rounded-md text-lg px-8 py-3 mt-4 relative
             before:absolute before:inset-0 before:rounded-md before:p-[3px] before:bg-gradient-to-r before:from-[#F0EDE4] before:to-[#A4966E]
             after:absolute after:inset-[3px] after:rounded-[5px] after:bg-gradient-to-r after:from-[#886808] after:to-[#C5A133]"
             onClick={handleGetStarted}
           >
-            <span className="relative z-10">Get Started</span>
+            <span className="relative z-10">Contact Us</span>
           </Button>
           {/* Theme Toggle Button in Mobile Menu - Hidden for now
           <Button

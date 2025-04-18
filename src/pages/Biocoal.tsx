@@ -301,7 +301,7 @@ const Biocoal = () => {
             ].map((benefit, index) => (
               <div
                 key={index}
-                className="rounded-lg p-4 sm:p-6 aspect-square"
+                className="rounded-lg p-4 sm:p-6 sm:aspect-square"
                 style={{
                   background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
                   border: '1px solid #A4966E'

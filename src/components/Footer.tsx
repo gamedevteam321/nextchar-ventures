@@ -10,9 +10,9 @@ export default function Footer() {
           {/* Logo Column */}
           <div className="flex flex-col items-center justify-center">
             <img 
-              src={getImagePath("/lovable-uploads/blacklogo.png")} 
+              src={getImagePath("/footer-logo.png")} 
               alt="Nexchar Ventures" 
-              className="h-20 w-auto"
+              className="h-40 w-auto"
             />
           </div>
 

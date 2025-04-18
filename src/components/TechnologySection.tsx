@@ -1,50 +1,60 @@
 import React from 'react';
+import Image from 'next/image';
 
 const technologies = [
   {
     id: 1,
     title: "Modular & Scalable",
-    description: "Easily scale up or down based on biomass availability and project requirements."
+    description: "Easily scale up or down based on biomass availability and project requirements.",
+    icon: "/technology/Modular-Scalable.svg"
   },
   {
     id: 2,
     title: "Biomass Agnostic",
-    description: "Process various types of organic material for maximum versatility."
+    description: "Process various types of organic material for maximum versatility.",
+    icon: "/technology/Biomass-Agnostic.svg"
   },
   {
     id: 3,
     title: "High Temperature with Precision Control",
-    description: "Achieve optimal pyrolysis conditions for different feedstocks."
+    description: "Achieve optimal pyrolysis conditions for different feedstocks.",
+    icon: "/technology/High-Temperature.svg"
   },
   {
     id: 4,
     title: "Hyperlocal Implementation",
-    description: "Deploy units directly where biomass is available to minimize transportation."
+    description: "Units operate within a small radius for both Biomass sourcing as well as final product utilization, for highest efficiency and least carbon leakage.",
+    icon: "/technology/Hyperlocal-Implementation.svg"
   },
   {
     id: 5,
     title: "Low Skill Requirement",
-    description: "Designed for ease of operation in various global contexts."
+    description: "Designed for ease of operation in rural and semi rural areas , we create employment opportunities.",
+    icon: "/technology/Low-Skill-Requirement.svg"
   },
   {
     id: 6,
     title: "Low Energy Consumption",
-    description: "Energy-efficient design that minimizes operational costs."
+    description: "Energy-efficient design that minimizes process carbon leakages.",
+    icon: "/technology/Low-Energy-Consumption.svg"
   },
   {
     id: 7,
     title: "Emissions Control",
-    description: "Advanced systems to ensure clean operation with minimal environmental impact."
+    description: "Advanced systems to ensure clean operation with minimal environmental impact.",
+    icon: "/technology/Emissions-Control.svg"
   },
   {
     id: 8,
     title: "Transparent Monitoring",
-    description: "Real-time data collection for process optimization and verification."
+    description: "Real-time live data collection from multiple points  for process optimization and verification.",
+    icon: "/technology/Transparent-Monitoring.svg"
   },
   {
     id: 9,
     title: "Trusted Verification Process",
-    description: "Rigorous standards ensuring accountability and quality assurance."
+    description: "Rigorous standards ensuring accountability and quality assurance.",
+    icon: "/technology/Trusted-Verification-Process.svg"
   }
 ];
 
@@ -58,7 +68,7 @@ export default function TechnologySection() {
           </span>
         </h2>
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-10" style={{ color: '#474747' }}>
-          Our Processing technology is scalable, efficient & robust
+          Our Processing technology is modular, scalable, and efficient
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 sm:gap-2 lg:gap-3">
@@ -86,16 +96,21 @@ export default function TechnologySection() {
                 }}
               />
               <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center relative z-10">
-                <div className="relative w-8 h-8 sm:w-10 sm:h-10 flex justify-center">
-                  <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 2L44.7846 13V35L24 46L3.21539 35V13L24 2Z" stroke="url(#paint0_linear)" strokeWidth="2"/>
-                    <defs>
-                      <linearGradient id="paint0_linear" x1="3.21539" y1="24" x2="44.7846" y2="24" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#A4966E"/>
-                        <stop offset="1" stopColor="#F0EDE4"/>
-                      </linearGradient>
-                    </defs>
-                  </svg>
+                <div className="relative w-12 h-12 sm:w-16 sm:h-16 flex justify-center">
+                  <div 
+                    className="w-full h-full"
+                    style={{
+                      maskImage: `url(${tech.icon})`,
+                      WebkitMaskImage: `url(${tech.icon})`,
+                      maskSize: 'contain',
+                      WebkitMaskSize: 'contain',
+                      maskRepeat: 'no-repeat',
+                      WebkitMaskRepeat: 'no-repeat',
+                      maskPosition: 'center',
+                      WebkitMaskPosition: 'center',
+                      background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)'
+                    }}
+                  />
                 </div>
                 <div className="flex flex-col items-center gap-0.5 sm:gap-1">
                   <h3 className="text-xs sm:text-sm md:text-base font-medium leading-tight

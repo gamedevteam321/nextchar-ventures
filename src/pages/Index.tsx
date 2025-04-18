@@ -44,6 +44,7 @@ const Index: React.FC = () => {
       <SectionDivider />
       <BiocharSection />
       <ImpactSection />
+      
       <QuoteSliderSection />
       <TechnologySection />
       <SectionDivider />

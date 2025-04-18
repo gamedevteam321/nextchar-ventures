@@ -14,7 +14,7 @@ const products = [
     id: 2,
     name: 'BIOCOAL',
     image: getImagePath('/BioCoal.png'),
-    link: '#'
+    link: '/biocoal'
   }, 
   {
     id: 3,

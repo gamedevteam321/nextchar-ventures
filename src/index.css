@@ -255,4 +255,16 @@
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
   }
+
+  .svg-mask-gradient-caramel {
+    background: linear-gradient(90deg, #886808 0%, #C5A133 100%);
+    -webkit-mask-image: var(--icon-url);
+    mask-image: var(--icon-url);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
 }

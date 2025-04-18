@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
+
+@layer utilities {
+  .fade-out {
+    opacity: 0;
+    filter: blur(8px);
+    transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+
+  .fade-in {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+} 

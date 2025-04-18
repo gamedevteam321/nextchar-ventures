@@ -110,9 +110,12 @@ const Header: React.FC = () => {
                 Biochar
               </a>
               <a 
-                href="#bio-coal" 
+                href="/biocoal" 
                 className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px]`}
-                onClick={(e) => handleNavClick(e, '#bio-coal')}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleProductClick('biocoal');
+                }}
               >
                 Biocoal
               </a>
@@ -126,9 +129,12 @@ const Header: React.FC = () => {
             </div>
           </div>
           <a 
-            href="#technology" 
+            href="/" 
             className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
-            onClick={(e) => handleNavClick(e, '#technology')}
+            onClick={(e) => {
+              e.preventDefault();
+              handleProductClick('#');
+            }}
           >
             Technology
           </a>
@@ -155,7 +161,7 @@ const Header: React.FC = () => {
             after:absolute after:inset-[3px] after:rounded-[5px] after:bg-gradient-to-r after:from-[#886808] after:to-[#C5A133]"
             onClick={handleGetStarted}
           >
-            <span className="relative z-10">Get Started</span>
+            <span className="relative z-10">Contact Us</span>
           </Button>
 
           {/* Theme Toggle Button - Hidden for now
@@ -195,49 +201,53 @@ const Header: React.FC = () => {
         }`}
       >
         <nav className="flex flex-col items-center justify-center h-full space-y-8 p-6">
-          <div className="relative">
+          <div className="w-full">
             <button 
-              className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
+              className={`w-full text-left px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px] flex items-center justify-between`}
               onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
             >
               Products
-              <ChevronDown className={`ml-1 h-5 w-5 transition-transform duration-300 ${isProductsDropdownOpen ? 'rotate-180' : ''}`} />
+              <ChevronDown className={`ml-1 h-5 w-5 transform transition-transform ${isProductsDropdownOpen ? 'rotate-180' : ''}`} />
             </button>
             
-            {/* Mobile Products Dropdown */}
-            <div className={`${isProductsDropdownOpen ? 'max-h-48' : 'max-h-0'} overflow-hidden transition-all duration-300`}>
-              <div className="flex flex-col items-center space-y-4 mt-4">
-                <a
-                  href="/biochar"
-                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleProductClick('biochar');
-                  }}
-                >
-                  Biochar
-                </a>
-                <a
-                  href="#bio-coal"
-                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
-                  onClick={(e) => handleNavClick(e, '#bio-coal')}
-                >
-                  Biocoal
-                </a>
-                <a
-                  href="#wood-vinegar"
-                  className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
-                  onClick={(e) => handleNavClick(e, '#wood-vinegar')}
-                >
-                  Wood Vinegar
-                </a>
-              </div>
+            <div className={`mt-2 space-y-2 ${isProductsDropdownOpen ? 'block' : 'hidden'}`}>
+              <a 
+                href="/biochar"
+                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleProductClick('biochar');
+                }}
+              >
+                Biochar
+              </a>
+              <a 
+                href="/biocoal"
+                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleProductClick('biocoal');
+                }}
+              >
+                Biocoal
+              </a>
+              <a 
+                href="#wood-vinegar"
+                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                onClick={(e) => handleNavClick(e, '#wood-vinegar')}
+              >
+                Wood Vinegar
+              </a>
             </div>
           </div>
-          <a
-            href="#technology"
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
-            onClick={(e) => handleNavClick(e, '#technology')}
+          
+          <a 
+            href="/technology"
+            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+            onClick={(e) => {
+              e.preventDefault();
+              handleProductClick('technology');
+            }}
           >
             Technology
           </a>

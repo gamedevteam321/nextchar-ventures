@@ -9,7 +9,7 @@ const BiocharSection: React.FC = () => {
           <h2 
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize"
             style={{
-              background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)',
+              background: 'linear-gradient(90deg, #886808 72%, #C5A133 28%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text'

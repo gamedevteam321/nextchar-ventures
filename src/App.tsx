@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Biochar from "./pages/Biochar";
+import Biocoal from "./pages/Biocoal";
+import Technology from "./pages/Technology";
 import Layout from "./components/Layout";
 
 const queryClient = new QueryClient();
@@ -20,6 +22,8 @@ const App = () => (
           <Route element={<Layout />}>
             <Route path="/" element={<Index />} />
             <Route path="/biochar" element={<Biochar />} />
+            <Route path="/biocoal" element={<Biocoal />} />
+            {/* <Route path="/technology" element={<Technology />} /> */}
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

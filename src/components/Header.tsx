@@ -139,9 +139,12 @@ const Header: React.FC = () => {
             Technology
           </a>
           <a 
-            href="#carbon" 
+            href="/carbon-credits" 
             className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
-            onClick={(e) => handleNavClick(e, '#carbon')}
+            onClick={(e) => {
+              e.preventDefault();
+              handleProductClick('carbon-credits');
+            }}
           >
             Carbon Removal
           </a>
@@ -252,9 +255,12 @@ const Header: React.FC = () => {
             Technology
           </a>
           <a
-            href="#carbon"
+            href="/carbon-credits"
             className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
-            onClick={(e) => handleNavClick(e, '#carbon')}
+            onClick={(e) => {
+              e.preventDefault();
+              handleProductClick('carbon-credits');
+            }}
           >
             Carbon Removal
           </a>

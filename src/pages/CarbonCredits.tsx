@@ -7,7 +7,6 @@ import 'swiper/css/pagination';
 import Footer from '@/components/Footer';
 import SectionDivider from '@/components/SectionDivider';
 import { ChevronDown } from 'lucide-react';
-import { Hexagon } from 'lucide-react';
 
 const CarbonCredits = () => {
   const [isFirstDropdownOpen, setIsFirstDropdownOpen] = useState(false);
@@ -16,16 +15,20 @@ const CarbonCredits = () => {
 
   const faqItems = [
     {
-      question: "What is carbon removal?",
-      answer: "Carbon removal is the process of capturing CO2 from the atmosphere and storing it permanently. Our approach uses biochar technology to achieve this while creating sustainable products."
+      question: "What is Biochar Carbon Removal (BCR)?",
+      answer: "Biochar Carbon Removal (BCR) is an innovative process that converts biomass into biochar through high-temperature pyrolysis. This technology permanently captures CO₂ from the atmosphere by transforming organic matter into a stable carbon form that can last for centuries in soil, effectively removing carbon from the natural carbon cycle."
     },
     {
-      question: "How does your carbon removal process work?",
-      answer: "We use state-of-the-art modular high-temperature pyrolysis reactors to convert biomass into biochar, effectively capturing and storing carbon while producing valuable materials for agriculture and industry."
+      question: "How does solid Carbon Removal Lock and Store CO₂?",
+      answer: "Through our pyrolysis process, carbon molecules from organic matter are transformed into a highly stable crystalline structure. This solid form of carbon is resistant to decomposition and can remain stable for hundreds to thousands of years when applied to soil, providing a permanent carbon storage solution while improving soil health."
     },
     {
-      question: "What makes your solution different?",
-      answer: "Our solution works immediately, not years in the future. We combine carbon removal with practical applications, creating sustainable products that benefit both the environment and various industries."
+      question: "How are Carbon Removal (CDR) removals independent from tree-planting schemes?",
+      answer: "Unlike tree-planting schemes which take decades to sequester carbon and are vulnerable to forest fires or logging, our CDR technology provides immediate, permanent carbon removal. We convert existing biomass into stable biochar, creating an additional carbon sink that's independent of forest growth cycles and resistant to environmental risks."
+    },
+    {
+      question: "How are Carbon Removal Certificates created and validated?",
+      answer: "Our carbon removal certificates are created through rigorous monitoring and verification processes. Each tonne of CO₂ removed is independently verified by leading carbon standards organizations. We track the entire process from biomass sourcing to biochar production and application, ensuring transparent and credible carbon accounting."
     }
   ];
 
@@ -36,7 +39,7 @@ const CarbonCredits = () => {
   return (
     <div className="text-[#474747] font-montserrat bg-[#F0EDE4]">
       {/* Hero Section */}
-      <section className="relative min-h-[400px] sm:min-h-[600px] h-[80vh] sm:h-screen w-full overflow-hidden">
+      <section id="hero" className="relative min-h-[400px] sm:min-h-[600px] h-[80vh] sm:h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           {/* Video Background */}
           <div className="absolute inset-0">
@@ -48,7 +51,7 @@ const CarbonCredits = () => {
               className="w-full h-full object-cover"
               poster={getImagePath("/carbon-credits-hero.png")}
             >
-              <source src="/videos/Mountains.mp4" type="video/mp4" />
+              <source src="/videos/Mountainsnew.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -85,7 +88,8 @@ const CarbonCredits = () => {
             </button>
             {isFirstDropdownOpen && (
               <div className="p-4 text-[#F0EDE4] border-t border-[#F0EDE4]/10">
-                <p className="text-sm sm:text-base">Carbon removal projects help to stabilize global temperatures by directly reducing atmospheric CO₂, a critical step in mitigating climate change and extreme weather events.</p>
+                <p className="text-sm sm:text-base">Carbon removal projects are initiatives designed to capture and remove carbon dioxide (CO₂) from the atmosphere, helping to mitigate climate change by reducing the overall concentration of this greenhouse gas. Unlike emissions avoidance strategies, which aim to avoid the amount of CO₂ produced, carbon removal directly extracts carbon that is already in the atmosphere.</p>
+                <p className="text-sm sm:text-base mt-4">These projects are essential to achieving "net-zero" emissions goals, as they address residual emissions that cannot be fully eliminated through avoidance alone</p>
               </div>
             )}
           </div>
@@ -112,55 +116,72 @@ const CarbonCredits = () => {
       <SectionDivider />
 
       {/* Technology Section */}
-      <section className="px-4 sm:px-8 md:px-[150px] py-8 sm:py-12">
-        <h2 className="text-2xl sm:text-[32px] md:text-[40px] font-medium mb-4 sm:mb-6 bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+      <section className="px-4 sm:px-8 md:px-[150px] py-12 sm:py-16">
+        <h2 className="text-2xl sm:text-[32px] md:text-[40px] font-medium mb-4 sm:mb-6 pb-2 leading-normal bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
           The Technology
         </h2>
-        <p className="text-base sm:text-lg mb-8 sm:mb-12 max-w-[900px]">
+        <p className="text-base sm:text-lg mb-8 sm:mb-12 max-w-[1200px]">
           We use state-of-the-art modular high-temperature pyrolysis reactors to make biochar. In the process, the carbon contained in the biomass is captured and permanently stored in the Biochar. The technological solution is called Biochar carbon removal (BCR).
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {/* First Row */}
           <div className="flex flex-col items-center text-center">
-            <Hexagon className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4 text-[#886808]" style={{ color: 'url(#hexagonGradient)' }} />
-            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">Natural Material containing<br />Carbon from the atmosphere</p>
+            <img 
+              src={getImagePath("/credits-tech/Natural-Material.svg")} 
+              alt="Natural Material"
+              className="w-16 h-16 mb-3 sm:mb-4"
+            />
+            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+              Natural Material containing<br />Carbon from the atmosphere
+            </p>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Hexagon className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4 text-[#886808]" style={{ color: 'url(#hexagonGradient)' }} />
-            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">First usage by the industry</p>
+            <img 
+              src={getImagePath("/credits-tech/First-usage.svg")} 
+              alt="First Usage"
+              className="w-16 h-16 mb-3 sm:mb-4"
+            />
+            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+              First usage by the industry
+            </p>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Hexagon className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4 text-[#886808]" style={{ color: 'url(#hexagonGradient)' }} />
-            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">we convert organic residue</p>
+            <img 
+              src={getImagePath("/credits-tech/organic-residue.svg")} 
+              alt="Organic Residue"
+              className="w-16 h-16 mb-3 sm:mb-4"
+            />
+            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+              we convert organic residue
+            </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mt-6 sm:mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 sm:gap-8 lg:gap-12 xl:gap-32 mt-6 sm:mt-8 max-w-[800px] mx-auto">
           {/* Second Row */}
           <div className="flex flex-col items-center text-center">
-            <Hexagon className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4 text-[#886808]" style={{ color: 'url(#hexagonGradient)' }} />
-            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">Carbon removal</p>
+            <img 
+              src={getImagePath("/credits-tech/Carbon-removal.svg")} 
+              alt="Carbon Removal"
+              className="w-16 h-16 mb-3 sm:mb-4"
+            />
+            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+              Carbon removal
+            </p>
           </div>
+          
           <div className="flex flex-col items-center text-center">
-            <Hexagon className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4 text-[#886808]" style={{ color: 'url(#hexagonGradient)' }} />
-            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">Industrial process energy or<br />heating networks</p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <Hexagon className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4 text-[#886808]" style={{ color: 'url(#hexagonGradient)' }} />
-            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">Biochar - Material for the<br />agriculture</p>
+            <img 
+              src={getImagePath("/credits-tech/Biochar-Material.svg")} 
+              alt="Biochar Material"
+              className="w-16 h-16 mb-3 sm:mb-4"
+            />
+            <p className="text-sm sm:text-base font-medium bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+              Biochar - Material for the<br />agriculture
+            </p>
           </div>
         </div>
-
-        {/* SVG Gradient Definition */}
-        <svg width="0" height="0" className="absolute">
-          <defs>
-            <linearGradient id="hexagonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="32.21%" stopColor="#886808" />
-              <stop offset="76.44%" stopColor="#C5A133" />
-            </linearGradient>
-          </defs>
-        </svg>
       </section>
 
       <SectionDivider />
@@ -175,16 +196,19 @@ const CarbonCredits = () => {
             </h2>
             <div className="space-y-4 sm:space-y-6">
               <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              Our process is not limited by geographics or scarce storage and transportation options for CO2.
+              Our technology is modular and decentralised—built for rural and climate-vulnerable areas, not limited by geography, or biomass type and volume 
               </p>
               <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              Our solution works at any location. We don't dispose CO2, we put the carbon to use. We turn it into solid, easy handable products.
+              By working close to the biomass source, we reduce costs, create local jobs, and generate verified carbon removal credits.
+              </p>
+              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
+              We produce High Quality Biochar , and there is soil everywhere that needs remediation 
               </p>
             </div>
           </div>
           <div className="w-full order-1 md:order-2">
             <img
-              src={getImagePath("/carbon-credits.png")}
+              src={getImagePath("/scale-anywhere.png")}
               alt="The Biochar Cycle"
               className="w-full h-auto object-contain rounded-lg"
             />
@@ -197,7 +221,7 @@ const CarbonCredits = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="w-full order-1">
             <img
-              src={getImagePath("/carbon-credits.png")}
+              src={getImagePath("/climate-change.png")}
               alt="The Biochar Cycle"
               className="w-full h-auto object-contain rounded-lg"
             />
@@ -219,13 +243,90 @@ const CarbonCredits = () => {
         </div>
       </section>
 
+      <SectionDivider />
+
+      {/* CO2 Removal Growth Graph Section */}
+      <section className="mb-8 sm:mb-8 md:mb-16 lg:mb-20 xl:mb-24 px-4 sm:px-8 md:px-[150px]">
+        <h2 className="text-2xl sm:text-[32px] md:text-[40px] font-medium mb-4 leading-normal bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+          Growing year after year: our CO₂ removal
+        </h2>
+        
+        <div className="mt-8 space-y-4">
+          {/* 2023 */}
+          <div className="relative">
+            <div className="flex items-center gap-4">
+              <span className="w-16 text-[#474747] font-medium">2023</span>
+              <div className="flex-1">
+                <div className="h-8 bg-gradient-to-r from-[#886808] to-[#C5A133] rounded-r-lg" style={{ width: '100%' }}></div>
+              </div>
+              <span className="w-24 text-[#474747] font-medium">2031 tn</span>
+            </div>
+          </div>
+
+          {/* 2022 */}
+          <div className="relative">
+            <div className="flex items-center gap-4">
+              <span className="w-16 text-[#474747] font-medium">2022</span>
+              <div className="flex-1">
+                <div className="h-8 bg-gradient-to-r from-[#886808] to-[#C5A133] rounded-r-lg" style={{ width: '69%' }}></div>
+              </div>
+              <span className="w-24 text-[#474747] font-medium">1400 tn</span>
+            </div>
+          </div>
+
+          {/* 2021 */}
+          <div className="relative">
+            <div className="flex items-center gap-4">
+              <span className="w-16 text-[#474747] font-medium">2021</span>
+              <div className="flex-1">
+                <div className="h-8 bg-gradient-to-r from-[#886808] to-[#C5A133] rounded-r-lg" style={{ width: '57%' }}></div>
+              </div>
+              <span className="w-24 text-[#474747] font-medium">1161 tn</span>
+            </div>
+          </div>
+
+          {/* 2020 */}
+          <div className="relative">
+            <div className="flex items-center gap-4">
+              <span className="w-16 text-[#474747] font-medium">2020</span>
+              <div className="flex-1">
+                <div className="h-8 bg-gradient-to-r from-[#886808] to-[#C5A133] rounded-r-lg" style={{ width: '57%' }}></div>
+              </div>
+              <span className="w-24 text-[#474747] font-medium">1155 tn</span>
+            </div>
+          </div>
+
+          {/* 2019 */}
+          <div className="relative">
+            <div className="flex items-center gap-4">
+              <span className="w-16 text-[#474747] font-medium">2019</span>
+              <div className="flex-1">
+                <div className="h-8 bg-gradient-to-r from-[#886808] to-[#C5A133] rounded-r-lg" style={{ width: '32%' }}></div>
+              </div>
+              <span className="w-24 text-[#474747] font-medium">657 tn</span>
+            </div>
+          </div>
+
+          {/* 2018 */}
+          <div className="relative">
+            <div className="flex items-center gap-4">
+              <span className="w-16 text-[#474747] font-medium">2018</span>
+              <div className="flex-1">
+                <div className="h-8 bg-gradient-to-r from-[#886808] to-[#C5A133] rounded-r-lg" style={{ width: '32%' }}></div>
+              </div>
+              <span className="w-24 text-[#474747] font-medium">659 tn</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Structure Section */}
       <section className="relative">
         {/* Background Image */}
         <div className="w-full">
           <img
-            src={getImagePath("/key-structure-bg.png")}
+            src={getImagePath("/credits-structure-bg.png")}
             alt="Structure Background"
             className="w-full h-auto min-h-[300px] sm:min-h-auto object-cover sm:object-contain"
           />
@@ -234,9 +335,9 @@ const CarbonCredits = () => {
         {/* Content */}
         <div className="py-12 absolute inset-0 flex flex-col justify-center bg-black/40 sm:bg-transparent">
           <div className="relative z-10 px-6 sm:px-8 md:px-[150px] py-12 sm:py-0">
-            <div className="grid grid-cols-1 gap-4 sm:gap-8 md:gap-12 max-w-[800px]">
+            <div className="grid grid-cols-1 gap-4 sm:gap-8 md:gap-12 max-w-[1200px]">
               <div className="text-[#F0EDE4] space-y-4 sm:space-y-6">
-                <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
+                <p className="text-sm sm:text-xl md:text-2xl font-light leading-relaxed">
                 We collaborate with leading carbon standards and policy makers to ensure our projects create the highest quality carbon removal credits, meeting the highest industry standards.
                 </p>
               </div>
@@ -261,7 +362,7 @@ const CarbonCredits = () => {
           </div>
           <div className="w-full order-1 md:order-2">
             <img
-              src={getImagePath("/carbon-credits.png")}
+              src={getImagePath("/crediits.png")}
               alt="The Biochar Cycle"
               className="w-full h-auto object-contain rounded-lg"
             />
@@ -274,7 +375,7 @@ const CarbonCredits = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="w-full order-1">
             <img
-              src={getImagePath("/carbon-credits.png")}
+              src={getImagePath("/removal.png")}
               alt="The Biochar Cycle"
               className="w-full h-auto object-contain rounded-lg"
             />
@@ -289,7 +390,7 @@ const CarbonCredits = () => {
               We develop & operate decentralized carbon removal projects, focusing on hyperlocal sites with consistent biomass residue availability and carbon sequestration potential. 
               </p>
               <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              Our projects generate verified carbon removal credits that help finance sustainable development and climate action
+              Our projects generate <b>verified carbon removal credits</b> that help finance sustainable development and climate action
               </p>
             </div>
           </div>
@@ -346,16 +447,9 @@ const CarbonCredits = () => {
             {[
               {
                 id: 1,
-                text: "60 Million Mt - Annual global forest-based charcoal consumption.",
+                text: "We're already helping leading companies around the world take action to achieve their net zero goals, with simple, honest carbon removal.",
               },
-              {
-                id: 2,
-                text: "2 Millions hectors of deforestation every year for Charcoal Production.",
-              },
-              {
-                id: 3,
-                text: "2.4 billion people rely on wood fuel.",
-              }
+              
             ].map((quote) => (
               <SwiperSlide key={quote.id}>
                 <div className="flex flex-col items-center justify-center min-h-[150px] sm:min-h-[250px] px-4 sm:px-8 md:px-20 py-6 sm:py-10 bg-gradient-to-r from-[#222D2B] to-[#44615B] rounded-2xl">

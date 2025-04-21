@@ -9,6 +9,7 @@ import Biochar from "./pages/Biochar";
 import Biocoal from "./pages/Biocoal";
 import Technology from "./pages/Technology";
 import CarbonCredits from "./pages/CarbonCredits";
+import AboutUs from "./pages/AboutUs";
 import Layout from "./components/Layout";
 
 const queryClient = new QueryClient();
@@ -25,7 +26,8 @@ const App = () => (
             <Route path="/biochar" element={<Biochar />} />
             <Route path="/biocoal" element={<Biocoal />} />
             <Route path="/carbon-credits" element={<CarbonCredits />} />
-            {/* <Route path="/technology" element={<Technology />} /> */}
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/technology" element={<Technology />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

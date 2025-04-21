@@ -60,7 +60,7 @@ const technologies = [
 
 export default function TechnologySection() {
   return (
-    <section id="technology" className="pt-8 sm:pt-12 md:pt-[80px]  bg-carbon w-full overflow-x-hidden">
+    <section id="technology" className="pt-4 bg-carbon w-full overflow-x-hidden">
       <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-24 xl:px-28">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize">
           <span style={{ background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
@@ -71,59 +71,61 @@ export default function TechnologySection() {
           Our Processing technology is modular, scalable, and efficient
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5 sm:gap-2 lg:gap-3">
-          {technologies.map((tech) => (
-            <div
-              key={tech.id}
-              className="rounded-[12px] p-3 sm:p-4"
-              style={{
-                background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
-                position: 'relative',
-                isolation: 'isolate',
-                overflow: 'hidden'
-              }}
-            >
+        <div className="relative w-full">
+          <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto pb-6 sm:pb-0 sm:overflow-x-visible -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory">
+            {technologies.map((tech) => (
               <div
-                className="absolute inset-0 rounded-[12px]"
+                key={tech.id}
+                className="flex-shrink-0 w-[280px] sm:w-auto snap-center rounded-[12px] p-3 sm:p-4"
                 style={{
-                  content: '""',
-                  background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
-                  padding: '1px',
-                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-                  WebkitMaskComposite: 'xor',
-                  maskComposite: 'exclude',
-                  pointerEvents: 'none'
+                  background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
+                  position: 'relative',
+                  isolation: 'isolate',
+                  overflow: 'hidden'
                 }}
-              />
-              <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center relative z-10">
-                <div className="relative w-12 h-12 sm:w-16 sm:h-16 flex justify-center">
-                  <div 
-                    className="w-full h-full"
-                    style={{
-                      maskImage: `url(${tech.icon})`,
-                      WebkitMaskImage: `url(${tech.icon})`,
-                      maskSize: 'contain',
-                      WebkitMaskSize: 'contain',
-                      maskRepeat: 'no-repeat',
-                      WebkitMaskRepeat: 'no-repeat',
-                      maskPosition: 'center',
-                      WebkitMaskPosition: 'center',
-                      background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)'
-                    }}
-                  />
-                </div>
-                <div className="flex flex-col items-center gap-0.5 sm:gap-1">
-                  <h3 className="text-xs sm:text-sm md:text-base font-medium leading-tight
-                              bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
-                    {tech.title}
-                  </h3>
-                  <p className="text-[#EDFDF6] text-[10px] sm:text-xs font-light leading-relaxed">
-                    {tech.description}
-                  </p>
+              >
+                <div
+                  className="absolute inset-0 rounded-[12px]"
+                  style={{
+                    content: '""',
+                    background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
+                    padding: '1px',
+                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                    WebkitMaskComposite: 'xor',
+                    maskComposite: 'exclude',
+                    pointerEvents: 'none'
+                  }}
+                />
+                <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center relative z-10">
+                  <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex justify-center">
+                    <div 
+                      className="w-full h-full"
+                      style={{
+                        maskImage: `url(${tech.icon})`,
+                        WebkitMaskImage: `url(${tech.icon})`,
+                        maskSize: 'contain',
+                        WebkitMaskSize: 'contain',
+                        maskRepeat: 'no-repeat',
+                        WebkitMaskRepeat: 'no-repeat',
+                        maskPosition: 'center',
+                        WebkitMaskPosition: 'center',
+                        background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)'
+                      }}
+                    />
+                  </div>
+                  <div className="flex flex-col items-center gap-0.5 sm:gap-1">
+                    <h3 className="text-xs sm:text-sm md:text-base font-medium leading-tight
+                                bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                      {tech.title}
+                    </h3>
+                    <p className="text-[#EDFDF6] text-[10px] sm:text-xs font-light leading-relaxed">
+                      {tech.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -38,7 +38,9 @@ const Index: React.FC = () => {
   return (
     <div className="bg-beige text-green-dark min-h-screen">
       <Header />
-      <HeroSection />
+      <div id="hero">
+        <HeroSection />
+      </div>
       <SectionDivider />
       <ProductsSection />
       <SectionDivider />

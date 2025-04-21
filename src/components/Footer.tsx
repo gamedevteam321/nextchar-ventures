@@ -1,19 +1,58 @@
 import React from 'react';
 import { getImagePath } from "@/lib/utils";
 import { Linkedin } from 'lucide-react';
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = (sectionId: string) => {
+    setTimeout(() => {
+      const element = document.querySelector(sectionId);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100); // Small delay to ensure page transition is complete
+  };
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string, sectionId?: string) => {
+    e.preventDefault();
+    
+    if (location.pathname === path) {
+      // If we're already on the correct page, just scroll to section
+      if (sectionId) {
+        scrollToSection(sectionId);
+      }
+    } else {
+      // Navigate to new page and then scroll if needed
+      navigate(path);
+      if (sectionId) {
+        scrollToSection(sectionId);
+      }
+    }
+  };
+
   return (
     <footer className="w-full py-12" style={{ background: '#F0EDE4' }}>
       <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 justify-items-center">
           {/* Logo Column */}
           <div className="flex flex-col items-center justify-center">
-            <img 
-              src={getImagePath("/footer-logo.png")} 
-              alt="Nexchar Ventures" 
-              className="h-40 w-auto"
-            />
+            <Link to="/" onClick={(e) => handleNavClick(e, '/', '#hero')}>
+              <img 
+                src={getImagePath("/footer-logo.png")} 
+                alt="Nexchar Ventures" 
+                className="h-40 w-auto cursor-pointer hover:opacity-90 transition-opacity"
+              />
+            </Link>
           </div>
 
           {/* Quick Links */}
@@ -21,10 +60,42 @@ export default function Footer() {
             <div className="w-full max-w-[200px] text-left">
               <h3 className="text-gray-800 font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">Technology</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">Impact</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">Contact</a></li>
+                <li>
+                  <a 
+                    href="/about#overview" 
+                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    onClick={(e) => handleNavClick(e, '/about', '#overview')}
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/technology#hero"
+                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    onClick={(e) => handleNavClick(e, '/technology', '#hero')}
+                  >
+                    Technology
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/carbon-credits#hero" 
+                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    onClick={(e) => handleNavClick(e, '/carbon-credits', '#hero')}
+                  >
+                    Impact
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/about#connect" 
+                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    onClick={(e) => handleNavClick(e, '/about', '#connect')}
+                  >
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

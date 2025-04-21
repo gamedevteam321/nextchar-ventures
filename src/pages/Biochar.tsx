@@ -49,11 +49,11 @@ const Biochar = () => {
             <div className="font-montserrat text-[16px] sm:text-[20px] md:text-[24px] lg:text-[32px] xl:text-[50px] font-medium leading-[130%] sm:leading-[120%] md:leading-[100%] tracking-[0%] 
                           flex flex-wrap items-center mb-2 sm:mb-3 gap-x-1 sm:gap-x-2 md:gap-x-3 lg:gap-x-4 gap-y-1">
               <span className="text-[#D87344]">Waste</span>
-              <span className="text-[#BCBCBC]">{'>'}{'>'}</span>
+              <span className="text-[#D87344]">{'»'}</span>
               <span className="text-[#BCBCBC]">Carbon</span>
-              <span className="text-[#BCBCBC]">{'>'}{'>'}</span>
+              <span className="text-[#BCBCBC]">{'»'}</span>
               <span className="text-[#A4966E]">Soil</span>
-              <span className="text-[#A4966E]">{'>'}{'>'}</span>
+              <span className="text-[#A4966E]">{'»'}</span>
               <span className="text-[#00A92D]">Life</span>
             </div>
             <p className="font-light text-[#FFFFFF] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[25px] max-w-3xl mt-2 leading-[150%] sm:leading-[140%]">

@@ -129,11 +129,11 @@ const Header: React.FC = () => {
             </div>
           </div>
           <a 
-            href="/" 
+            href="/technology" 
             className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => {
               e.preventDefault();
-              handleProductClick('#');
+              handleProductClick('technology');
             }}
           >
             Technology
@@ -151,7 +151,10 @@ const Header: React.FC = () => {
           <a 
             href="#about" 
             className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
-            onClick={(e) => handleNavClick(e, '#about')}
+            onClick={(e) => {
+              e.preventDefault();
+              handleProductClick('about');
+            }}
           >
             About Us
           </a>
@@ -265,9 +268,12 @@ const Header: React.FC = () => {
             Carbon Removal
           </a>
           <a
-            href="#about"
+            href="/about"
             className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
-            onClick={(e) => handleNavClick(e, '#about')}
+            onClick={(e) => {
+              e.preventDefault();
+              handleProductClick('about');
+            }}
           >
             About Us
           </a>

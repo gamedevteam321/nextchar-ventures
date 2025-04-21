@@ -57,9 +57,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="flex flex-col items-center">
-            <div className="w-full max-w-[200px] text-left">
+            <div className="w-full max-w-[200px] text-center md:text-left">
               <h3 className="text-gray-800 font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 flex flex-col items-center md:items-start">
                 <li>
                   <a 
                     href="/about#overview" 
@@ -102,11 +102,11 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="flex flex-col items-center">
-            <div className="w-full max-w-[200px] text-left">
+            <div className="w-full max-w-[200px] text-center md:text-left">
               <h3 className="text-gray-800 font-semibold mb-4">Contact</h3>
               <ul className="space-y-2">
                 <li className="text-gray-600">info@nexcharventures.com</li>
-                <li>
+                <li className="flex justify-center md:justify-start">
                   <a 
                     href="https://www.linkedin.com/company/nexchar-ventures" 
                     target="_blank" 

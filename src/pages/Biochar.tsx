@@ -226,30 +226,30 @@ const Biochar = () => {
       
 
       {/* Structure Section */}
-      <section className="relative">
+      <section className="relative py-12 sm:py-24">
         {/* Background Image */}
-        <div className="w-full">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-10" />
+        <div className="w-full relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/90 z-10" />
           <img
             src={getImagePath("/honeycomb.jpeg")}
             alt="Structure Background"
-            className="w-full h-[200px] sm:h-auto min-h-[200px] sm:min-h-auto object-contain sm:object-contain"
+            className="w-full h-[400px] sm:h-[500px] object-cover"
           />
         </div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center bg-black/40 sm:bg-transparent">
-          <div className="relative z-10 px-4 sm:px-8 md:px-[150px] py-8 sm:py-0">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+        <div className="absolute inset-0 flex flex-col justify-center">
+          <div className="relative z-20 px-4 sm:px-8 md:px-[150px]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-8 text-transparent bg-clip-text"
                 style={{
                   backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
                 }}>
               The key is in its structure
             </h2>
-            <div className="grid grid-cols-1 gap-4 sm:gap-8 md:gap-12 max-w-[1300px]">
-              <div className="text-[#F0EDE4] space-y-4 sm:space-y-6">
-                <p className="text-sm sm:text-base md:text-2xl font-light leading-relaxed">
-                Our premium Biochar has a highly porous honeycomb structure with an internal surface area of over 100 square meters per gram of biochar.This internal area enhances its nutrient holding-capacity by as much as 20 times that of healthy soil, doubles water-retention capacity and provides the perfect housing for beneficial microbes which defends roots and fights off pests.
+            <div className="grid grid-cols-1 gap-4 sm:gap-8 max-w-[1300px]">
+              <div className="text-[#F0EDE4] space-y-4">
+                <p className="text-sm sm:text-base md:text-xl lg:text-2xl font-light leading-relaxed">
+                  Our premium Biochar has a highly porous honeycomb structure with an internal surface area of over 100 square meters per gram of biochar. This internal area enhances its nutrient holding-capacity by as much as 20 times that of healthy soil, doubles water-retention capacity and provides the perfect housing for beneficial microbes which defends roots and fights off pests.
                 </p>
               </div>
             </div>
@@ -525,17 +525,17 @@ const Biochar = () => {
               },
               {
                 id: 2,
-                text: '"To mitigate agriculture impact on climate change, is to future proof farmers’ ability to feed 8 billion people"',
+                text: "To mitigate agriculture impact on climate change, is to future proof farmers' ability to feed 8 billion people",
                 author: ""
               },
               {
                 id: 3,
-                text: '"One gram of biochar can have a larger surface area than a basketball court, making it an exceptional storage solution for water and nutrients.and an ideal host for beneficial fungi, bacteria, and microbes."',
+                text: "One gram of biochar can have a larger surface area than a basketball court, making it an exceptional storage solution for water and nutrients.and an ideal host for beneficial fungi, bacteria, and microbes.",
                 author: ""
               },
               {
                 id: 4,
-                text: '"Building Soil. Sinking Carbon. Improving Lives. Nexchar’s Biochar help farmers increase long term profitability, regenerate degraded soils and improve yields becoming more resilient to climate change."',
+                text: "Building Soil. Sinking Carbon. Improving Lives. Nexchar's Biochar help farmers increase long term profitability, regenerate degraded soils and improve yields becoming more resilient to climate change.",
                 author: ""
               },
               

@@ -23,7 +23,7 @@ const BiocharSection: React.FC = () => {
         </div>
       </div>
       
-      <div className="w-full container-padding flex justify-center pb-50 md:pb-20 lg:pb-20 xl:pb-20">
+      <div className="w-full container-padding flex justify-center mb-10">
         <img 
           src={getImagePath("/tree-light.png")} 
           alt="Tree" 

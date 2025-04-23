@@ -7,23 +7,31 @@ import './QuoteSlider.css';
 const quotes = [
   {
     id: 1,
-    text: `"33% of Global Farmland Soils are moderately degraded, with 12 Million HA lost every year"`
+    text: `"Soil is fundamental for Human survival - producing 95% of the food we eat, However 33% of Global Farmland Soils are already significantly  degraded, with 12 Million HA lost every year"`
   },
   {
     id: 2,
-    text: `"Biochar is the simplest, cheapest and most practicable way to bring life back  to soil"`
+    text: `"Soil is a non renewable resource with 1 Cm taking thousands of years to develop"`
   },
   {
     id: 3,
-    text: `"The world needs to remove 10 billion tonnes of CO2  Every year to avoid ‘irreversible climate change’  and Biochar can do almost 2 Billion tons annually"`
+    text: `"6 out of 10 Species ( vascular or non vascular ) depend on Soil directly for their survival"`
+  },
+  {
+    id: 4,
+    text: `"Biochar is the simplest, cheapest and most practicable way to bring life back to soil"`
+  },
+  {
+    id: 5,
+    text: `"The world needs to remove 10 billion tonnes of CO2 every year to avoid 'irreversible climate change' and Biochar can do almost 2 Billion tons annually"`
   }
 ];
 
 export default function QuoteSliderSection() {
   return (
-    <section className="w-full py-12 px-4 sm:px-8 md:px-[150px]">
-      <div className="max-w-[90rem] mx-auto">
-        <div className="rounded-[32px] bg-gradient-to-r from-[#222D2B] to-[#44615B] overflow-hidden">
+    <section className="w-full py-12 bg-gradient-to-r from-[#222D2B] to-[#44615B]">
+      <div className="w-full">
+        <div className="overflow-hidden">
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={{

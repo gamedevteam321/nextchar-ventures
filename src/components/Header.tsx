@@ -47,12 +47,13 @@ const Header: React.FC = () => {
 
     const element = document.querySelector(sectionId);
     if (element) {
+      // Get the element's position relative to the document
+      const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
       const headerOffset = 80; // Height of your fixed header
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
+      
+      // Scroll to the element position minus the header offset
       window.scrollTo({
-        top: offsetPosition,
+        top: elementTop - headerOffset,
         behavior: 'smooth'
       });
 
@@ -63,13 +64,22 @@ const Header: React.FC = () => {
   };
 
   const handleGetStarted = () => {
-    // Scroll to the contact or relevant section
-    handleNavClick({ preventDefault: () => {} } as React.MouseEvent<HTMLAnchorElement>, '#carbon');
+    // Navigate to the About Us page and scroll to connect section
+    navigate('/about');
+    // Use setTimeout to ensure the page has loaded before scrolling
+    setTimeout(() => {
+      const connectSection = document.getElementById('connect');
+      if (connectSection) {
+        connectSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   const handleProductClick = (product: string) => {
     setIsProductsDropdownOpen(false);
     setIsMobileMenuOpen(false);
+    // Reset scroll position to top before navigating
+    window.scrollTo(0, 0);
     navigate(`/${product}`);
   };
 
@@ -78,7 +88,7 @@ const Header: React.FC = () => {
       <header className={`${isScrolled ? 'bg-black/80 backdrop-blur-sm' : 'bg-transparent'} 
         py-6 px-6 md:px-12 lg:px-16 flex items-center justify-between fixed top-0 left-0 right-0 z-50 transition-all duration-300`}>
         <div className="flex items-center">
-          <Link to="/" className="flex items-center hover:opacity-90 transition-opacity">
+          <Link to="/" className="flex items-center hover:opacity-90 transition-opacity" onClick={() => window.scrollTo(0, 0)}>
             <img src={getImagePath("/lovable-uploads/logo.png")} alt="NexChar Ventures" className="h-12 w-auto" />
           </Link>
         </div>
@@ -122,7 +132,10 @@ const Header: React.FC = () => {
               <a 
                 href="#wood-vinegar" 
                 className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px]`}
-                onClick={(e) => handleNavClick(e, '#wood-vinegar')}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleProductClick('woodvinegar');
+                }}
               >
                 Wood Vinegar
               </a>
@@ -240,7 +253,10 @@ const Header: React.FC = () => {
               <a 
                 href="#wood-vinegar"
                 className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
-                onClick={(e) => handleNavClick(e, '#wood-vinegar')}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleProductClick('woodvinegar');
+                }}
               >
                 Wood Vinegar
               </a>

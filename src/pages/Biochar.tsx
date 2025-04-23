@@ -14,7 +14,7 @@ const compostBenefits = [
   { text: "Minimize ammonia losses (NH3)" },
   { text: "Serve as a bulking agent for compost" },
   { text: "Diminish odor" },
-  { text: "Load biochar with nutrients" }
+  { text: "Load the biochar with nutrients and beneficial microbes" }
 ];
 
 const Biochar = () => {
@@ -57,7 +57,7 @@ const Biochar = () => {
               <span className="text-[#00A92D]">Life</span>
             </div>
             <p className="font-light text-[#FFFFFF] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[25px] max-w-3xl mt-2 leading-[150%] sm:leading-[140%]">
-              Biochar is a charcoal-like material made from organic residues
+              Biochar is a charcoal-like material made through high temperature pyrolysis of organic residues
             </p>
           </div>
         </div>
@@ -65,12 +65,12 @@ const Biochar = () => {
 
       {/* Benefits Grid Section */}
       <section className="pt-8 sm:pt-12 md:pt-16">
-        <div className="px-4 sm:px-8 md:px-[150px]">
-          <p className="font-montserrat font-light text-[#474747] text-[16px] sm:text-[18px] md:text-[24px] lg:text-[30px] leading-[120%] sm:leading-[110%] md:leading-[100%] tracking-[0%] mb-6 sm:mb-8 md:mb-[50px] 
+        <div className="mb-8 px-4 sm:px-8 md:px-[150px]">
+          <p className="font-montserrat font-medium text-[#474747] text-[16px] sm:text-[18px] md:text-[24px] lg:text-[30px] leading-[120%] sm:leading-[110%] md:leading-[100%] tracking-[0%] mb-6 sm:mb-8 md:mb-[50px] 
                       bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text text-left">
             While biochar has diverse applications, our focus is on it's most urgent & impactful use for soil revitalization and livestock health, while ensuring carbon sequestration for a Climate Relevant Time Scale.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0.1 md:gap-0.01">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-2">
             {/* Card 1: Soil Treatment */}
             <div className="relative bg-carbon-light overflow-hidden w-full aspect-[16/9]">
               <img
@@ -101,33 +101,71 @@ const Biochar = () => {
 
       {/* Production Process Section */}
       <section className="">
-        <div className="px-4 sm:px-8 md:px-[150px]">
-          <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-8 md:gap-40 items-center">
-            {/* Image Container */}
-            <div className="w-full order-1 h-full">
-              <img
-                src={getImagePath("/production-process.png")}
-                alt="Production Process Diagram"
-                className="w-auto h-full object-cover max-h-[600px] max-w-[300px]"
-                style={{ objectFit: 'contain', objectPosition: 'left' }}
-              />
-            </div>
-
+        <div className="pt-8 px-4 sm:px-8 md:px-[150px]">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_400px] gap-8 md:gap-20 items-center">
             {/* Text Content */}
-            <div className="order-2">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-6 
-                           bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+            <div className="order-1">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
                 Production Process
               </h2>
               <div className="space-y-6">
                 <p className="text-[#474747] text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                Biochar is a charcoal-like material made from sustainably produced biomass (agri residues, forest residues, wood chips, manure, etc.)
+                  Biochar is a charcoal-like material made from sustainably produced biomass from agricultural and forestry residues (e.g. corn stalks, hulls, wood chips, manure, etc.).
                 </p>
                 <p className="text-[#474747] text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                It is produced at high temperature, ranging from 350°C to 800°C with little to no oxygen. This stabilizes the carbon content of the biomass.
+                  It is produced at high temperatures, ranging from 350°C to 800°C with little to no oxygen. This process is called pyrolysis or carbonization.
                 </p>
                 <p className="text-[#474747] text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                When biomass undergoes pyrolysis, the carbon is reenergized into a stable form with unique benefits and applications.
+                  When biomass undergoes pyrolysis, the carbon is rearranged in a stable form with unique properties and applications, and soil enhancement being one of them.
+                </p>
+              </div>
+            </div>
+
+            {/* Image Container */}
+            <div className="w-full order-2">
+              <img
+                src={getImagePath("/production-process.png")}
+                alt="Production Process Diagram"
+                className="w-full h-auto object-contain max-h-[550px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      {/* where does it come from Section */}
+      <section className="relative py-12">
+        {/* Background Image */}
+        <div className="w-full relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-10" />
+          <img
+            src={getImagePath("/biomass.jpeg")}
+            alt="Structure Background"
+            className="w-full h-[500px] sm:h-[600px] object-cover"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col justify-center z-20">
+          <div className="relative px-4 sm:px-8 md:px-[150px] py-8 sm:py-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
+              Where Does Our Biochar Come From?
+            </h2>
+            <div className="grid grid-cols-1 gap-4 sm:gap-8 md:gap-12 max-w-auto mx-auto sm:ml-auto">
+              <div className="text-[#F0EDE4] space-y-4 sm:space-y-6">
+                <p className="text-sm sm:text-base md:text-lg font-regular leading-relaxed text-center sm:text-left">
+                We harness the potential of Biomass Residues that would otherwise go unused or left to decompose. Through an advanced thermochemical process, we convert this waste into biochar, a valuable resource that enhances soil health and supports sustainable agriculture.
+                </p>
+                <p className="text-sm sm:text-base md:text-lg font-regular leading-relaxed text-center sm:text-left">
+                While currently we have a focused portfolio of agri and forest residues, we plan to expand our scope to include a wider range of feed stocks. This will be supported by our robust residue supply chain and adaptable inhouse technology enabling us address distinct challenges presented by each biomass type and its unique supply logistics.
                 </p>
               </div>
             </div>
@@ -135,45 +173,28 @@ const Biochar = () => {
         </div>
       </section>
 
-      <SectionDivider />
-
-      {/* Source Section - Medium/Light weight */}
-      <section className="py-4 sm:py-4 md:py-4 px-4 sm:px-8 md:px-[150px]">
-        <h2 className="font-montserrat font-medium text-xl sm:text-2xl md:text-[30px] leading-tight sm:leading-[100%] tracking-[0%] capitalize 
-                     mb-6 sm:mb-[50px] text-left inline-block 
-                     bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
-          Where Does Our Biochar Come From?
-        </h2>
-        <div className="text-left  font-montserrat font-light text-sm sm:text-base md:text-[20px] leading-relaxed sm:leading-[100%] tracking-[0%]">
-          <p className="mb-4 sm:mb-6 font-light">
-          At Nexchar, we harness the potential of Biomass Residues that would otherwise go unused or left to decompose. Through advanced thermochemical process, we convert this waste into biochar, a valuable resource that enhances soil health and supports sustainable agriculture.
-          </p>
-          <p className="font-light">
-          We started with agro and forest residue processing in India. With plans to expand to several other feedstocks, By transforming agricultural byproducts into biochar, We contribute to a circular economy that utilises every part of the agricultural process.
-          </p>
-        </div>
-      </section>
-
-      <SectionDivider />
+      
 
       {/* Special Features Section */}
-      <section className="py-8 sm:py-12 md:py-[20px] bg-carbon-light px-4 sm:px-8 md:px-[150px]">
+      <section className="pt-12 mb-20 bg-carbon-light px-4 sm:px-8 md:px-[150px]">
         <div className="px-0 sm:px-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-4 sm:mb-[40px] text-left inline-block 
-                       bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
             Why Is Our Biochar Special?
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-x-2 gap-y-2 sm:gap-y-[10px]">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-x-2 gap-y-6 sm:gap-y-[20px]">
             {[
-              { title: "It's net-negative", description: "For every 1 tonne of biochar produced, we remove ≈ 2.5 tonnes of CO2 from the atmosphere.", icon: "net-negative.svg" },
-              { title: "It's Durable", description: "Biochar when applied to soils removes carbon from the atmosphere permanently (1000+ years).", icon: "Durable.svg" },
+              { title: "It's net-negative", description: "For every 1 tonne of biochar produced, we permanently remove ≈ 2.5 tonnes of CO2 from the atmosphere.", icon: "net-negative.svg" },
+              { title: "It's Durable", description: "Biochar when applied to soils removes carbon from the atmosphere permanently for 100+ years, and we are striving to improve this to 1000+ Years .", icon: "Durable.svg" },
               { title: "It's Certified", description: "Certified by 3rd party science based standards, puro.earth & Carbon Standards International.", icon: "Certified.svg" },
-              { title: "It's Equitable", description: "We are putting carbon finacne directly into regions worst affected by climate change.", icon: "Equitable.svg" },
-              { title: "It's scalable", description: "Our tech can is modular and easy to scale, providing an opportunity for large scale Soil Remediation and Carbon Sequestration.", icon: "scalable.svg" },
+              { title: "It's Equitable", description: "We are putting carbon finance directly into regions worst affected by climate change.", icon: "Equitable.svg" },
+              { title: "It's scalable", description: "Our tech is modular, offgrid and easy to scale, providing an opportunity for large scale Soil Remediation and Carbon Sequestration.", icon: "scalable.svg" },
               { title: "It's additional", description: "The income from carbon credits finances biochar production and carbon removal that would otherwise not have taken place.", icon: "additional.svg" }
             ].map((feature, index) => (
-              <div key={index} className="text-left rounded-lg bg-carbon/50">
-                <div className="mb-4 sm:mb-[10px] ">
+              <div key={index} className="text-center sm:text-left rounded-lg bg-carbon/50">
+                <div className="mb-4 sm:mb-[10px] flex justify-center sm:justify-start">
                   <div
                     className="w-[70px] h-[70px]"
                     style={{
@@ -189,11 +210,11 @@ const Biochar = () => {
                     }}
                   />
                 </div>
-                <h3 className="text-base sm:text-lg md:text-xl font-medium mb-3 sm:mb-[20px] px-4
+                <h3 className="text-base sm:text-lg md:text-xl font-medium mb-2 sm:mb-[10px] px-4
                              bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text inline-block">
                   {feature.title}
                 </h3>
-                <p className="text-sm sm:text-base font-light leading-relaxed px-4 text-[#474747]">
+                <p className="text-[13px] sm:text-base font-light leading-relaxed px-2 sm:px-4 text-[#474747]">
                   {feature.description}
                 </p>
               </div>
@@ -202,33 +223,33 @@ const Biochar = () => {
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Structure Section */}
       <section className="relative">
         {/* Background Image */}
         <div className="w-full">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-10" />
           <img
-            src={getImagePath("/key-structure-bg.png")}
+            src={getImagePath("/honeycomb.jpeg")}
             alt="Structure Background"
-            className="w-full h-auto min-h-[300px] sm:min-h-auto object-cover sm:object-contain"
+            className="w-full h-[200px] sm:h-auto min-h-[200px] sm:min-h-auto object-contain sm:object-contain"
           />
         </div>
 
         {/* Content */}
-        <div className="py-12 absolute inset-0 flex flex-col justify-center bg-black/40 sm:bg-transparent">
-          <div className="relative z-10 px-6 sm:px-8 md:px-[150px] py-12 sm:py-0">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-4 sm:mb-8
-                       bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+        <div className="absolute inset-0 flex flex-col justify-center bg-black/40 sm:bg-transparent">
+          <div className="relative z-10 px-4 sm:px-8 md:px-[150px] py-8 sm:py-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
               The key is in its structure
             </h2>
-            <div className="grid grid-cols-1 gap-4 sm:gap-8 md:gap-12 max-w-[800px]">
+            <div className="grid grid-cols-1 gap-4 sm:gap-8 md:gap-12 max-w-[1300px]">
               <div className="text-[#F0EDE4] space-y-4 sm:space-y-6">
-                <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                Nexchar Biochar is a very stable form of carbon with a highly porous structure. Its internal surface is over 100 square meters per gram of biochar. This internal area enhances the nutrient holding-capacity by as much as 20 times that healthy soil and doubles water-retention as it absorbs moisture and releases it back into the soil when water availability is depressed.
-                </p>
-                <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                Nexchar honeycomb structure provides the perfect housing for beneficial microbes which defends roots and fights off pests.
+                <p className="text-sm sm:text-base md:text-2xl font-light leading-relaxed">
+                Our premium Biochar has a highly porous honeycomb structure with an internal surface area of over 100 square meters per gram of biochar.This internal area enhances its nutrient holding-capacity by as much as 20 times that of healthy soil, doubles water-retention capacity and provides the perfect housing for beneficial microbes which defends roots and fights off pests.
                 </p>
               </div>
             </div>
@@ -239,20 +260,22 @@ const Biochar = () => {
       
 
       {/* Agriculture Benefits Section */}
-      <section className="py-24  px-4 sm:px-8 md:px-[150px]">
+      <section className="py-16  px-4 sm:px-8 md:px-[150px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Text Content */}
           <div className="text-[#474747]">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-8
-                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
               Agriculture
             </h2>
             <div className="space-y-6">
               <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                Biochar reduces plant mortality by improving moisture dynamics, creating a buffering effect that protects fragile root structures in drought conditions.
+              Biochar reduces plant mortality by improving moisture dynamics, creating a buffering effect that protects fragile root structures. It absorbs moisture and releases it back into the soil when water availability is depressed.
               </p>
               <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
-                When combined with organic matter and mineralization, biochar improves plant-microbe synergy and restores depleted soils.
+                When combined with organic matter and minerals, biochar improves plant-microbe synergy and restores depleted soils.
               </p>
               <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
                 Biochar improves nutrient retention by capturing and storing organic matter and other plant nutrients, releasing them slowly, while binding metals, in-organic contaminants, and toxins.
@@ -267,11 +290,11 @@ const Biochar = () => {
           </div>
 
           {/* Image Container */}
-          <div className="relative w-full h-full min-h-[400px] rounded-lg overflow-hidden">
+          <div className="relative w-full h-full flex items-center justify-center">
             <img
               src={getImagePath("/agri-benefits.png")}
               alt="Biochar in agriculture"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain max-w-[90%] md:max-w-[70%]"
             />
           </div>
         </div>
@@ -279,13 +302,15 @@ const Biochar = () => {
 
 
       {/* Compost Producer Subsection */}
-      <div className="mt-8 sm:mt-[50px]">
+      <div className="py-8 mt-8 bg-white">
         <div className="w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw]" 
              >
           <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-20 xl:px-40 py-1 sm:py-[50px]">
-            <h3 className="font-montserrat font-semibold text-lg sm:text-xl md:text-[25px] leading-tight sm:leading-[100%] tracking-[0%] text-center mb-6 sm:mb-[50px]
-                       bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
-              If You're A Compost Producer, Adding Biochar To Your Compost Pile Can:
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
+              As a Compost Producer, Adding Biochar To Your Compost Pile Can:
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-x-8 gap-y-4 sm:gap-y-[30px]">
               {compostBenefits.map((benefit, index) => (
@@ -306,92 +331,111 @@ const Biochar = () => {
         </div>
       </div>
 
-      <SectionDivider />
+      
 
       {/* Crop Yields Section */}
       <section className="">
-        <div className="px-4 sm:px-8 md:px-[150px]">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-2 sm:mb-12 md:mb-12
-                       bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+        <div className="py-16 px-4 sm:px-8 md:px-[150px]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
             Higher Crop Yields With Better Quality
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Increase Water Retention",
-                description: "Enhance soil structure for better water holding capacity",
-                icon: "Increase-Water-Retention.svg"
-              },
-              {
-                title: "Increase Nutrient Absorption",
-                description: "Improved nutrient uptake and availability for plants.",
-                icon: "Increased-Fertiliser-Efficiency.svg"
-              },
-              {
-                title: "Induce Good Microbes",
-                description: "Create optimal environment for beneficial soil microorganisms",
-                icon: "Houses-Good-Microbes.svg"
-              },
-              {
-                title: "Increase Soil Fertility",
-                description: "Enhance soil composition for better crop yields",
-                icon: "Improves-Soil-Structure.svg"
-              },
-              {
-                title: "Regenerate degraded soils",
-                description: "Supports healthy plant development and growth",
-                icon: "metal-toxins.svg"
-              },
-              {
-                title: "Increase storage capacity",
-                description: "Active carbon sequestration for environmental benefit",
-                icon: "Increased-cation-exchange-capacity.svg"
-              },
-              
-            ].map((benefit, index) => (
-              <div
-                key={index}
-                className="rounded-lg p-4 sm:p-6"
-                style={{
-                  background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
-                  border: '1px solid #A4966E'
-                }}
-              >
-                <div className="flex flex-col gap-2">
+          <div className="relative w-full">
+            <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto pb-6 sm:pb-0 sm:overflow-x-visible -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory">
+              {[
+                {
+                  title: "Increase Water Retention",
+                  description: "Enhance soil structure for better water holding capacity",
+                  icon: "Increase-Water-Retention.svg"
+                },
+                {
+                  title: "Increase Nutrient Absorption",
+                  description: "Improved nutrient uptake and availability for plants.",
+                  icon: "Increased-Fertiliser-Efficiency.svg"
+                },
+                {
+                  title: "Induce Good Microbes",
+                  description: "Create optimal environment for beneficial soil microorganisms",
+                  icon: "Houses-Good-Microbes.svg"
+                },
+                {
+                  title: "Increase Soil Fertility",
+                  description: "Enhance soil composition for better crop yields",
+                  icon: "Improves-Soil-Structure.svg"
+                },
+                {
+                  title: "Regenerate degraded soils",
+                  description: "Supports healthy plant development and growth",
+                  icon: "metal-toxins.svg"
+                },
+                {
+                  title: "Increase storage capacity",
+                  description: "Active carbon sequestration for environmental benefit",
+                  icon: "Increased-cation-exchange-capacity.svg"
+                },
+              ].map((benefit, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-[280px] sm:w-auto snap-center rounded-[12px] p-5 sm:p-4"
+                  style={{
+                    background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
+                    position: 'relative',
+                    isolation: 'isolate',
+                    overflow: 'hidden'
+                  }}
+                >
                   <div
-                    className="w-16 h-16"
+                    className="absolute inset-0 rounded-[12px]"
                     style={{
-                      maskImage: `url(${getImagePath(`/crops/${benefit.icon}`)})`,
-                      WebkitMaskImage: `url(${getImagePath(`/crops/${benefit.icon}`)})`,
-                      maskSize: 'contain',
-                      WebkitMaskSize: 'contain',
-                      maskRepeat: 'no-repeat',
-                      WebkitMaskRepeat: 'no-repeat',
-                      maskPosition: 'center',
-                      WebkitMaskPosition: 'center',
-                      background: 'linear-gradient(90deg, #F0EDE4 0%, #A4966E 100%)'
+                      content: '""',
+                      background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
+                      padding: '1px',
+                      WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                      WebkitMaskComposite: 'xor',
+                      maskComposite: 'exclude',
+                      pointerEvents: 'none'
                     }}
                   />
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-base sm:text-lg md:text-xl font-medium leading-tight
-                                bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-[#FFFFFF] text-sm sm:text-base font-light leading-relaxed">
-                      {benefit.description}
-                    </p>
+                  <div className="flex flex-col items-start sm:items-center gap-4 sm:gap-2 text-left sm:text-center relative z-10">
+                    <div className="relative w-16 h-16 sm:w-12 sm:h-12">
+                      <div 
+                        className="w-full h-full"
+                        style={{
+                          maskImage: `url(${getImagePath(`/crops/${benefit.icon}`)})`,
+                          WebkitMaskImage: `url(${getImagePath(`/crops/${benefit.icon}`)})`,
+                          maskSize: 'contain',
+                          WebkitMaskSize: 'contain',
+                          maskRepeat: 'no-repeat',
+                          WebkitMaskRepeat: 'no-repeat',
+                          maskPosition: 'left',
+                          WebkitMaskPosition: 'left',
+                          background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)'
+                        }}
+                      />
+                    </div>
+                    <div className="flex flex-col items-start sm:items-center gap-1.5 sm:gap-1">
+                      <h3 className="text-lg sm:text-sm md:text-base font-medium leading-tight
+                                  bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                        {benefit.title}
+                      </h3>
+                      <p className="text-[#EDFDF6] text-base sm:text-xs font-light leading-snug">
+                        {benefit.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Livestock Health Section */}
-      <section className=" px-4 sm:px-8 md:px-[200px]">
+      <section className=" py-16 px-4 sm:px-8 md:px-[200px] bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-[50px] items-start">
           <div className="order-2 md:order-1 h-full">
             <img
@@ -403,16 +447,20 @@ const Biochar = () => {
           </div>
 
           <div className="order-1 md:order-2">
-            <h2 className="text-xl sm:text-2xl md:text-[35px] font-semibold leading-tight sm:leading-[100%] tracking-[0%] font-montserrat
-                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text mb-4 sm:mb-[20px]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
               Livestock Health
             </h2>
             <p className="text-[#474747] text-base sm:text-lg md:text-[20px] leading-relaxed sm:leading-[100%] tracking-[0%] font-normal font-montserrat mb-6 sm:mb-[30px]">
             Biochar is also a great component in animal feed & bedding. Added to feed, it supports digestion, reduces toxins and enteric methane emissions. , and supports overall livestock well being.
             </p>
             <div className="mt-6 sm:mt-[20px]">
-              <h3 className="text-lg sm:text-xl md:text-[20px] font-semibold leading-tight sm:leading-[100%] tracking-[0%] font-montserrat mb-4 sm:mb-[20px]
-                           bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+              <h3 className="text-lg sm:text-xl md:text-[20px] font-semibold leading-tight sm:leading-[100%] tracking-[0%] font-montserrat mb-4 sm:mb-[20px] text-transparent bg-clip-text"
+              style={{
+                backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+              }}>
                 Key Benefits
               </h3>
               <ul className="space-y-1 sm:space-y-[1px]">
@@ -437,8 +485,10 @@ const Biochar = () => {
                   <li key={index} className="flex items-start gap-1 sm:gap-[5px] rounded-lg bg-carbon/50">
                     <span className="text-[#A4966E] text-xl sm:text-[25px] leading-5 sm:leading-[20px]">•</span>
                     <div className="flex flex-col">
-                      <span className="font-bold text-base sm:text-lg md:text-[20px] leading-tight sm:leading-[100%] tracking-[0%] font-montserrat
-                                     bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+                      <span className="font-bold text-base sm:text-lg md:text-[20px] leading-tight sm:leading-[100%] tracking-[0%] font-montserrat text-transparent bg-clip-text"
+                      style={{
+                        backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                      }}>
                         {benefit.title}
                       </span>
                       <span className="text-[#474747] text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[28px] tracking-[0%] font-light font-montserrat ">
@@ -455,7 +505,7 @@ const Biochar = () => {
 
 
       {/* Quote Slider Section */}
-      <section className="pt-20  px-4 sm:px-8 md:px-[150px]">
+      <section className=" py-12 bg-gradient-to-r from-[#222D2B] to-[#44615B]">
         <div className="w-full">
           <Swiper
             modules={[Pagination, Autoplay]}
@@ -491,8 +541,8 @@ const Biochar = () => {
               
             ].map((quote) => (
               <SwiperSlide key={quote.id}>
-                <div className="flex flex-col items-center justify-center min-h-[150px] sm:min-h-[250px] px-4 sm:px-8 md:px-20 py-6 sm:py-10 bg-gradient-to-r from-[#222D2B] to-[#44615B] rounded-2xl">
-                  <div className="text-center max-w-4xl">
+                <div className="flex flex-col items-center justify-center h-[250px] sm:h-[300px] px-4 sm:px-8 md:px-20 py-6 sm:py-10 ">
+                  <div className="text-center max-w-5xl">
                     {quote.text.split('\n\n').map((paragraph, index) => (
                       <p
                         key={index}
@@ -514,14 +564,16 @@ const Biochar = () => {
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Carbon Sequestration Section */}
-      <section className="py-8 sm:py-12 md:py-[25px] px-4 sm:px-8 md:px-[150px]">
+      <section className="py-8 sm:py-12 md:py-[80px] px-4 sm:px-8 md:px-[150px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="text-white order-2 md:order-1">
-            <h2 className="font-montserrat font-semibold text-xl sm:text-2xl md:text-[35px] leading-tight sm:leading-[100%] tracking-[0%] mb-4 sm:mb-6
-                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
+                style={{
+                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
+                }}>
               Carbon Sequestration
             </h2>
             <div className="space-y-4 sm:space-y-6">

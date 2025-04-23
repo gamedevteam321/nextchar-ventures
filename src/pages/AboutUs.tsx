@@ -14,7 +14,7 @@ const AboutUs = () => {
       image: "/team/member1.png",
       description: `Arjun Dhawan (Jun), Co-Founder of Nexchar, brings a unique perspective shaped by his academic focus, studying Quantitative Economics, Business, and Organizational Management at Northwestern University, as well as experience in ESG Investing, Venture Capital, Deep Tech & Defense.
 
-His passion stems from his early experiences and belief  that sustainable stewardship of people and the environment is integral to human success. Arjun’s forward-thinking approach and never say die attitude, drives the company to make a real-world difference.`
+His passion stems from his early experiences and belief  that sustainable stewardship of people and the environment is integral to human success. Arjun's forward-thinking approach and never say die attitude, drives the company to make a real-world difference.`
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ As the inventor of the Kalefaction Reactor, a ground-breaking technology designe
       image: "/team/member3.png",
       description: `Basanta Kumar Nayak ( BN ), Director at  Nexchar, brings over 3 decades of expertise in agribusiness, with a proven track record in managing large-scale operations across the food supply chain, agri-inputs, and fresh produce. An accomplished leader he has driven transformational initiatives in many organizations including Adani Agrifresh and Reliance Retail.
 
-Basant's experience and commitment to empowering farming communities  are integral to Nexchar’s mission of enriching soils, protecting forests, and fostering a living planet.`
+Basant's experience and commitment to empowering farming communities  are integral to Nexchar's mission of enriching soils, protecting forests, and fostering a living planet.`
     }
   ];
 
@@ -56,10 +56,10 @@ Basant's experience and commitment to empowering farming communities  are integr
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80 z-10" />
         </div>
 
-        <div className="relative z-20 h-full flex flex-col justify-end items-end text-left px-4 sm:px-16 pb-8 sm:pb-12">
-          <h1 className="font-montserrat text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] font-medium leading-[120%] sm:leading-[110%] tracking-[0%] mb-4
+        <div className="relative z-20 h-full flex flex-col justify-end items-start text-left px-4 sm:px-8 pb-8 sm:pb-12">
+          <h1 className="font-montserrat text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] font-medium leading-[120%] sm:leading-[110%] tracking-[0%] mb-4
                        bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">
-            We are innovators dedicated to fostering a living planet.
+            We are innovators dedicated to fostering a living planet
           </h1>
 
         </div>
@@ -75,7 +75,10 @@ Basant's experience and commitment to empowering farming communities  are integr
             </h2>
             <div className="space-y-4 sm:space-y-6">
               <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              We are a carbon project developer leveraging proprietary modular pyrolysis technology to transform diverse biomass waste streams into sustainable and high quality Biochar and Biocoal. Our decentralized approach is designed for scalable deployment across hyperlocal sites and tackles critical waste management issues while revitalizing soils, preventing deforestation and sequestering Carbon.
+              We are a waste to value enterprise leveraging proprietary modular technologies engineered for exceptional energy and operating efficiency, to transform diverse biomass waste streams into high quality, sustainable carbon products like Biochar.
+              </p>
+              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
+              Our decentralized approach enables scalable deployment across hyperlocal sites, addressing critical waste management issues while revitalizing soils, preventing deforestation and actively removing & sequestering Carbon for lasting ecological impact.
               </p>
             </div>
           </div>
@@ -108,10 +111,10 @@ Basant's experience and commitment to empowering farming communities  are integr
             </h2>
             <div className="space-y-4 sm:space-y-6">
               <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              Soil degradation is accelerating at an alarming rate—<b>33% of India's soil is already degraded</b>, and globally, <b>up to 90% of soils could be degraded by 2050.</b> This threatens the very basis of existence on the planet .. No Soil .. No Life
+              Soil degradation is accelerating at an alarming rate—<b>33% of global soils are already significantly degraded</b> and <b>90% of soils could be degraded by 2050</b>. This threatens the very basis of existence on the planet .. No Soil .. No Life 
               </p>
               <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              <b>Why now?</b> Because without immediate action, soil and environmental restoration will face irreversible damage. Our solutions repurpose biomass into biochar, revitalizing soils and ensuring long-term sustainability.
+              <b>Why now?</b>  Because without immediate action, soil and environmental systems face irreversible decline. Our solutions transform waste biomass into biochar, restoring degraded soils, capturing carbon, and ensuring long-term ecological resilience—preserving the vitality of our planet for generations to come.
               </p>
             </div>
           </div>
@@ -133,7 +136,7 @@ Basant's experience and commitment to empowering farming communities  are integr
               At Nexchar, we design technology that works where it's needed most—directly at the source of biomass residues. Our modular pyrolysis systems are built for adaptability, operating efficiently in rural and agricultural settings where conventional solutions often fail.
               </p>
               <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              This approach enables two key advantages: first, it eliminates unnecessary transportation costs by processing biomass locally, ensuring practical logistics for decentralized operations. Second, it allows effortless scaling—deploying additional units where needed to repurpose all available residues into valuable biochar, preventing waste, restoring soil health and sequestering carbon.
+              This approach enables two key advantages: first, it eliminates unnecessary transportation costs by processing biomass locally, ensuring practical logistics for decentralized operations. <b>Second,</b> it allows effortless scaling—deploying additional units where needed to repurpose all available residues into valuable biochar, preventing waste, restoring soil health and sequestering carbon.
               </p>
             </div>
           </div>
@@ -203,7 +206,32 @@ Basant's experience and commitment to empowering farming communities  are integr
         
         <div className="max-w-[1200px]">
           <p className="text-[#474747] font-light text-base sm:text-lg md:text-xl leading-relaxed">
-          Nexchar’s advisory board is composed of seasoned experts, industry leaders, and sustainability pioneers who serve as invaluable guides in shaping our mission. Their insights and experience help steer Nexchar toward practical, high-impact solutions for soil restoration and biomass utilization.
+          Nexchar's advisory board is composed of seasoned experts, industry leaders, and sustainability pioneers who serve as invaluable guides in shaping our mission. Their insights and experience help steer Nexchar toward practical, high-impact solutions for soil restoration and biomass utilization.
+          </p>
+        </div>
+      </section>
+
+      <SectionDivider />
+
+      {/* Partner with Us Section */}
+      <section className="py-4 px-4 sm:px-8 md:px-[150px]">
+        <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl md:text-[40px] leading-normal sm:leading-normal tracking-[0%] mb-8 sm:mb-8 pb-1
+                     bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+          Partner with Us
+        </h2>
+        
+        <div className="max-w-[1200px]">
+          <p className="text-[#474747] mb-4 font-light text-base sm:text-lg md:text-xl leading-relaxed">
+          At Nexchar, we believe that restoring soils and transforming waste into value is a mission too big for any one organization to tackle alone. That's why we've built a unique <span className="font-medium">low-risk, high-impact franchise model</span> designed to empower individuals and businesses to join us in scaling sustainable solutions while earning and contributing meaningfully to environmental restoration.
+          </p>
+          <p className="text-[#474747] mb-4 font-light text-base sm:text-lg md:text-xl leading-relaxed">
+          We provide our  complete cutting-edge proprietary technology at a <span className="font-medium">fraction of the cost</span>, with <span className="font-medium">full equipment and maintenance support</span>—ensuring that partners can focus on making an impact without operational risks. With <span className="font-medium">complete buy back</span>,  this model is designed to be completely de-risked and an  ideal opportunity to invest in sustainability while building a profitable enterprise.
+          </p>
+          <p className="text-[#474747] mb-4 font-light text-base sm:text-lg md:text-xl leading-relaxed">
+          By partnering with us, you'll gain access to <span className="font-medium">proven technology</span>, <span className="font-medium">operational expertise, and a thriving network</span>, all working toward a shared goal: restoring soils, reducing waste, and creating a more sustainable future. 
+          </p>
+          <p className="text-[#474747] mb-4 font-medium text-base sm:text-lg md:text-xl leading-relaxed">
+          Together, we can drive change, scale solutions, and contribute to building a resilient future that benefits generations to come.
           </p>
         </div>
       </section>

@@ -20,13 +20,13 @@ const products = [
     id: 3,
     name: 'WOOD VINEGAR',
     image: getImagePath('/Wood Vinegar.png'),
-    link: '#'
+    link: '/woodvinegar'
   }
 ];
 
 const ProductsSection: React.FC = () => {
   return (
-    <section id="products" className="bg-beige w-full overflow-hidden">
+    <section id="products" className="bg-white w-full overflow-hidden">
       <div className="container mx-auto w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-12">
         <div className="text-left max-w-3xl mb-2 md:mb-12 w-full pl-2 sm:pl-6 md:pl-12 lg:pl-14 xl:pl-20">
           <h2 
@@ -40,9 +40,7 @@ const ProductsSection: React.FC = () => {
           >
             Our Biocarbons
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-green-dark/80 mb-8 md:mb-16">
-            Pioneering next generation carbon solutions
-          </p>
+          
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 lg:gap-8 w-full max-w-[1200px] mx-auto px-1 sm:px-0">

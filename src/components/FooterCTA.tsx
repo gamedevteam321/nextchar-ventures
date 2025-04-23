@@ -13,8 +13,11 @@ export default function FooterCTA() {
           </h2>
         </div>
         <div className="px-4 sm:px-10 md:px-16 lg:px-20 xl:px-20 mx-auto w-full">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 text-center leading-relaxed mb-4">
+          We are a waste to value enterprise leveraging proprietary modular technologies engineered for exceptional energy and operating efficiency, to transform diverse biomass waste streams into premium carbon negative products like Biochar.
+          </p>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 text-center leading-relaxed">
-          We are a carbon project developer leveraging proprietary modular pyrolysis technology to transform diverse biomass waste streams into sustainable and high quality Biochar and Biocoal. Our decentralized approach is designed for scalable deployment across hyperlocal sites and tackles critical waste management issues while revitalizing soils, preventing deforestation and sequestering Carbon.
+          Our decentralized approach enables scalable deployment across hyperlocal sites, addressing critical waste management issues while revitalizing soils, preventing deforestation and actively removing & sequestering Carbon for lasting ecological impact.
           </p>
         </div>
       </div>

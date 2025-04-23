@@ -151,7 +151,7 @@ const HeroSection: React.FC = () => {
       <section className="bg-beige w-full px-4 sm:px-6 md:px-8 lg:px-[150px] pt-[60px] sm:pt-[25px] md:pt-[40px] lg:pt-[75px] pb-6 md:pb-8">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
           <p className="font-montserrat font-light text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px] leading-[120%] md:leading-[100%] tracking-[0%] w-full reveal text-green-dark" style={{ animationDelay: '0.2s' }}>
-            We transform Biomass Waste streams that are presently being burnt, landfilled or underutilised to products imperative for life
+          We transform Biomass Waste streams that are presently being burnt, landfilled or underutilised into premium Carbon Negative products
           </p>
         </div>
       </section>

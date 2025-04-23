@@ -12,7 +12,7 @@ const stats = [
   {
     id: 2,
     number: '1,000,000+',
-    label: 'Tons/Year of\nBiochar to be\nproduced annually',
+    label: 'Tons/Year of Biochar to be produced annually',
     icon: getImagePath('/our plan/Biochar.svg')
   },
   {
@@ -36,14 +36,14 @@ const stats = [
   {
     id: 6,
     number: 'The Largest',
-    label: 'Decentralized\nCarbon Project\nin the World',
+    label: 'Decentralized Carbon Project in the World',
     icon: getImagePath('/our plan/Decentralized carbon.svg')
   }
 ];
 
 const ImpactSection: React.FC = () => {
   return (
-    <section className="bg-beige w-full overflow-x-hidden">
+    <section className="bg-white w-full overflow-x-hidden py-8">
       <div className="container-padding pt-8 md:pt-8 pb-1 md:pb-0.5">
         <div className="container mx-auto text-left w-full pl-6 sm:pl-6 md:pl-8 lg:pl-12 xl:pl-14">
           <h2 
@@ -60,7 +60,7 @@ const ImpactSection: React.FC = () => {
         </div>
       </div>
       
-      <div className="container mx-auto w-full px-4 sm:px-10 md:px-28 lg:px-32 xl:px-36 pb-20 md:pb-4 lg:pb-8 xl:pb-12">
+      <div className="container mx-auto w-full px-4 sm:px-10 md:px-28 lg:px-32 xl:px-36 ">
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 w-full">
           {stats.map((stat) => (
             <div key={stat.id} className="flex flex-col items-center gap-4 w-full">

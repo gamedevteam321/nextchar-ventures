@@ -96,6 +96,15 @@ export default function Footer() {
                     Contact
                   </a>
                 </li>
+                <li>
+                  <a 
+                    href="/gallery#hero" 
+                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    onClick={(e) => handleNavClick(e, '/gallery', '#hero')}
+                  >
+                    Gallery
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

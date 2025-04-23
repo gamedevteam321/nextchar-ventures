@@ -43,13 +43,14 @@ const Index: React.FC = () => {
       </div>
       <SectionDivider />
       <ProductsSection />
-      <SectionDivider />
+      
       <BiocharSection />
+      
       <ImpactSection />
       
       <QuoteSliderSection />
       <TechnologySection />
-      <SectionDivider />
+      
       <CarbonCreditsSection />
       <ClosingSection />
       <FooterCTA />

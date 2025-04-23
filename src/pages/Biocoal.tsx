@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import Footer from '@/components/Footer';
 import SectionDivider from '@/components/SectionDivider';
 
@@ -133,7 +134,7 @@ const Biocoal = () => {
       </section>
 
       {/* Quote Slider Section */}
-      <section className="pt-4  px-4 sm:px-8 md:px-[150px]">
+      <section className="">
         <div className="w-full">
           <Swiper
             modules={[Pagination, Autoplay]}
@@ -152,15 +153,15 @@ const Biocoal = () => {
               },
               {
                 id: 2,
-                text: "2 Millions hectors of deforestation every year for Charcoal Production.",
+                text: "2 Millions hectares of deforestation occurs every year just to produce Charcoal.",
               },
               {
                 id: 3,
-                text: "2.4 billion people rely on wood fuel.",
+                text: "2.4 billion people rely on wood fuel and need to be transitioned.",
               }
             ].map((quote) => (
               <SwiperSlide key={quote.id}>
-                <div className="flex flex-col items-center justify-center min-h-[150px] sm:min-h-[250px] px-4 sm:px-8 md:px-20 py-6 sm:py-10 bg-gradient-to-r from-[#222D2B] to-[#44615B] rounded-2xl">
+                <div className="flex flex-col items-center justify-center min-h-[150px] sm:min-h-[250px] px-4 sm:px-8 md:px-20 py-6 sm:py-10 bg-gradient-to-r from-[#222D2B] to-[#44615B]">
                   <div className="text-center max-w-4xl">
                     {quote.text.split('\n\n').map((paragraph, index) => (
                       <p
@@ -179,7 +180,7 @@ const Biocoal = () => {
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* charcoal and fire wood Section */}
       <section className="py-8 px-4 sm:px-8 md:px-[150px]">
@@ -188,7 +189,7 @@ const Biocoal = () => {
           <div className="text-[#474747]">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-8
                          bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
-              Charcoal & Fire Wood are destroying  Global Forests
+              Charcoal production is  destroying Global Forests
             </h2>
             <div className="space-y-6">
               <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
@@ -215,25 +216,13 @@ const Biocoal = () => {
       {/* Our Biocoal Section */}
       <section className="py-8 px-4 sm:px-8 md:px-[150px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
-          {/* Image Container */}
-          <div className="relative w-full md:h-[400px] rounded-lg overflow-hidden">
-            <img
-              src={getImagePath("/our-biocoal.png")}
-              alt="our-biocoal"
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
           {/* Text Content */}
-          <div className="text-[#474747]">
+          <div className="text-[#474747] order-1 md:order-2">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-medium 
-                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
-              Our Biocoal
+                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text mb-4">
+              We prevent Deforestation
             </h2>
-            <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-8
-                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
-              We Prevent Deforestation
-            </h3>
+            
             <div className="space-y-6">
               <p className="text-sm sm:text-base md:text-lg font-light leading-relaxed">
               Produced exclusively from residual biomass streams through torrefaction in our proprietary reactors, Nexchar's Biocoal is a sustainable, zero-emission, and scalable alternative to traditional wood charcoal and forest fuels—the primary drivers of deforestation.
@@ -244,107 +233,134 @@ const Biocoal = () => {
 
             </div>
           </div>
-        </div>
-      </section>
 
-      <SectionDivider />
-
-      {/* Biocoal Special Section */}
-      <section className="">
-        <div className="px-4 sm:px-8 md:px-[150px]">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-2 sm:mb-12 md:mb-12
-                       bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
-            Why is our Biocoal special?
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "No Carbon Blackening",
-                description: "Only from agricultural and forest waste we produce Biocoal which is a clean substitute to traditional wood fuel/charcoal",
-                icon: "Increase-Water-Retention.svg"
-              },
-              {
-                title: "Natural & Chemical Free",
-                description: "Improved nutrient uptake and availability for plants.",
-                icon: "Increased-Fertiliser-Efficiency.svg"
-              },
-              {
-                title: "Versatile Applications",
-                description: "Improved nutrient uptake and availability for plants.",
-                icon: "Houses-Good-Microbes.svg"
-              },
-              {
-                title: "Prolonged Burn Time",
-                description: "Create optimal environment for beneficial soil microorganisms",
-                icon: "Improves-Soil-Structure.svg"
-              },
-              {
-                title: "High Heat",
-                description: "Enhance soil structure for better water holding capacity",
-                icon: "metal-toxins.svg"
-              },
-              {
-                title: "Low Ash",
-                description: "Improved nutrient uptake and availability for plants.",
-                icon: "Increased-cation-exchange-capacity.svg"
-              },
-              {
-                title: "Smokeless",
-                description: "Improved nutrient uptake and availability for plants.",
-                icon: "Liming-Effect.svg"
-              },
-              {
-                title: "Quick Ignition",
-                description: "Create optimal environment for beneficial soil microorganisms",
-                icon: "Improved-yields-from-first-Application.svg"
-              }
-            ].map((benefit, index) => (
-              <div
-                key={index}
-                className="rounded-lg p-4 sm:p-6 sm:aspect-square"
-                style={{
-                  background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
-                  border: '1px solid #A4966E'
-                }}
-              >
-                <div className="flex flex-col h-full">
-                  <div
-                    className="w-12 h-12 sm:w-16 sm:h-16 mb-4"
-                    style={{
-                      maskImage: `url(${getImagePath(`/crops/${benefit.icon}`)})`,
-                      WebkitMaskImage: `url(${getImagePath(`/crops/${benefit.icon}`)})`,
-                      maskSize: 'contain',
-                      WebkitMaskSize: 'contain',
-                      maskRepeat: 'no-repeat',
-                      WebkitMaskRepeat: 'no-repeat',
-                      maskPosition: 'center',
-                      WebkitMaskPosition: 'center',
-                      background: 'linear-gradient(90deg, #F0EDE4 0%, #A4966E 100%)'
-                    }}
-                  />
-                  <div className="flex flex-col flex-grow">
-                    <h3 className="text-base sm:text-lg font-medium leading-tight mb-2
-                                bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm font-light leading-relaxed text-[#FFFFFF]">
-                      {benefit.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* Image Container */}
+          <div className="relative w-full md:h-[400px] rounded-lg overflow-hidden order-2 md:order-1">
+            <img
+              src={getImagePath("/our-biocoal.png")}
+              alt="our-biocoal"
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
         </div>
       </section>
 
-      <SectionDivider />
+      
+
+      {/* Biocoal Special Section */}
+      <section className="py-12 bg-white">
+        <div className="px-4 sm:px-8 md:px-[150px]">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-4 sm:mb-12 md:mb-12
+                       bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+            Why is our Biocoal special?
+          </h2>
+          <div className="relative w-full">
+            <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 overflow-x-auto pb-6 sm:pb-0 sm:overflow-x-visible -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory">
+              {[
+                {
+                  title: "Its Carbon Neutral",
+                  description: "Only from agricultural and forest waste we produce Biocoal which is a clean substitute to traditional wood fuel/charcoal",
+                  icon: "Increase-Water-Retention.svg"
+                },
+                {
+                  title: "Natural & Chemical Free",
+                  description: "Improved nutrient uptake and availability for plants.",
+                  icon: "Increased-Fertiliser-Efficiency.svg"
+                },
+                {
+                  title: "Versatile Applications",
+                  description: "Improved nutrient uptake and availability for plants.",
+                  icon: "Houses-Good-Microbes.svg"
+                },
+                {
+                  title: "Prolonged Burn Time",
+                  description: "Create optimal environment for beneficial soil microorganisms",
+                  icon: "Improves-Soil-Structure.svg"
+                },
+                {
+                  title: "High Heat",
+                  description: "Enhance soil structure for better water holding capacity",
+                  icon: "metal-toxins.svg"
+                },
+                {
+                  title: "Low Ash",
+                  description: "Improved nutrient uptake and availability for plants.",
+                  icon: "Increased-cation-exchange-capacity.svg"
+                },
+                {
+                  title: "Smokeless",
+                  description: "Improved nutrient uptake and availability for plants.",
+                  icon: "Liming-Effect.svg"
+                },
+                {
+                  title: "Quick Ignition",
+                  description: "Create optimal environment for beneficial soil microorganisms",
+                  icon: "Improved-yields-from-first-Application.svg"
+                }
+              ].map((benefit, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-[280px] sm:w-auto snap-center rounded-[12px] p-5 sm:p-4"
+                  style={{
+                    background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
+                    position: 'relative',
+                    isolation: 'isolate',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <div
+                    className="absolute inset-0 rounded-[12px]"
+                    style={{
+                      content: '""',
+                      background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
+                      padding: '1px',
+                      WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                      WebkitMaskComposite: 'xor',
+                      maskComposite: 'exclude',
+                      pointerEvents: 'none'
+                    }}
+                  />
+                  <div className="flex flex-col items-start sm:items-center gap-4 sm:gap-2 text-left sm:text-center relative z-10">
+                    <div className="relative w-16 h-16 sm:w-12 sm:h-12">
+                      <div 
+                        className="w-full h-full"
+                        style={{
+                          maskImage: `url(${getImagePath(`/crops/${benefit.icon}`)})`,
+                          WebkitMaskImage: `url(${getImagePath(`/crops/${benefit.icon}`)})`,
+                          maskSize: 'contain',
+                          WebkitMaskSize: 'contain',
+                          maskRepeat: 'no-repeat',
+                          WebkitMaskRepeat: 'no-repeat',
+                          maskPosition: 'left',
+                          WebkitMaskPosition: 'left',
+                          background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)'
+                        }}
+                      />
+                    </div>
+                    <div className="flex flex-col items-start sm:items-center gap-1.5 sm:gap-1">
+                      <h3 className="text-lg sm:text-sm md:text-base font-medium leading-tight
+                                  bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                        {benefit.title}
+                      </h3>
+                      {/* <p className="text-[#EDFDF6] text-base sm:text-xs font-light leading-snug">
+                        {benefit.description}
+                      </p> */}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
 
       {/* Biocoal Types Section */}
-      <section className="py-8 px-4 sm:px-8 md:px-[150px]">
+      <section className="py-16 px-4 sm:px-8 md:px-[150px] bg-gradient-to-r from-[#222D2B] to-[#44615B]">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-8 sm:mb-12
                      bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
-          Our Biocoal types
+          Our Biocoals
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {[
@@ -366,7 +382,7 @@ const Biocoal = () => {
                 <img
                   src={getImagePath(product.image)}
                   alt={product.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   onError={(e) => {
                     e.currentTarget.src = 'https://placehold.co/800x600/333333/FFFFFF?text=' + product.title;
                   }}
@@ -378,15 +394,82 @@ const Biocoal = () => {
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Easy Replacement Section */}
-      <section className="py-8 mb-12 px-4 sm:px-8 md:px-[150px]">
+      <section className="py-8 px-4 sm:px-8 md:px-[150px]">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-8 sm:mb-12
                      bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
           Easy Replacement, Infinite value
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        
+        {/* Mobile Swiper */}
+        <div className="block sm:hidden relative pb-12">
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            pagination={{ 
+              clickable: true,
+              el: '.swiper-pagination',
+              bulletClass: 'swiper-pagination-bullet',
+              bulletActiveClass: 'swiper-pagination-bullet-active',
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            className="w-full"
+          >
+            {[
+              {
+                title: "Clean home Cook stoves",
+                image: "/replacement/clean-home.png"
+              },
+              {
+                title: "Outdoor Grilling",
+                image: "/replacement/outdoor-grilling.png"
+              },
+              {
+                title: "Street food vendors",
+                image: "/replacement/street-food.png"
+              },
+              {
+                title: "Restaurants - (Tandoor)",
+                image: "/replacement/tandoor.png"
+              },
+              {
+                title: "Brick kilns",
+                image: "/replacement/brick.png"
+              },
+              {
+                title: "Small Industries",
+                image: "/replacement/small-industries.png"
+              }
+            ].map((application, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col items-center">
+                  <div className="relative w-full aspect-square overflow-hidden rounded-lg mb-3">
+                    <img
+                      src={getImagePath(application.image)}
+                      alt={application.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.currentTarget.src = 'https://placehold.co/800x800/333333/FFFFFF?text=' + application.title;
+                      }}
+                    />
+                  </div>
+                  <h3 className="text-center text-lg font-medium text-[#886808]">
+                    {application.title}
+                  </h3>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="swiper-pagination absolute bottom-0 left-0 right-0 flex justify-center gap-2 [&>.swiper-pagination-bullet]:w-2 [&>.swiper-pagination-bullet]:h-2 [&>.swiper-pagination-bullet]:bg-[#886808]/30 [&>.swiper-pagination-bullet-active]:bg-[#886808]"></div>
+        </div>
+
+        {/* Desktop Grid */}
+        <div className="hidden sm:grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {[
             {
               title: "Clean home Cook stoves",

@@ -5,43 +5,43 @@ const technologies = [
   {
     id: 1,
     title: "Modular & Scalable",
-    description: "Easily scale up or down based on biomass availability and project requirements.",
+    description: "Can be placed anywhere, and scaled to Biomass availability by adding modular units as required",
     icon: "/technology/Modular-Scalable.svg"
   },
   {
     id: 2,
-    title: "Biomass Agnostic",
-    description: "Process various types of organic material for maximum versatility.",
-    icon: "/technology/Biomass-Agnostic.svg"
+    title: "Offgrid with Zero External Electricity",
+    description: "Each reactor is connected to its dedicated syngas powered electricity generation system, achieving exceptional energy autonomy & operational efficiency",
+    icon: "/technology/Low-Energy-Consumption.svg"
   },
   {
     id: 3,
-    title: "High Temperature with Precision Control",
-    description: "Achieve optimal pyrolysis conditions for different feedstocks.",
-    icon: "/technology/High-Temperature.svg"
+    title: "Biomass Agnostic",
+    description: "Process various types of organic material for maximum versatility",
+    icon: "/technology/Biomass-Agnostic.svg"
   },
   {
     id: 4,
     title: "Hyperlocal Implementation",
-    description: "Units operate within a small radius for both Biomass sourcing as well as final product utilization, for highest efficiency and least carbon leakage.",
+    description: "Units operate within a small radius for both Biomass sourcing as well as final product utilization, for highest efficiency and least carbon leakage",
     icon: "/technology/Hyperlocal-Implementation.svg"
   },
   {
     id: 5,
     title: "Low Skill Requirement",
-    description: "Designed for ease of operation in rural and semi rural areas , we create employment opportunities.",
+    description: "Designed for ease of operation in rural and semi rural areas , we create employment opportunities",
     icon: "/technology/Low-Skill-Requirement.svg"
   },
   {
     id: 6,
-    title: "Low Energy Consumption",
-    description: "Energy-efficient design that minimizes process carbon leakages.",
-    icon: "/technology/Low-Energy-Consumption.svg"
+    title: "High Temperature with Precision Control",
+    description: "Achieve optimal pyrolysis conditions for different feedstocks",
+    icon: "/technology/High-Temperature.svg"
   },
   {
     id: 7,
     title: "Emissions Control",
-    description: "Advanced systems to ensure clean operation with minimal environmental impact.",
+    description: "Advanced systems to ensure clean operation with minimal environmental impact",
     icon: "/technology/Emissions-Control.svg"
   },
   {
@@ -60,23 +60,21 @@ const technologies = [
 
 export default function TechnologySection() {
   return (
-    <section id="technology" className="pt-4 bg-carbon w-full overflow-x-hidden">
+    <section id="technology" className="py-4 bg-carbon w-full overflow-x-hidden ">
       <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-24 xl:px-28">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize">
           <span style={{ background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            Our Technology
+          Our Proprietary Technology drives Innovation 
           </span>
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-10" style={{ color: '#474747' }}>
-          Our Processing technology is modular, scalable, and efficient
-        </p>
         
-        <div className="relative w-full">
+        
+        <div className="relative w-full pt-10 ">
           <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto pb-6 sm:pb-0 sm:overflow-x-visible -mx-4 px-4 sm:mx-0 sm:px-0 snap-x snap-mandatory">
             {technologies.map((tech) => (
               <div
                 key={tech.id}
-                className="flex-shrink-0 w-[280px] sm:w-auto snap-center rounded-[12px] p-3 sm:p-4"
+                className="flex-shrink-0 w-[280px] sm:w-auto snap-center rounded-[12px] p-5 sm:p-4"
                 style={{
                   background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
                   position: 'relative',
@@ -96,8 +94,8 @@ export default function TechnologySection() {
                     pointerEvents: 'none'
                   }}
                 />
-                <div className="flex flex-col items-center gap-1.5 sm:gap-2 text-center relative z-10">
-                  <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex justify-center">
+                <div className="flex flex-col items-start sm:items-center gap-4 sm:gap-2 text-left sm:text-center relative z-10">
+                  <div className="relative w-16 h-16 sm:w-12 sm:h-12">
                     <div 
                       className="w-full h-full"
                       style={{
@@ -107,18 +105,18 @@ export default function TechnologySection() {
                         WebkitMaskSize: 'contain',
                         maskRepeat: 'no-repeat',
                         WebkitMaskRepeat: 'no-repeat',
-                        maskPosition: 'center',
-                        WebkitMaskPosition: 'center',
+                        maskPosition: 'left',
+                        WebkitMaskPosition: 'left',
                         background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)'
                       }}
                     />
                   </div>
-                  <div className="flex flex-col items-center gap-0.5 sm:gap-1">
-                    <h3 className="text-xs sm:text-sm md:text-base font-medium leading-tight
+                  <div className="flex flex-col items-start sm:items-center gap-1.5 sm:gap-1">
+                    <h3 className="text-lg sm:text-sm md:text-base font-medium leading-tight
                                 bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
                       {tech.title}
                     </h3>
-                    <p className="text-[#EDFDF6] text-[10px] sm:text-xs font-light leading-relaxed">
+                    <p className="text-[#EDFDF6] text-base sm:text-xs font-light leading-snug">
                       {tech.description}
                     </p>
                   </div>

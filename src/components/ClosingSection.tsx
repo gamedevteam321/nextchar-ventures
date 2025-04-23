@@ -21,10 +21,10 @@ const testimonials = [
 
 export default function ClosingSection() {
   return (
-    <section className="py-8 sm:py-12 md:py-[40px] w-full px-4 sm:px-8 md:px-[150px]">
-      <div className="max-w-[90rem] mx-auto">
+    <section className="w-full">
+      <div className="w-full">
         <div 
-          className="rounded-[32px] overflow-hidden"
+          className="w-full"
           style={{
             background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)'
           }}

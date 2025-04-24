@@ -541,10 +541,7 @@ const Biochar = () => {
       <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="text-white order-2 md:order-1">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-8 text-transparent bg-clip-text"
-                style={{
-                  backgroundImage: "linear-gradient(180deg, #886808 22.21%, #C5A133 86.44%)"
-                }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-heading">
               Carbon Sequestration
             </h2>
             <div className="space-y-4 sm:space-y-6">

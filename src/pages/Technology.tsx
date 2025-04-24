@@ -44,7 +44,7 @@ const Technology = () => {
               <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-heading text-transparent bg-clip-text leading-normal">
                 Batch Reactor
               </h3>
-              <p className="text-[#E5DCC3] text-sm sm:text-base leading-relaxed">
+              <p className="text-para leading-relaxed">
                 Engineered for unshredded, diverse biomass - slow, controlled batch production provides complete control on temperature and residence time for producing high quality Biochar
               </p>
             </div>
@@ -59,7 +59,7 @@ const Technology = () => {
               <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-heading text-transparent bg-clip-text leading-normal">
                 Continuous Reactor
               </h3>
-              <p className="text-[#E5DCC3] text-sm sm:text-base leading-relaxed">
+              <p className="text-para leading-relaxed">
               Seamless, high-quality fast biochar production with continuous-feed efficiency. Modular, mobile, and built for precise process control
               </p>
             </div>
@@ -74,7 +74,7 @@ const Technology = () => {
               <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-heading text-transparent bg-clip-text leading-normal">
                 Mini Gasifier
               </h3>
-              <p className="text-[#E5DCC3] text-sm sm:text-base leading-relaxed">
+              <p className="text-para leading-relaxed">
               Compact biomass gasification unit for cold start & external fuel replacement
               </p>
             </div>

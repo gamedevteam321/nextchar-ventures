@@ -88,7 +88,7 @@ const CarbonCredits = () => {
               <ChevronDown className={`transform transition-transform ${isFirstDropdownOpen ? 'rotate-180' : ''} text-[#3D4E3A] flex-shrink-0`} />
             </button>
             {isFirstDropdownOpen && (
-              <div className="p-4 text-[#F0EDE4] border-t border-[#F0EDE4]/10">
+              <div className="p-4 text-heading border-t border-[#F0EDE4]/10">
                 <p className="text-sm sm:text-base">Carbon removal projects are initiatives designed to capture and remove carbon dioxide (CO₂) from the atmosphere, helping to mitigate climate change by reducing the overall concentration of this greenhouse gas. Unlike emissions avoidance strategies, which aim to avoid the amount of CO₂ produced, carbon removal directly extracts carbon that is already in the atmosphere.</p>
                 <p className="text-sm sm:text-base mt-4">These projects are essential to achieving "net-zero" emissions goals, as they address residual emissions that cannot be fully eliminated through avoidance alone</p>
               </div>
@@ -428,7 +428,7 @@ const CarbonCredits = () => {
               </button>
               {openFaqIndex === index && (
                 <div className="p-4 sm:p-5 border-t border-[#F0EDE4]/10">
-                  <p className="text-sm sm:text-base text-[#F0EDE4]/90 font-regular">
+                  <p className="text-sm sm:text-para  font-regular">
                     {item.answer}
                   </p>
                 </div>

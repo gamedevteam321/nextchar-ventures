@@ -126,7 +126,7 @@ Basant's experience and commitment to empowering farming communities  are integr
       {/* Hyperlocal Section */}
       <section className="w-full min-h-screen relative py-8 md:py-16 flex items-center">
         <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black before:opacity-40"
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black before:opacity-20"
           style={{
             backgroundImage: `url(${getImagePath('/hyperlocal-bg.png')})`,
           }}
@@ -140,10 +140,10 @@ Basant's experience and commitment to empowering farming communities  are integr
             
             <div className="text-[#474747]">
               <div className="space-y-4 sm:space-y-6">
-                <p className="text-sm sm:text-base md:text-lg font-regular leading-relaxed">
+                <p className="text-para md:text-lg font-regular leading-relaxed">
                   At Nexchar, we design technology that works where it's needed most—directly at the source of biomass residues. Our modular pyrolysis systems are built for adaptability, operating efficiently in rural and agricultural settings where conventional solutions often fail.
                 </p>
-                <p className="text-sm sm:text-base md:text-lg font-regular leading-relaxed">
+                  <p className="text-para md:text-lg font-regular leading-relaxed">
                   This approach enables two key advantages: first, it eliminates unnecessary transportation costs by processing biomass locally, ensuring practical logistics for decentralized operations. <b>Second,</b> it allows effortless scaling—deploying additional units where needed to repurpose all available residues into valuable biochar, preventing waste, restoring soil health and sequestering carbon.
                 </p>
               </div>
@@ -200,7 +200,7 @@ Basant's experience and commitment to empowering farming communities  are integr
       
       
       {/* Advisory Board Section */}
-      <section className="sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
+      <section className="py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
         <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl md:text-[40px] leading-normal sm:leading-normal tracking-[0%] mb-8 sm:mb-8 pb-1
                      text-heading">
           Advisory Board
@@ -216,7 +216,7 @@ Basant's experience and commitment to empowering farming communities  are integr
       
 
       {/* Partner with Us Section */}
-      <section className="sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-white">
+      <section className="py-8 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-white">
         <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl md:text-[40px] leading-normal sm:leading-normal tracking-[0%] mb-8 sm:mb-8 pb-1
                      text-heading">
           Partner with Us
@@ -241,7 +241,7 @@ Basant's experience and commitment to empowering farming communities  are integr
       
 
       {/* Connect Section */}
-      <section id="connect" className="sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
+      <section id="connect" className="py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Column */}
           <div className="flex flex-col justify-center space-y-4 lg:pr-12">

@@ -26,7 +26,7 @@ export default function ClosingSection() {
         <div 
           className="w-full"
           style={{
-            background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)'
+            background: 'linear-gradient(99.49deg,#3D4E3A 0.47%,#3D4E3A 98.81%)'
           }}
         >
           <Swiper
@@ -54,30 +54,13 @@ export default function ClosingSection() {
               <SwiperSlide key={testimonial.id}>
                 <div className="flex flex-col items-center justify-center min-h-[180px] py-8 px-8 md:px-16">
                   <div className="text-center w-full">
-                    <blockquote className="text-lg sm:text-xl md:text-xl font-medium mb-4"
-                      style={{
-                        background: 'linear-gradient(90deg, #F0EDE4 0%, #A4966E 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text'
-                      }}
-                    >
+                    <blockquote className="text-lg sm:text-xl md:text-xl font-medium text-[#FFFFFF] mb-4">
                       "{testimonial.quote}"
                     </blockquote>
                     <div className="space-y-1 text-right">
                       <p 
-                        className="text-base sm:text-lg font-medium"
-                        style={{
-                          background: 'linear-gradient(90deg, #F0EDE4 0%, #A4966E 100%)',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                          backgroundClip: 'text'
-                        }}
-                      >
-                        {testimonial.author}
-                      </p>
-                      <p className="text-white/80 text-sm">
-                        {testimonial.position}
+                        className="text-base sm:text-lg font-medium text-[#FFFFFF]">
+                        {testimonial.author} , {testimonial.position}
                       </p>
                     </div>
                   </div>

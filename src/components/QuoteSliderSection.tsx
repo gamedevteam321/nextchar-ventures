@@ -29,7 +29,7 @@ const quotes = [
 
 export default function QuoteSliderSection() {
   return (
-    <section className="w-full py-12 bg-gradient-to-r from-[#222D2B] to-[#44615B]">
+    <section className="w-full py-12 bg-[#3D4E3A]">
       <div className="w-full">
         <div className="overflow-hidden">
           <Swiper
@@ -40,8 +40,8 @@ export default function QuoteSliderSection() {
               bulletActiveClass: 'swiper-pagination-bullet-active',
               renderBullet: function (index, className) {
                 return index === 0 
-                  ? `<span class="${className}" style="width: 24px; height: 4px; border-radius: 2px; background-color: #00A92D;"></span>`
-                  : `<span class="${className}" style="width: 24px; height: 4px; border-radius: 2px; background-color: #F0EDE4;"></span>`;
+                  ? `<span class="${className}" style="width: 24px; height: 4px; border-radius: 2px; background-color: #7CB342;"></span>`
+                  : `<span class="${className}" style="width: 24px; height: 4px; border-radius: 2px; background-color: #D9D9D9;"></span>`;
               },
             }}
             autoplay={{
@@ -54,15 +54,7 @@ export default function QuoteSliderSection() {
             {quotes.map((quote) => (
               <SwiperSlide key={quote.id}>
                 <div className="flex flex-col items-center justify-center min-h-[180px] py-8 px-8 md:px-16">
-                  <p 
-                    className="text-center text-xl sm:text-2xl md:text-3xl font-medium max-w-4xl"
-                    style={{
-                      background: 'linear-gradient(90deg, #F0EDE4 0%, #A4966E 100%)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text'
-                    }}
-                  >
+                  <p className="text-center text-xl sm:text-2xl md:text-3xl font-medium max-w-6xl text-[#FFFFFF] ">
                     {quote.text}
                   </p>
                 </div>

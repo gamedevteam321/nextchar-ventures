@@ -27,7 +27,7 @@ const ScrollToTop: React.FC = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`${isVisible ? 'opacity-100' : 'opacity-0'} fixed bottom-6 right-6 bg-gold text-carbon-dark p-3 rounded-full shadow-lg transition-opacity duration-300 z-50`}
+      className={`${isVisible ? 'opacity-100' : 'opacity-0'} fixed bottom-6 right-6 bg-[#3D4E3A] text-white p-3 rounded-full shadow-lg transition-opacity duration-300 z-50`}
       aria-label="Scroll to top"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

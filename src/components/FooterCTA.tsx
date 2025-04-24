@@ -1,14 +1,9 @@
 export default function FooterCTA() {
   return (
-    <section className="w-full py-12 md:py-20 overflow-x-hidden" style={{ background: '#F0EDE4' }}>
+    <section className="w-full py-12 md:py-20 overflow-x-hidden bg-[#F5F5F5]">
       <div className="max-w-[90rem] mx-auto w-full">
         <div className="text-center mb-8 md:mb-12 w-full px-4 sm:px-10 md:px-16 lg:px-20 xl:px-40">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-8" 
-              style={{ 
-                background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent'
-              }}>
+          <h2 className="bg-[#3D4E3A] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-8 text-transparent bg-clip-text">
             THE TIME IS NOW
           </h2>
         </div>

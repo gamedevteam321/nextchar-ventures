@@ -41,7 +41,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full py-12" style={{ background: '#F0EDE4' }}>
+    <footer className="w-full py-12 bg-[#FDFAF3]">
       <div className="max-w-[90rem] mx-auto px-4 md:px-16 lg:px-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 justify-items-center">
           {/* Logo Column */}
@@ -50,7 +50,7 @@ export default function Footer() {
               <img 
                 src={getImagePath("/footer-logo.png")} 
                 alt="Nexchar Ventures" 
-                className="h-40 w-auto cursor-pointer hover:opacity-90 transition-opacity"
+                className="h-60 w-auto cursor-pointer hover:opacity-90 transition-opacity"
               />
             </Link>
           </div>
@@ -58,12 +58,12 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="flex flex-col items-center">
             <div className="w-full max-w-[200px] text-center md:text-left">
-              <h3 className="text-gray-800 font-semibold mb-4">Quick Links</h3>
+              <h3 className="text-black font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 flex flex-col items-center md:items-start">
                 <li>
                   <a 
                     href="/about#overview" 
-                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    className="text-black hover:text-black transition-colors"
                     onClick={(e) => handleNavClick(e, '/about', '#overview')}
                   >
                     About Us
@@ -72,7 +72,7 @@ export default function Footer() {
                 <li>
                   <a 
                     href="/technology#hero"
-                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    className="text-black hover:text-black transition-colors"
                     onClick={(e) => handleNavClick(e, '/technology', '#hero')}
                   >
                     Technology
@@ -81,7 +81,7 @@ export default function Footer() {
                 <li>
                   <a 
                     href="/carbon-credits#hero" 
-                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    className="text-black hover:text-black transition-colors"
                     onClick={(e) => handleNavClick(e, '/carbon-credits', '#hero')}
                   >
                     Impact
@@ -90,7 +90,7 @@ export default function Footer() {
                 <li>
                   <a 
                     href="/about#connect" 
-                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    className="text-black hover:text-black transition-colors"
                     onClick={(e) => handleNavClick(e, '/about', '#connect')}
                   >
                     Contact
@@ -99,10 +99,19 @@ export default function Footer() {
                 <li>
                   <a 
                     href="/gallery#hero" 
-                    className="text-gray-600 hover:text-gray-800 transition-colors"
+                    className="text-black hover:text-black transition-colors"
                     onClick={(e) => handleNavClick(e, '/gallery', '#hero')}
                   >
                     Gallery
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/PrivacyPolicy" 
+                    className="text-black hover:text-black transition-colors"
+                    onClick={(e) => handleNavClick(e, '/PrivacyPolicy')}
+                  >
+                    Privacy Policy
                   </a>
                 </li>
               </ul>
@@ -112,17 +121,17 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="flex flex-col items-center">
             <div className="w-full max-w-[200px] text-center md:text-left">
-              <h3 className="text-gray-800 font-semibold mb-4">Contact</h3>
+              <h3 className="text-black font-semibold mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li className="text-gray-600">info@nexcharventures.com</li>
+                <li className="text-black">info@nexcharventures.com</li>
                 <li className="flex justify-center md:justify-start">
                   <a 
                     href="https://www.linkedin.com/company/nexchar-ventures" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-gray-600 hover:text-gray-800 transition-colors"
+                    className="inline-flex items-center text-black hover:text-black transition-colors"
                   >
-                    <Linkedin className="w-5 h-5" />
+                    LinkedIn
                   </a>
                 </li>
               </ul>
@@ -131,7 +140,7 @@ export default function Footer() {
         </div>
 
         {/* Section Line */}
-        <div className="w-full py-8">
+        <div className="w-full py-4">
           <img 
             src={getImagePath("/Section-line.png")}
             alt="Section Divider" 
@@ -141,7 +150,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="pt-8">
-          <p className="text-gray-600 text-sm text-center">
+          <p className="text-black text-sm text-center">
             © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>

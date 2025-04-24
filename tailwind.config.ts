@@ -129,13 +129,22 @@ export default {
 						opacity: '1',
 						transform: 'translateX(0)'
 					}
+				},
+				scrollText: {
+					'0%': {
+						transform: 'translate3d(100%, -50%, 0)'
+					},
+					'100%': {
+						transform: 'translate3d(-100%, -50%, 0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.5s ease-out',
-				'fade-in-right': 'fade-in-right 0.5s ease-out'
+				'fade-in-right': 'fade-in-right 0.5s ease-out',
+				'scrollText': 'scrollText 20s linear infinite'
 			}
 		}
 	},

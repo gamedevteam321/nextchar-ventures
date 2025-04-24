@@ -12,6 +12,7 @@ import CarbonCredits from "./pages/CarbonCredits";
 import AboutUs from "./pages/AboutUs";
 import WoodVinegar from "./pages/woodvinegar";
 import Gallery from "./pages/Gallery";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Layout from "./components/Layout";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/about" element={<AboutUs />} />
             <Route path="/technology" element={<Technology />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

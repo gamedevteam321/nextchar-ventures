@@ -41,7 +41,7 @@ const Index: React.FC = () => {
       <div id="hero">
         <HeroSection />
       </div>
-      <SectionDivider />
+      
       <ProductsSection />
       
       <BiocharSection />

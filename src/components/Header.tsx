@@ -176,8 +176,8 @@ const Header: React.FC = () => {
         <div className="flex items-center space-x-4">
           <Button 
             className="hidden md:flex text-white hover:opacity-90 font-medium rounded-md text-sm px-6 relative
-            before:absolute before:inset-0 before:rounded-md before:p-[3px] before:bg-gradient-to-r before:from-[#F0EDE4] before:to-[#A4966E]
-            after:absolute after:inset-[3px] after:rounded-[5px] after:bg-gradient-to-r after:from-[#886808] after:to-[#C5A133]"
+            before:absolute before:inset-0 before:rounded-md before:p-[3px] before:bg-[#3D4E3A]
+            after:absolute after:inset-[3px] after:rounded-[5px] after:bg-[#3D4E3A]"
             onClick={handleGetStarted}
           >
             <span className="relative z-10">Contact Us</span>
@@ -232,7 +232,7 @@ const Header: React.FC = () => {
             <div className={`mt-2 space-y-2 ${isProductsDropdownOpen ? 'block' : 'hidden'}`}>
               <a 
                 href="/biochar"
-                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300`}
                 onClick={(e) => {
                   e.preventDefault();
                   handleProductClick('biochar');
@@ -242,7 +242,7 @@ const Header: React.FC = () => {
               </a>
               <a 
                 href="/biocoal"
-                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300`}
                 onClick={(e) => {
                   e.preventDefault();
                   handleProductClick('biocoal');
@@ -252,7 +252,7 @@ const Header: React.FC = () => {
               </a>
               <a 
                 href="#wood-vinegar"
-                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300`}
+                className={`block px-8 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300`}
                 onClick={(e) => {
                   e.preventDefault();
                   handleProductClick('woodvinegar');
@@ -295,8 +295,8 @@ const Header: React.FC = () => {
           </a>
           <Button
             className="w-full text-white hover:opacity-90 font-medium rounded-md text-lg px-8 py-3 mt-4 relative
-            before:absolute before:inset-0 before:rounded-md before:p-[3px] before:bg-gradient-to-r before:from-[#F0EDE4] before:to-[#A4966E]
-            after:absolute after:inset-[3px] after:rounded-[5px] after:bg-gradient-to-r after:from-[#886808] after:to-[#C5A133]"
+            before:absolute before:inset-0 before:rounded-md before:p-[3px] before:bg-[#3D4E3A]
+            after:absolute after:inset-[3px] after:rounded-[5px] after:bg-[#3D4E3A]"
             onClick={handleGetStarted}
           >
             <span className="relative z-10">Contact Us</span>

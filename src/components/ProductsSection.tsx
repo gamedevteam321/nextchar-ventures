@@ -26,29 +26,22 @@ const products = [
 
 const ProductsSection: React.FC = () => {
   return (
-    <section id="products" className="bg-white w-full overflow-hidden">
+    <section id="products" className="bg-[#F3F7F1] w-full overflow-hidden">
       <div className="container mx-auto w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-12">
-        <div className="text-left max-w-3xl mb-2 md:mb-12 w-full pl-2 sm:pl-6 md:pl-12 lg:pl-14 xl:pl-20">
+        <div className="text-left max-w-3xl mb-4 md:mb-12 w-full pl-2 sm:pl-6 md:pl-12 lg:pl-14 xl:pl-20">
           <h2 
-            className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize"
-            style={{
-              background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text'
-            }}
-          >
+            className="bg-[#3D4E3A] text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize text-transparent bg-clip-text">
             Our Biocarbons
           </h2>
           
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 lg:gap-8 w-full max-w-[1200px] mx-auto px-1 sm:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 lg:gap-8 w-full max-w-[1000px] mx-auto px-1 sm:px-0">
           {products.map(product => (
             <Link key={product.id} to={product.link} className="w-full block">
               <Card className="bg-beige border border-green-dark/20 overflow-hidden card-effect rounded-xl hover:border-green-dark/40 transition-all duration-300 w-full h-full">
                 <CardContent className="p-0 h-full w-full">
-                  <div className="relative w-full pb-[60%] sm:pb-[100%]">
+                  <div className="relative w-full pb-[50%] sm:pb-[100%]">
                     <img 
                       src={product.image} 
                       alt={product.name} 

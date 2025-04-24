@@ -58,7 +58,7 @@ Basant's experience and commitment to empowering farming communities  are integr
 
         <div className="relative z-20 h-full flex flex-col justify-end items-start text-left px-4 sm:px-8 pb-8 sm:pb-12">
           <h1 className="font-montserrat text-[28px] sm:text-[36px] md:text-[44px] lg:text-[48px] font-medium leading-[120%] sm:leading-[110%] tracking-[0%] mb-4
-                       bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">
+                       text-white">
             We are innovators dedicated to fostering a living planet
           </h1>
 
@@ -66,18 +66,18 @@ Basant's experience and commitment to empowering farming communities  are integr
       </section>
 
       {/* who are weSection */}
-      <section className="py-8 sm:py-12 md:py-[25px] px-4 sm:px-8 md:px-[150px]">
+      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="text-white order-2 md:order-1">
             <h2 className="font-montserrat font-semibold text-xl sm:text-2xl md:text-[35px] leading-normal sm:leading-normal tracking-[0%] mb-4 sm:mb-6 pb-1
-                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+                         text-heading">
               Who are we ?
             </h2>
             <div className="space-y-4 sm:space-y-6">
-              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
+              <p className="text-[#474747] font-regular text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
               We are a waste to value enterprise leveraging proprietary modular technologies engineered for exceptional energy and operating efficiency, to transform diverse biomass waste streams into high quality, sustainable carbon products like Biochar.
               </p>
-              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
+              <p className="text-[#474747] font-regular text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
               Our decentralized approach enables scalable deployment across hyperlocal sites, addressing critical waste management issues while revitalizing soils, preventing deforestation and actively removing & sequestering Carbon for lasting ecological impact.
               </p>
             </div>
@@ -92,10 +92,10 @@ Basant's experience and commitment to empowering farming communities  are integr
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* why matters Section */}
-      <section className="py-8 sm:py-12 md:py-[25px] px-4 sm:px-8 md:px-[150px]">
+      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="w-full order-1">
             <img
@@ -106,14 +106,14 @@ Basant's experience and commitment to empowering farming communities  are integr
           </div>
           <div className="text-white order-2">
             <h2 className="font-montserrat font-semibold text-xl sm:text-2xl md:text-[35px] leading-normal sm:leading-normal tracking-[0%] mb-4 sm:mb-6 pb-1
-                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+                         text-heading">
               Why it matters?
             </h2>
             <div className="space-y-4 sm:space-y-6">
-              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
+              <p className="text-[#474747] font-regular text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
               Soil degradation is accelerating at an alarming rate—<b>33% of global soils are already significantly degraded</b> and <b>90% of soils could be degraded by 2050</b>. This threatens the very basis of existence on the planet .. No Soil .. No Life 
               </p>
-              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
+              <p className="text-[#474747] font-regular text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
               <b>Why now?</b>  Because without immediate action, soil and environmental systems face irreversible decline. Our solutions transform waste biomass into biochar, restoring degraded soils, capturing carbon, and ensuring long-term ecological resilience—preserving the vitality of our planet for generations to come.
               </p>
             </div>
@@ -121,59 +121,61 @@ Basant's experience and commitment to empowering farming communities  are integr
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Hyperlocal Section */}
-      <section className="py-8 sm:py-12 md:py-[25px] px-4 sm:px-8 md:px-[150px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
-          <div className="text-white order-2 md:order-1">
-            <h2 className="font-montserrat font-semibold text-xl sm:text-2xl md:text-[35px] leading-normal sm:leading-normal tracking-[0%] mb-4 sm:mb-6 pb-1
-                         bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+      <section className="w-full min-h-screen relative py-8 md:py-16 flex items-center">
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black before:opacity-40"
+          style={{
+            backgroundImage: `url(${getImagePath('/hyperlocal-bg.png')})`,
+          }}
+        />
+        
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-[150px] relative">
+          <div className="bg-white/70 backdrop-blur-sm rounded-[20px] md:rounded-[32px] p-6 md:p-12">
+            <h2 className="text-[#3D4E3A] text-3xl sm:text-4xl md:text-5xl font-semibold mb-8 md:mb-16 font-montserrat">
               Why are we hyperlocal?
             </h2>
-            <div className="space-y-4 sm:space-y-6">
-              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              At Nexchar, we design technology that works where it's needed most—directly at the source of biomass residues. Our modular pyrolysis systems are built for adaptability, operating efficiently in rural and agricultural settings where conventional solutions often fail.
-              </p>
-              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
-              This approach enables two key advantages: first, it eliminates unnecessary transportation costs by processing biomass locally, ensuring practical logistics for decentralized operations. <b>Second,</b> it allows effortless scaling—deploying additional units where needed to repurpose all available residues into valuable biochar, preventing waste, restoring soil health and sequestering carbon.
-              </p>
+            
+            <div className="text-[#474747]">
+              <div className="space-y-4 sm:space-y-6">
+                <p className="text-sm sm:text-base md:text-lg font-regular leading-relaxed">
+                  At Nexchar, we design technology that works where it's needed most—directly at the source of biomass residues. Our modular pyrolysis systems are built for adaptability, operating efficiently in rural and agricultural settings where conventional solutions often fail.
+                </p>
+                <p className="text-sm sm:text-base md:text-lg font-regular leading-relaxed">
+                  This approach enables two key advantages: first, it eliminates unnecessary transportation costs by processing biomass locally, ensuring practical logistics for decentralized operations. <b>Second,</b> it allows effortless scaling—deploying additional units where needed to repurpose all available residues into valuable biochar, preventing waste, restoring soil health and sequestering carbon.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="w-full order-1 md:order-2">
-            <img
-              src={getImagePath("/who-are-we.png")}
-              alt="The Biochar Cycle"
-              className="w-full h-auto object-contain rounded-lg"
-            />
           </div>
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Team Section */}
-      <section className="px-4 sm:px-8 md:px-[150px]">
+      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-white">
         <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl md:text-[40px] leading-tight sm:leading-[100%] tracking-[0%] mb-8 sm:mb-12
-                     bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+                     text-heading">
           Our Team
         </h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
             <div key={member.id} className="flex flex-col">
-              <div className="relative bg-[#F8F8F8] rounded-lg overflow-hidden transition-all duration-300">
+              <div className="relative bg-olive rounded-lg overflow-hidden transition-all duration-300">
                 <img
                   src={getImagePath(member.image)}
                   alt={member.name}
                   className="w-full h-[280px] object-cover object-top"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-medium text-[#474747] mb-2">{member.name}</h3>
-                  <p className="text-[#666666] mb-4">{member.role}</p>
+                  <h3 className="text-xl font-semibold text-heading mb-2">{member.name}</h3>
+                  <p className="text-para font-medium mb-4">{member.role}</p>
                   <button
                     onClick={() => toggleTeamMember(member.id)}
-                    className="text-[#886808] hover:text-[#C5A133] transition-colors duration-300"
+                    className="text-heading hover:text-olive transition-colors duration-300"
                   >
                     {expandedTeamMember === member.id ? 'Read less' : 'Read more'}
                   </button>
@@ -195,40 +197,40 @@ Basant's experience and commitment to empowering farming communities  are integr
         </div>
       </section>
 
-      <SectionDivider />
+      
       
       {/* Advisory Board Section */}
-      <section className="py-4 px-4 sm:px-8 md:px-[150px]">
+      <section className="sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
         <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl md:text-[40px] leading-normal sm:leading-normal tracking-[0%] mb-8 sm:mb-8 pb-1
-                     bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+                     text-heading">
           Advisory Board
         </h2>
         
         <div className="max-w-[1200px]">
-          <p className="text-[#474747] font-light text-base sm:text-lg md:text-xl leading-relaxed">
+          <p className="text-para font-regular text-base sm:text-lg md:text-xl leading-relaxed">
           Nexchar's advisory board is composed of seasoned experts, industry leaders, and sustainability pioneers who serve as invaluable guides in shaping our mission. Their insights and experience help steer Nexchar toward practical, high-impact solutions for soil restoration and biomass utilization.
           </p>
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Partner with Us Section */}
-      <section className="py-4 px-4 sm:px-8 md:px-[150px]">
+      <section className="sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-white">
         <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl md:text-[40px] leading-normal sm:leading-normal tracking-[0%] mb-8 sm:mb-8 pb-1
-                     bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+                     text-heading">
           Partner with Us
         </h2>
         
         <div className="max-w-[1200px]">
-          <p className="text-[#474747] mb-4 font-light text-base sm:text-lg md:text-xl leading-relaxed">
-          At Nexchar, we believe that restoring soils and transforming waste into value is a mission too big for any one organization to tackle alone. That's why we've built a unique <span className="font-medium">low-risk, high-impact franchise model</span> designed to empower individuals and businesses to join us in scaling sustainable solutions while earning and contributing meaningfully to environmental restoration.
+          <p className="text-[#474747] mb-4 font-regular text-base sm:text-lg md:text-xl leading-relaxed">
+          <b>At Nexchar, we believe</b> that restoring soils and transforming waste into value is a mission too big for any one organization to tackle alone. That's why we've built a unique <b>low-risk, high-impact franchise model</b> designed to empower individuals and businesses to join us in scaling sustainable solutions while earning and contributing meaningfully to environmental restoration.
           </p>
-          <p className="text-[#474747] mb-4 font-light text-base sm:text-lg md:text-xl leading-relaxed">
-          We provide our  complete cutting-edge proprietary technology at a <span className="font-medium">fraction of the cost</span>, with <span className="font-medium">full equipment and maintenance support</span>—ensuring that partners can focus on making an impact without operational risks. With <span className="font-medium">complete buy back</span>,  this model is designed to be completely de-risked and an  ideal opportunity to invest in sustainability while building a profitable enterprise.
+          <p className="text-[#474747] mb-4 font-regular text-base sm:text-lg md:text-xl leading-relaxed">
+          We provide our  complete cutting-edge proprietary technology at a <b>fraction of the cost</b>, with <b>full equipment and maintenance support</b>—ensuring that partners can focus on making an impact without operational risks. With <b>complete buy back</b>,  this model is designed to be completely de-risked and an  ideal opportunity to invest in sustainability while building a profitable enterprise.
           </p>
-          <p className="text-[#474747] mb-4 font-light text-base sm:text-lg md:text-xl leading-relaxed">
-          By partnering with us, you'll gain access to <span className="font-medium">proven technology</span>, <span className="font-medium">operational expertise, and a thriving network</span>, all working toward a shared goal: restoring soils, reducing waste, and creating a more sustainable future. 
+          <p className="text-[#474747] mb-4 font-regular text-base sm:text-lg md:text-xl leading-relaxed">
+          By partnering with us, you'll gain access to <b>proven technology</b>, <b>operational expertise, and a thriving network</b>, all working toward a shared goal: restoring soils, reducing waste, and creating a more sustainable future. 
           </p>
           <p className="text-[#474747] mb-4 font-medium text-base sm:text-lg md:text-xl leading-relaxed">
           Together, we can drive change, scale solutions, and contribute to building a resilient future that benefits generations to come.
@@ -236,63 +238,64 @@ Basant's experience and commitment to empowering farming communities  are integr
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Connect Section */}
-      <section id="connect" className="pt-4 pb-20 px-4 sm:px-8 md:px-[150px]">
-        <div className="bg-gradient-to-r from-[#222D2B] to-[#44615B] rounded-2xl p-6 sm:p-8 id='connect'">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-            {/* Left Column */}
-            <div className="flex flex-col justify-center space-y-4">
-              <h2 className="text-2xl sm:text-3xl font-medium leading-normal sm:leading-normal pb-1 bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">Connect<br/>Want to join our team?</h2>
-              
-              <p className="pt-4 text-[#F0EDE4]/80 text-sm sm:text-base leading-relaxed">
-              A world of possibilities and opportunities is open to those who believe in our vision of building Scalable Carbon Solutions for a Sustainable Future . Contact us to  learn more about our way of working and job openings.
-              </p>
-            </div>
+      <section id="connect" className="sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          {/* Left Column */}
+          <div className="flex flex-col justify-center space-y-4 lg:pr-12">
+            <h2 className="text-heading text-2xl sm:text-3xl font-medium">Connect</h2>
+            <h3 className="text-heading text-2xl sm:text-3xl font-medium">Want to join our team?</h3>
+            
+            <p className="text-[#474747] text-sm sm:text-base leading-relaxed max-w-lg">
+              A world of possibilities and opportunities is open to those who believe in our purpose of renewing life inspired by trees. To learn more about our way of working and job openings, visit the Join our Team page.
+            </p>
+          </div>
 
-            {/* Right Column - Contact Form */}
-            <div className="rounded-xl">
+          {/* Right Column - Contact Form */}
+          <div className="flex justify-center">
+            <div className="bg-white rounded-xl p-6 shadow-lg max-w-md w-full">
               <div className="space-y-4">
-                <h3 className="text-[#F0EDE4] text-xl sm:text-2xl mb-4">Contact <span className="text-[#A4966E]">Us</span></h3>
+                <h3 className="text-heading text-xl sm:text-2xl mb-4 font-semibold">Contact Us</h3>
                 
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="text-[#F0EDE4] block mb-1">Name</label>
+                    <label htmlFor="name" className="text-[#474747] block mb-2">Name</label>
                     <input
                       type="text"
                       id="name"
-                      className="w-full bg-[#2C3B38] border border-[#F0EDE4]/20 rounded-lg p-2.5 text-[#F0EDE4] focus:outline-none focus:border-[#A4966E]"
+                      className="w-full bg-offwhite rounded-lg p-3 text-[#474747] focus:outline-none"
                       placeholder="Enter your name"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="text-[#F0EDE4] block mb-1">Email</label>
+                    <label htmlFor="email" className="text-[#474747] block mb-2">Email</label>
                     <input
                       type="email"
                       id="email"
-                      className="w-full bg-[#2C3B38] border border-[#F0EDE4]/20 rounded-lg p-2.5 text-[#F0EDE4] focus:outline-none focus:border-[#A4966E]"
+                      className="w-full bg-offwhite rounded-lg p-3 text-[#474747] focus:outline-none"
                       placeholder="Enter your email"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="text-[#F0EDE4] block mb-1">Write to us....</label>
+                    <label htmlFor="message" className="text-[#474747] block mb-2">Write to us....</label>
                     <textarea
                       id="message"
-                      rows={3}
-                      className="w-full bg-[#2C3B38] border border-[#F0EDE4]/20 rounded-lg p-2.5 text-[#F0EDE4] focus:outline-none focus:border-[#A4966E]"
+                      rows={4}
+                      className="w-full bg-offwhite rounded-lg p-3 text-[#474747] focus:outline-none"
                       placeholder="Enter your message"
                     />
                   </div>
 
-                  <button className="w-full bg-gradient-to-r from-[#886808] to-[#C5A133] text-white py-2.5 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                  <button className="w-full bg-[#3D4E3A] text-white py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
                     Send Message
                   </button>
 
-                  <p className=" text-center text-xs sm:text-sm bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">
-                    Or reach out at <a href="mailto:info@nexcharventures.com" className="text-[#A4966E] hover:underline">info@nexcharventures.com</a>
+                  <p className="text-center text-sm text-[#474747]">
+                    Or reach out at <a href="mailto:info@nexcharventures.com" className="text-[#474747] hover:underline">info@nexcharventures.com</a>
                   </p>
                 </div>
               </div>

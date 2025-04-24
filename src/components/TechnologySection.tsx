@@ -60,10 +60,10 @@ const technologies = [
 
 export default function TechnologySection() {
   return (
-    <section id="technology" className="py-4 bg-carbon w-full overflow-x-hidden ">
+    <section id="technology" className="py-16 bg-white w-full overflow-x-hidden ">
       <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-24 xl:px-28">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize">
-          <span style={{ background: 'linear-gradient(90deg, #886808 32.21%, #C5A133 76.44%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-1 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize bg-[#3D4E3A] text-transparent bg-clip-text">
+          <span >
           Our Proprietary Technology drives Innovation 
           </span>
         </h2>
@@ -76,7 +76,7 @@ export default function TechnologySection() {
                 key={tech.id}
                 className="flex-shrink-0 w-[280px] sm:w-auto snap-center rounded-[12px] p-5 sm:p-4"
                 style={{
-                  background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
+                  background: 'linear-gradient(99.49deg, #F5F5F5 0.47%, #F5F5F5 98.81%)',
                   position: 'relative',
                   isolation: 'isolate',
                   overflow: 'hidden'
@@ -86,8 +86,8 @@ export default function TechnologySection() {
                   className="absolute inset-0 rounded-[12px]"
                   style={{
                     content: '""',
-                    background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)',
-                    padding: '1px',
+                    background: 'linear-gradient(90deg, #3D4E3A 0%, #3D4E3A 100%)',
+                    padding: '2px',
                     WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                     WebkitMaskComposite: 'xor',
                     maskComposite: 'exclude',
@@ -95,7 +95,7 @@ export default function TechnologySection() {
                   }}
                 />
                 <div className="flex flex-col items-start sm:items-center gap-4 sm:gap-2 text-left sm:text-center relative z-10">
-                  <div className="relative w-16 h-16 sm:w-12 sm:h-12">
+                  <div className="relative w-24 h-24 sm:w-16 sm:h-16">
                     <div 
                       className="w-full h-full"
                       style={{
@@ -107,16 +107,16 @@ export default function TechnologySection() {
                         WebkitMaskRepeat: 'no-repeat',
                         maskPosition: 'left',
                         WebkitMaskPosition: 'left',
-                        background: 'linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%)'
+                        background: 'linear-gradient(90deg, #3D4E3A 0%, #3D4E3A 100%)'
                       }}
                     />
                   </div>
                   <div className="flex flex-col items-start sm:items-center gap-1.5 sm:gap-1">
                     <h3 className="text-lg sm:text-sm md:text-base font-medium leading-tight
-                                bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                                bg-gradient-to-r from-[#3D4E3A] to-[#3D4E3A] text-transparent bg-clip-text">
                       {tech.title}
                     </h3>
-                    <p className="text-[#EDFDF6] text-base sm:text-xs font-light leading-snug">
+                    <p className="text-[#474747] text-base sm:text-xs font-light leading-snug">
                       {tech.description}
                     </p>
                   </div>

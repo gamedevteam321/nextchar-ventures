@@ -7,11 +7,11 @@ const WoodVinegar = () => {
   return (
     <div className="text-[#474747] font-montserrat bg-[#F0EDE4]">
       {/* Hero Section */}
-      <section id="overview" className="relative min-h-[400px] sm:min-h-[600px] h-[80vh] sm:h-screen w-full overflow-hidden">
+      <section id="overview" className="relative min-h-[600px] sm:min-h-[600px] h-[100vh] sm:h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           {/* Hero Image */}
           <img
-            src={getImagePath("/wood-vinegar-hero.png")}
+            src={getImagePath("/wood-vinegar-howtouse.png")}
             alt="Wood Vinegar Hero"
             className="w-full h-full object-cover"
           />
@@ -22,7 +22,7 @@ const WoodVinegar = () => {
 
         <div className="relative z-20 h-full flex flex-col justify-end items-start text-left px-4 sm:px-16 pb-8 sm:pb-12">
           <h1 className="font-montserrat text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] font-medium leading-[120%] sm:leading-[110%] tracking-[0%] mb-4
-                       bg-gradient-to-r from-[#F0EDE4] to-[#A4966E] text-transparent bg-clip-text">
+                       text-white text-transparent bg-clip-text">
                         The ideal organic fertilizer & bio stimulant
           </h1>
           <p className="text-white text-xl sm:text-xl">
@@ -33,10 +33,10 @@ const WoodVinegar = () => {
       </section>
 
       {/* Key Benefits Section */}
-      <section className="pt-12">
+      <section className="py-4 sm:py-12 md:py-[50px] bg-white">
         <div className="px-4 sm:px-8 md:px-[150px]">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-2 sm:mb-12 md:mb-12
-                        bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+                        text-heading text-transparent bg-clip-text">
             Key Benefits
           </h2>
 
@@ -68,13 +68,13 @@ const WoodVinegar = () => {
                   key={index}
                   className="flex-shrink-0 w-[280px] sm:w-auto snap-center rounded-lg p-4 sm:p-6"
                   style={{
-                    background: 'linear-gradient(99.49deg, #222D2B 0.47%, #44615B 98.81%)',
-                    border: '1px solid #A4966E'
+                    background: 'linear-gradient(99.49deg, #F5F5F5 0.47%, #F5F5F5 98.81%)',
+                    border: '2px solid #3D4E3A'
                   }}
                 >
                   <div className="flex flex-col gap-2">
                     <div
-                      className="w-16 h-16"
+                      className="w-20 h-20"
                       style={{
                         maskImage: `url(${getImagePath(`/woodvinegar/${benefit.icon}`)})`,
                         WebkitMaskImage: `url(${getImagePath(`/woodvinegar/${benefit.icon}`)})`,
@@ -84,15 +84,15 @@ const WoodVinegar = () => {
                         WebkitMaskRepeat: 'no-repeat',
                         maskPosition: 'center',
                         WebkitMaskPosition: 'center',
-                        background: 'linear-gradient(90deg, #F0EDE4 0%, #A4966E 100%)'
+                        background: 'linear-gradient(90deg, #3D4E3A 0%, #3D4E3A 100%)'
                       }}
                     />
                     <div className="flex flex-col gap-2">
                       <h3 className="text-base sm:text-lg md:text-xl font-medium leading-tight
-                                  bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                                  text-heading text-transparent bg-clip-text">
                         {benefit.title}
                       </h3>
-                      <p className="text-[#FFFFFF] text-sm sm:text-base font-light leading-relaxed">
+                      <p className="text-para text-sm sm:text-base font-regular leading-relaxed">
                         {benefit.description}
                       </p>
                     </div>
@@ -104,13 +104,13 @@ const WoodVinegar = () => {
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* Additional Agronomic Effects Section */}
-      <section className="pt-12 pb-16">
+      <section className="pt-12 pb-16 bg-olive">
         <div className="px-4 sm:px-8 md:px-[150px]">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-8 sm:mb-12
-                      bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+          <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-8 sm:mb-12
+                      text-heading text-transparent bg-clip-text">
             Additional Agronomic Effects
           </h2>
 
@@ -154,16 +154,16 @@ const WoodVinegar = () => {
         </div>
       </section>
 
-      <SectionDivider />
+      
 
       {/* How To Use Section */}
-      <section className=" pb-16">
+      <section className=" py-4 sm:py-12 md:py-[50px] bg-white">
         <div className="px-4 sm:px-8 md:px-[150px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left side - Image */}
             <div>
               <img 
-                src={getImagePath("/wood-vinegar-howtouse.png")}
+                src={getImagePath("/wood-vinegar-hero.png")}
                 alt="Wood Vinegar Usage"
                 className="w-full rounded-lg"
               />
@@ -171,38 +171,38 @@ const WoodVinegar = () => {
 
             {/* Right side - Content */}
             <div className="flex flex-col justify-center h-full gap-4 sm:gap-4 md:gap-16 text-center sm:text-left">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-center sm:text-left
-                          bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center sm:text-left
+                          text-heading text-transparent bg-clip-text">
                 How To Use
               </h2>
 
-              <div className="flex flex-col gap-4 sm:gap-4 md:gap-16 text-center sm:text-left">
+              <div className="flex flex-col gap-4 sm:gap-4 md:gap-12 text-center sm:text-left">
                 {/* Dilution */}
                 <div className="text-center sm:text-left">
-                  <h3 className="text-lg sm:text-xl font-bold text-[#2A3B37] mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#000000] mb-2">
                     Dilution
                   </h3>
-                  <p className="text-[#474747] text-sm sm:text-base">
+                  <p className="text-[#000000] text-sm sm:text-base">
                     Mix 1:500 to 1:1000 with water for foliar spray or soil drench.
                   </p>
                 </div>
 
                 {/* Application */}
                 <div className="text-center sm:text-left">
-                  <h3 className="text-lg sm:text-xl font-bold text-[#2A3B37] mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#000000] mb-2">
                     Application
                   </h3>
-                  <p className="text-[#474747] text-sm sm:text-base">
+                  <p className="text-[#000000] text-sm sm:text-base">
                     Use during early morning or late evening for best results.
                   </p>
                 </div>
 
                 {/* Frequency */}
                 <div className="text-center sm:text-left">
-                  <h3 className="text-lg sm:text-xl font-bold text-[#2A3B37] mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#000000] mb-2">
                     Frequency
                   </h3>
-                  <p className="text-[#474747] text-sm sm:text-base">
+                  <p className="text-[#000000] text-sm sm:text-base">
                     1-2 times a week for continuous plant health improvement
                   </p>
                 </div>

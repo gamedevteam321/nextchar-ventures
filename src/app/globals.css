@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  .heading {
+    color: #3D4E3A;
+  }
+
   .fade-out {
     opacity: 0;
     filter: blur(8px);

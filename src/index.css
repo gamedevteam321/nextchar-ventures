@@ -244,6 +244,30 @@
 }
 
 @layer utilities {
+  .text-heading {
+    color: #3D4E3A;
+  }
+
+  .text-base {
+    color: #474747;
+  }
+
+  .text-para {
+    color: #474747;
+  }
+
+  .bg-olive {
+    background-color: #F3F7F1;
+  }
+
+  .bg-slider {
+    background-color: #3D4E3A;
+  }
+
+  .bg-offwhite {
+    background-color: #F5F5F5;
+  }
+
   .svg-mask-gradient {
     background: linear-gradient(90deg, #A4966E 0%, #F0EDE4 100%);
     -webkit-mask-image: var(--icon-url);

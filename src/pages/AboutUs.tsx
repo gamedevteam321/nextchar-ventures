@@ -95,7 +95,7 @@ Basant's experience and commitment to empowering farming communities  are integr
       
 
       {/* why matters Section */}
-      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
+      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-olive">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="w-full order-1">
             <img
@@ -200,7 +200,7 @@ Basant's experience and commitment to empowering farming communities  are integr
       
       
       {/* Advisory Board Section */}
-      <section className="py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
+      <section className="py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-olive">
         <h2 className="font-montserrat font-semibold text-2xl sm:text-3xl md:text-[40px] leading-normal sm:leading-normal tracking-[0%] mb-8 sm:mb-8 pb-1
                      text-heading">
           Advisory Board
@@ -241,7 +241,7 @@ Basant's experience and commitment to empowering farming communities  are integr
       
 
       {/* Connect Section */}
-      <section id="connect" className="py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
+      <section id="connect" className="py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-olive">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Column */}
           <div className="flex flex-col justify-center space-y-4 lg:pr-12">
@@ -265,7 +265,7 @@ Basant's experience and commitment to empowering farming communities  are integr
                     <input
                       type="text"
                       id="name"
-                      className="w-full bg-offwhite rounded-lg p-3 text-[#474747] focus:outline-none"
+                      className="w-full bg-olive rounded-lg p-3 text-[#474747] focus:outline-none"
                       placeholder="Enter your name"
                     />
                   </div>
@@ -275,7 +275,7 @@ Basant's experience and commitment to empowering farming communities  are integr
                     <input
                       type="email"
                       id="email"
-                      className="w-full bg-offwhite rounded-lg p-3 text-[#474747] focus:outline-none"
+                      className="w-full bg-olive rounded-lg p-3 text-[#474747] focus:outline-none"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -285,7 +285,7 @@ Basant's experience and commitment to empowering farming communities  are integr
                     <textarea
                       id="message"
                       rows={4}
-                      className="w-full bg-offwhite rounded-lg p-3 text-[#474747] focus:outline-none"
+                      className="w-full bg-olive rounded-lg p-3 text-[#474747] focus:outline-none"
                       placeholder="Enter your message"
                     />
                   </div>

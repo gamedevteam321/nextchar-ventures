@@ -9,11 +9,18 @@ const WoodVinegar = () => {
       {/* Hero Section */}
       <section id="overview" className="relative min-h-[600px] sm:min-h-[600px] h-[100vh] sm:h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
-          {/* Hero Image */}
+          {/* Mobile Hero Image */}
+          <img
+            src={getImagePath("/wood-vinegar-potrait.png")}
+            alt="Wood Vinegar Hero"
+            className="w-full h-full object-cover object-right sm:hidden"
+          />
+          
+          {/* Desktop Hero Image */}
           <img
             src={getImagePath("/wood-vinegar-howtouse.png")}
             alt="Wood Vinegar Hero"
-            className="w-full h-full object-cover"
+            className="hidden sm:block w-full h-full object-cover object-center"
           />
           
           {/* Gradient Overlay */}
@@ -88,7 +95,7 @@ const WoodVinegar = () => {
                       }}
                     />
                     <div className="flex flex-col gap-2">
-                      <h3 className="text-base sm:text-lg md:text-xl font-medium leading-tight
+                      <h3 className=" sm:text-lg md:text-xl font-medium leading-tight
                                   text-heading text-transparent bg-clip-text">
                         {benefit.title}
                       </h3>
@@ -107,7 +114,7 @@ const WoodVinegar = () => {
       
 
       {/* Additional Agronomic Effects Section */}
-      <section className="pt-12 pb-16 bg-olive">
+      <section className="pt-12 pb-16 bg-white">
         <div className="px-4 sm:px-8 md:px-[150px]">
           <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-8 sm:mb-12
                       text-heading text-transparent bg-clip-text">
@@ -157,7 +164,7 @@ const WoodVinegar = () => {
       
 
       {/* How To Use Section */}
-      <section className=" py-4 sm:py-12 md:py-[50px] bg-white">
+      <section className=" py-4 sm:py-12 md:py-[50px] bg-olive">
         <div className="px-4 sm:px-8 md:px-[150px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left side - Image */}

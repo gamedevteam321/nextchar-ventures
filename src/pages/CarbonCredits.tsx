@@ -79,12 +79,12 @@ const CarbonCredits = () => {
       <section className="py-8 bg-white">
         <div className="space-y-4 px-4 sm:px-8 md:px-[150px]">
           {/* First Dropdown */}
-          <div className="bg-offwhite rounded-xl overflow-hidden">
+          <div className="bg-olive rounded-xl overflow-hidden">
             <button
               onClick={() => setIsFirstDropdownOpen(!isFirstDropdownOpen)}
               className="w-full p-4 flex justify-between items-center"
             >
-              <span className="text-base sm:text-lg font-semibold text-heading text-transparent bg-clip-text pr-4">What are carbon removals?</span>
+              <span className=" sm:text-lg font-semibold text-heading text-transparent bg-clip-text pr-4">What are carbon removals?</span>
               <ChevronDown className={`transform transition-transform ${isFirstDropdownOpen ? 'rotate-180' : ''} text-[#3D4E3A] flex-shrink-0`} />
             </button>
             {isFirstDropdownOpen && (
@@ -96,12 +96,12 @@ const CarbonCredits = () => {
           </div>
 
           {/* Second Dropdown */}
-          <div className="bg-offwhite rounded-2xl overflow-hidden">
+          <div className="bg-olive rounded-2xl overflow-hidden">
             <button
               onClick={() => setIsSecondDropdownOpen(!isSecondDropdownOpen)}
               className="w-full p-4 flex justify-between items-center"
             >
-              <span className="text-base sm:text-lg font-semibold text-heading text-transparent bg-clip-text pr-4">Benefits to the planet</span>
+              <span className=" sm:text-lg font-semibold text-heading text-transparent bg-clip-text pr-4">Benefits to the planet</span>
               <ChevronDown className={`transform transition-transform ${isSecondDropdownOpen ? 'rotate-180' : ''} text-[#3D4E3A] flex-shrink-0`} />
             </button>
             {isSecondDropdownOpen && (
@@ -115,7 +115,7 @@ const CarbonCredits = () => {
       </section>
 
       {/* removal credits Section */}
-      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
+      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-olive">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="w-full order-1">
             <img
@@ -253,7 +253,7 @@ const CarbonCredits = () => {
       </section>
 
       {/* climate change Section */}
-      <section className="py-8 sm:py-12 md:py-[50px] bg-offwhite">
+      <section className="py-8 sm:py-12 md:py-[50px] bg-olive">
         <div className="grid grid-cols-1 gap-6 sm:gap-8 md:gap-12 ">
           <div className="text-white px-4 sm:px-8 md:px-[150px]">
             <h2 className="font-montserrat font-semibold text-xl sm:text-2xl md:text-[35px] leading-tight sm:leading-[100%] tracking-[0%] mb-4 sm:mb-6
@@ -297,7 +297,7 @@ const CarbonCredits = () => {
           {/* Graph Content */}
           <div className="mb-12">
             <h2 className="text-2xl sm:text-[32px] md:text-[40px] font-medium mb-4 leading-normal text-white">
-              Projected Growth of our CO2 Removal
+            Our Projected Annual CO2 Removal 
             </h2>
             
             <div className="mt-8 space-y-4">
@@ -381,7 +381,7 @@ const CarbonCredits = () => {
       </section>
 
       {/* credits Section */}
-      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-offwhite">
+      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="text-white order-2 md:order-1">
             <h2 className="font-montserrat font-semibold text-xl sm:text-2xl md:text-[35px] leading-tight sm:leading-[100%] tracking-[0%] mb-4 sm:mb-6
@@ -416,7 +416,7 @@ const CarbonCredits = () => {
         
         <div className="space-y-4">
           {faqItems.map((item, index) => (
-            <div key={index} className="bg-offwhite rounded-lg overflow-hidden">
+            <div key={index} className="bg-olive rounded-lg overflow-hidden">
               <button
                 onClick={() => toggleFaq(index)}
                 className="w-full p-4 sm:p-5 flex justify-between items-center text-left"
@@ -439,7 +439,7 @@ const CarbonCredits = () => {
       </section>
 
       {/* Quote Slider Section */}
-      <section className=" bg-olive">
+      <section className=" bg-slider">
         <div className="w-full">
           <Swiper
             modules={[Pagination, Autoplay]}
@@ -465,7 +465,7 @@ const CarbonCredits = () => {
                       <p
                         key={index}
                         className="mb-4 sm:mb-6 font-montserrat text-lg sm:text-xl md:text-2xl leading-relaxed font-medium
-                                 text-heading"
+                                 text-white"
                       >
                         {paragraph}
                       </p>

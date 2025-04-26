@@ -54,7 +54,7 @@ const ImpactSection: React.FC = () => {
       
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-[150px] relative">
         <div className="bg-white/70 backdrop-blur-sm rounded-[20px] md:rounded-[32px] p-6 md:p-12">
-          <h2 className="text-[#3D4E3A] text-3xl sm:text-4xl md:text-5xl font-semibold mb-8 md:mb-16 font-montserrat">
+          <h2 className="text-[#3D4E3A] text-3xl sm:text-4xl md:text-4xl font-semibold mb-8 md:mb-16 font-montserrat">
             Our Plan
           </h2>
           

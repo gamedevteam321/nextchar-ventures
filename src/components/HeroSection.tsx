@@ -119,7 +119,7 @@ const HeroSection: React.FC = () => {
       {/* Content Section */}
       <section className="bg-[#FFFFFF] w-full px-4 sm:px-6 md:px-8 lg:px-[150px] py-[60px] sm:py-[25px] md:py-[40px] lg:py-[75px] ">
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
-          <p className="font-montserrat font-regular text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px] leading-[120%] md:leading-[100%] tracking-[0%] w-full reveal text-[#474747]" style={{ animationDelay: '0.2s' }}>
+          <p className="font-montserrat font-medium text-[16px] sm:text-[18px] md:text-[20px] lg:text-[25px] leading-[120%] md:leading-[100%] tracking-[0%] w-full reveal text-[#474747]" style={{ animationDelay: '0.2s' }}>
           We transform Biomass Waste streams that are presently being burnt, landfilled or underutilised into premium Carbon Negative products
           </p>
         </div>

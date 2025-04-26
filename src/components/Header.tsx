@@ -101,7 +101,7 @@ const Header: React.FC = () => {
             onMouseLeave={() => setIsProductsDropdownOpen(false)}
           >
             <button 
-              className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
+              className={`${isDarkTheme ? 'text-white hover:text-white' : 'text-gray-800 hover:text-gray-800'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center flex items-center`}
             >
               Products
               <ChevronDown className="ml-1 h-5 w-5" />
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
             <div className={`absolute top-full left-0 w-48 ${isDarkTheme ? 'bg-black/90' : 'bg-white'} rounded-md shadow-lg py-2 mt-2 transition-all duration-300 ${isProductsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
               <a 
                 href="/biochar" 
-                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px]`}
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 text-[18px]`}
                 onClick={(e) => {
                   e.preventDefault();
                   handleProductClick('biochar');
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
               </a>
               <a 
                 href="/biocoal" 
-                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px]`}
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 text-[18px]`}
                 onClick={(e) => {
                   e.preventDefault();
                   handleProductClick('biocoal');
@@ -131,7 +131,7 @@ const Header: React.FC = () => {
               </a>
               <a 
                 href="#wood-vinegar" 
-                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px]`}
+                className={`block px-4 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 text-[18px]`}
                 onClick={(e) => {
                   e.preventDefault();
                   handleProductClick('woodvinegar');
@@ -143,7 +143,7 @@ const Header: React.FC = () => {
           </div>
           <a 
             href="/technology" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => {
               e.preventDefault();
               handleProductClick('technology');
@@ -153,7 +153,7 @@ const Header: React.FC = () => {
           </a>
           <a 
             href="/carbon-credits" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => {
               e.preventDefault();
               handleProductClick('carbon-credits');
@@ -163,7 +163,7 @@ const Header: React.FC = () => {
           </a>
           <a 
             href="#about" 
-            className={`${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
+            className={`${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-center`}
             onClick={(e) => {
               e.preventDefault();
               handleProductClick('about');
@@ -222,7 +222,7 @@ const Header: React.FC = () => {
         <nav className="flex flex-col items-start justify-center h-full space-y-8 p-6 w-full">
           <div className="w-full">
             <button 
-              className={`w-full text-left px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 text-[18px] font-inter font-light leading-[100%] tracking-[0%] flex items-center`}
+              className={`w-full text-left px-4 py-2 ${isDarkTheme ? 'text-white hover:text-white' : 'text-gray-800 hover:text-gray-800'} transition-colors duration-300 text-[18px] font-inter font-light leading-[100%] tracking-[0%] flex items-center`}
               onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
             >
               Products
@@ -265,7 +265,7 @@ const Header: React.FC = () => {
           
           <a 
             href="/technology"
-            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
+            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
             onClick={(e) => {
               e.preventDefault();
               handleProductClick('technology');
@@ -275,7 +275,7 @@ const Header: React.FC = () => {
           </a>
           <a
             href="/carbon-credits"
-            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
+            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
             onClick={(e) => {
               e.preventDefault();
               handleProductClick('carbon-credits');
@@ -285,7 +285,7 @@ const Header: React.FC = () => {
           </a>
           <a
             href="/about"
-            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-gold' : 'text-gray-800 hover:text-gold'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
+            className={`block w-full px-4 py-2 ${isDarkTheme ? 'text-white hover:text-heading' : 'text-gray-800 hover:text-heading'} transition-colors duration-300 font-inter text-[18px] font-light leading-[100%] tracking-[0%] text-left`}
             onClick={(e) => {
               e.preventDefault();
               handleProductClick('about');

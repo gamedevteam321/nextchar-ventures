@@ -7,7 +7,7 @@ const BiocharSection: React.FC = () => {
       <div className="container-padding pt-8 md:pt-8 pb-1 md:pb-0.5 ">
         <div className="container mx-auto text-left w-full pl-6 sm:pl-6 md:pl-8 lg:pl-12 xl:pl-14">
           <h2 
-            className="bg-[#3D4E3A] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize text-transparent bg-clip-text">
+            className="bg-[#3D4E3A] text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold mb-4 md:mb-1 font-montserrat leading-[100%] tracking-[0%] capitalize text-transparent bg-clip-text">
             Biochar
           </h2>
         </div>

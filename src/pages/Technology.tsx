@@ -85,7 +85,7 @@ const Technology = () => {
       
 
       {/* Batch Reactor Section */}
-      <section className="py-8 px-4 sm:px-8 md:px-16 lg:px-[150px] bg-offwhite">
+      <section className="py-8 px-4 sm:px-8 md:px-16 lg:px-[150px] bg-olive">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-2xl sm:text-3xl font-semibold mb-4 text-heading text-transparent bg-clip-text leading-normal py-2 px-4 sm:px-0">
             Batch Reactor
@@ -138,7 +138,7 @@ const Technology = () => {
       
 
       {/* Mini Gasifier Section */}
-      <section className="py-8 px-4 sm:px-8 md:px-16 lg:px-[150px] bg-offwhite">
+      <section className="py-8 px-4 sm:px-8 md:px-16 lg:px-[150px] bg-olive">
         <div className="max-w-7xl mx-auto ">
           <h3 className="text-2xl sm:text-3xl font-semibold mb-4 text-heading text-transparent bg-clip-text leading-normal py-2 px-4 sm:px-0">
             Mini Gasifier
@@ -199,7 +199,7 @@ const Technology = () => {
       </section>
 
       {/* Traceability Transparency Trust Section */}
-      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px]">
+      <section className="py-8 sm:py-12 md:py-[50px] px-4 sm:px-8 md:px-[150px] bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
           <div className="w-full order-1">
             <img

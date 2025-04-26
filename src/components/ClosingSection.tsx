@@ -59,7 +59,7 @@ export default function ClosingSection() {
                     </blockquote>
                     <div className="space-y-1 text-right">
                       <p 
-                        className="text-base sm:text-lg font-medium text-[#FFFFFF]">
+                        className="font-medium text-[#FFFFFF]">
                         {testimonial.author} , {testimonial.position}
                       </p>
                     </div>

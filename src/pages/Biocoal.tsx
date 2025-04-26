@@ -320,7 +320,7 @@ const Biocoal = () => {
                       pointerEvents: 'none'
                     }}
                   />
-                  <div className="flex flex-col items-start sm:items-center gap-4 sm:gap-2 text-left sm:text-center relative z-10">
+                  <div className="flex flex-col items-center gap-4 sm:gap-2 text-center relative z-10">
                     <div className="relative w-16 h-16 ">
                       <div 
                         className="w-full h-full"
@@ -331,15 +331,15 @@ const Biocoal = () => {
                           WebkitMaskSize: 'contain',
                           maskRepeat: 'no-repeat',
                           WebkitMaskRepeat: 'no-repeat',
-                          maskPosition: 'left',
-                          WebkitMaskPosition: 'left',
+                          maskPosition: 'center',
+                          WebkitMaskPosition: 'center',
                           background: 'linear-gradient(90deg, #3D4E3A 0%, #3D4E3A 100%)'
                         }}
                       />
                     </div>
-                    <div className="flex flex-col items-start sm:items-center gap-1.5 sm:gap-1">
-                      <h3 className="text-lg sm:text-sm md:text-base font-medium leading-tight
-                                  bg-gradient-to-r from-[#A4966E] to-[#F0EDE4] text-transparent bg-clip-text">
+                    <div className="flex flex-col items-center gap-1.5 sm:gap-1">
+                      <h3 className="text-lg sm:text-sm md:text-base font-semibold leading-tight
+                                  text-heading">
                         {benefit.title}
                       </h3>
                       {/* <p className="text-[#EDFDF6] text-base sm:text-xs font-light leading-snug">

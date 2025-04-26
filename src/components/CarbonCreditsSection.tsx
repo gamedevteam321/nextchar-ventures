@@ -2,7 +2,7 @@ import { getImagePath } from "@/lib/utils";
 
 const CarbonCreditsSection = () => {
   return (
-    <section id="carbon" className="py-6 sm:py-8 md:py-12 bg-[#F5F5F5] w-full overflow-x-hidden">
+    <section id="carbon" className="py-6 sm:py-8 md:py-12 bg-olive w-full overflow-x-hidden">
       <div className="mx-auto w-full px-4 sm:px-6  lg:pr-[150px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center w-full">
           {/* Image Side */}

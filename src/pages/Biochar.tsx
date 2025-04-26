@@ -66,8 +66,8 @@ const Biochar = () => {
       {/* Benefits Grid Section */}
       <section className="pt-8 sm:pt-12 md:pt-16 bg-white">
         <div className="mb-8 px-4 sm:px-8 md:px-[150px]">
-          <p className="font-montserrat font-regular text-[#474747] text-[12px] sm:text-[16px] md:text-[20px] lg:text-[28px] leading-[120%] sm:leading-[110%] md:leading-[100%] tracking-[0%] mb-6 sm:mb-8 md:mb-[50px] 
-                      bg-[#474747] text-transparent bg-clip-text text-left">
+          <p className="font-montserrat font-medium text-[#474747] text-[16px] sm:text-[16px] md:text-[20px] lg:text-[28px] leading-[120%] sm:leading-[110%] md:leading-[100%] tracking-[0%] mb-6 sm:mb-8 md:mb-[50px] 
+                      bg-[#474747] text-transparent bg-clip-text text-center">
             While biochar has diverse applications, our focus is on it's most urgent & impactful use for soil revitalization and livestock health, while ensuring carbon sequestration for a Climate Relevant Time Scale.
           </p>
           
@@ -110,13 +110,13 @@ const Biochar = () => {
                 Production Process
               </h2>
               <div className="space-y-6">
-                <p className="text-[#474747] text-sm sm:text-base md:text-lg font-regular leading-relaxed">
+                <p className="text-[#474747] text-sm sm:text-para md:text-lg font-regular leading-relaxed">
                   Biochar is a charcoal-like material made from sustainably produced biomass from agricultural and forestry residues (e.g. corn stalks, hulls, wood chips, manure, etc.).
                 </p>
-                <p className="text-[#474747] text-sm sm:text-base md:text-lg font-regular leading-relaxed">
+                <p className="text-[#474747] text-sm sm:text-para md:text-lg font-regular leading-relaxed">
                   It is produced at high temperatures, ranging from 350°C to 800°C with little to no oxygen. This process is called pyrolysis or carbonization.
                 </p>
-                <p className="text-[#474747] text-sm sm:text-base md:text-lg font-regular leading-relaxed">
+                <p className="text-[#474747] text-sm sm:text-para md:text-lg font-regular leading-relaxed">
                   When biomass undergoes pyrolysis, the carbon is rearranged in a stable form with unique properties and applications, and soil enhancement being one of them.
                 </p>
               </div>
@@ -151,8 +151,8 @@ const Biochar = () => {
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-center">
           <div className="relative z-20 px-4 sm:px-8 md:px-[150px]">
-            <div className="max-w-[1200px] bg-white/70 p-6 sm:p-8 md:p-12 rounded-xl mx-auto">
-              <h2 className="text-xl sm:text-2xl md:text-4xl font-medium mb-4 sm:mb-8 text-[#3D4E3A]">
+            <div className="max-w-[1200px] bg-white/80 p-6 sm:p-8 md:p-12 rounded-xl mx-auto">
+              <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 sm:mb-8 text-[#3D4E3A]">
                 Where Does Our Biochar Come From?
               </h2>
               <div className="space-y-4 sm:space-y-6">
@@ -202,8 +202,8 @@ const Biochar = () => {
                     }}
                   />
                 </div>
-                <h3 className="text-heading sm:text-lg md:text-xl font-medium mb-2 sm:mb-[10px] px-4
-                             bg-gradient-to-r from-[#886808] to-[#C5A133] text-transparent bg-clip-text inline-block">
+                <h3 className="text-heading sm:text-lg md:text-xl font-semibold mb-2 sm:mb-[10px] px-4
+                             text-heading  inline-block">
                   {feature.title}
                 </h3>
                 <p className="text-[13px] sm:text-base font-light leading-relaxed px-2 sm:px-4 text-[#474747]">
@@ -218,21 +218,21 @@ const Biochar = () => {
       
 
       {/* Structure Section */}
-      <section className="relative py-4 sm:py-8 bg-white">
+      <section className="relative py-8 sm:py-12 md:py-16 bg-white">
         {/* Background Image */}
         <div className="w-full relative">
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-black/50 z-10" />
           <img
             src={getImagePath("/honeycomb.jpeg")}
             alt="Structure Background"
-            className="w-full min-h-[200px] sm:min-h-[300px] object-cover"
+            className="w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] object-cover"
           />
         </div>
 
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-center">
-          <div className="relative z-20 px-2 sm:px-4 md:px-[150px]">
-            <div className="max-w-[1200px] bg-white/70 p-3 sm:p-6 md:p-8 lg:p-12 rounded-xl mx-auto">
+          <div className="relative z-20 px-6 sm:px-8 md:px-[150px]">
+            <div className="max-w-[1200px] bg-white/70 p-8 sm:p-8 md:p-12 rounded-xl mx-auto">
               <h2 className="text-heading sm:text-lg md:text-xl lg:text-2xl xl:text-4xl font-medium mb-2 sm:mb-3 md:mb-4 text-[#3D4E3A]">
                 The key is in its structure
               </h2>
@@ -288,11 +288,11 @@ const Biochar = () => {
 
 
       {/* Compost Producer Subsection */}
-      <div className="py-8  bg-[#F3F7F1]">
+      <div className="py-8  bg-olive">
         <div className="w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw]" 
              >
           <div className="max-w-[90rem] mx-auto w-full px-4 sm:px-10 md:px-16 lg:px-20 xl:px-40 py-1 sm:py-[50px]">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-medium mb-8 text-transparent bg-clip-text text-heading">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-8 text-transparent bg-clip-text text-heading">
               As a Compost Producer, Adding Biochar To Your Compost Pile Can:
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-x-8 gap-y-4 sm:gap-y-[30px]">
@@ -545,10 +545,10 @@ const Biochar = () => {
               Carbon Sequestration
             </h2>
             <div className="space-y-4 sm:space-y-6">
-              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
+              <p className="text-[#474747] font-regular text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
               Humans have observed the benefits of biochar for tens-of thousands of years, from the pre-Columbian (450 BC) farmers in South America who produced 'terra preta', transforming marginal soils to what was one of the most productive food systems in human history.
               </p>
-              <p className="text-[#474747] font-light text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
+              <p className="text-[#474747] font-regular text-sm sm:text-base md:text-[18px] leading-relaxed sm:leading-[150%] tracking-[0%]">
               When a ton of biochar is produced and used in a soil application, it permanently sequesters Approx 2.5 tons of CO2. Biochar is viewed by climate scientists as one of the few viable scalable approaches that sequesters carbon while simultaneously  providing the most significant downstream impact of Soil remediation, essential for human existence.
               </p>
             </div>
